@@ -1,0 +1,155 @@
+
+body{
+    width:auto;  
+}
+
+header{
+    padding: 0  20px ;
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+}
+
+header .brand{
+     
+    position: relative;
+    top: 39px;
+    width: 109px;
+    height: 20px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: rgb(96, 112, 255);
+    text-decoration: none;
+}
+
+header .union{
+    height: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 8px;
+    position: absolute;
+    right: 24px;
+    top: 38px;
+    border-radius: 8px;
+    
+}
+
+section{
+    background-image: url("../assets/header-shapes\ mobile.png");
+}
+
+section .container{
+   
+    background-image: url()  ;
+    position: relative;
+    height: 718px;
+    width: 375px;
+    background-repeat: no-repeat;
+    border-bottom-left-radius: 2px;
+    background-size: contain;
+    display: flex;
+    flex-direction: column;
+
+}
+
+section .container h2{
+    width: 327px;
+    height: 150px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+    display: flex;
+    align-items: center;
+    color: #172B4D;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    position: relative;
+    margin: 15px;
+    top: 34px;
+
+}
+
+section .container p:first-of-type{
+    width: 327px;
+    height: 146px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #344563;
+    flex: none;
+    position: relative;
+    
+    flex-grow: 0;
+    top: -11px;
+    right: -20px;
+
+}
+
+section .container p:nth-of-type(2n){
+    top: -79px;
+    width: 121px;
+    height: 6px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #7F8CFF;
+    flex: none;
+    flex-grow: 0;
+    
+    position: relative;
+    margin: 15px;
+    top: -34px;
+}
+
+section ul{
+    width: 170.17px;
+    height: 20px;
+    flex: none;
+    order: 3;
+    flex-grow: 0;
+    position: relative;
+    
+    left: -35px;
+    margin: 15px;
+    top: -35px;
+}
+
+
+section .media {
+    display: flex;
+    list-style-type: none;
+
+}
+
+section .media li{
+    padding-right: 14px;
+    size: 10px;
+}
+
+section .media li:nth-child(3){
+    bottom: -3px;
+    position: relative;
+}
+
+section .header-shapes{
+    z-index: 1;
+}
+
+
+
+
+
