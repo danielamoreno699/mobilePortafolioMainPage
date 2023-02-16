@@ -29,7 +29,7 @@ After you're finished please remove all the comments and instructions!
   <!-- You are encouraged to replace this logo with your own! Otherwise you can also remove it. -->
   
 
-  <h3><b>hello Microverse project</b></h3>
+  <h3><b>Portafolio project main page</b></h3>
 
 </div>
 
@@ -60,11 +60,11 @@ After you're finished please remove all the comments and instructions!
 
 HELLO MICROVERSE 
 
-# 📖 [hello microverse] <a name="about-project"></a>
+# 📖 [Portafolio project main page] <a name="about-project"></a>
 
 
 
-**[hello microverse]** is a proyect that shows a html template only for practice purposes 
+**[Portafolio project main page]** is a html mobile front page  
 
 ## 🛠 Built With <a name="built-with"></a>
 
