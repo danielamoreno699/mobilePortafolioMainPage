@@ -129,6 +129,7 @@ table {
 body {
   width: 417px;
   height: 718px;
+  
 }
 
 header {
@@ -167,13 +168,13 @@ header .union {
   border-radius: 8px;
 }
 
-section {
+.main-page {
   background-image: url("../assets/header-shapes\ mobile.png");
   background-repeat: not-repeat;
   width: 100%;
 }
 
-section .container {
+.main-page .container {
   background-image: url();
   position: relative;
   height: 718px;
@@ -185,7 +186,7 @@ section .container {
   flex-direction: column;
 }
 
-section .container h2 {
+.main-page .container h2 {
   width: 327px;
   height: 150px;
   font-family: 'Poppins', serif;
@@ -204,7 +205,7 @@ section .container h2 {
   top: 34px;
 }
 
-section .container p:first-of-type {
+.main-page .container p:first-of-type {
   width: 327px;
   height: 146px;
   font-family: 'Poppins', serif;
@@ -220,7 +221,7 @@ section .container p:first-of-type {
   right: -20px;
 }
 
-section .container p:nth-of-type(2n) {
+.main-page .container p:nth-of-type(2n) {
   width: 121px;
   height: 6px;
   font-family: 'Poppins', serif;
@@ -236,7 +237,7 @@ section .container p:nth-of-type(2n) {
   top: 5px;
 }
 
-section ul {
+.main-page ul {
   width: 170.17px;
   height: 20px;
   flex: 0 0 auto;
@@ -247,21 +248,175 @@ section ul {
   top: 0;
 }
 
-section .media {
+.main-page .media {
   display: flex;
   list-style-type: none;
 }
 
-section .media li {
+.main-page .media li {
   padding-right: 14px;
   size: 10px;
 }
 
-section .media li:nth-child(3) {
+.main-page .media li:nth-child(3) {
   bottom: -3px;
   position: relative;
 }
 
-section .header-shapes {
+.main-page .header-shapes {
   z-index: 1;
 }
+
+/* styles of section card */
+
+.section-card {
+  width: 100%;
+  background: #e5e5e5;
+}
+
+.section-card .card-container {
+  display: grid;
+  grid-row: auto;
+  row-gap: 50px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.section-card .card {
+  position: relative;
+  left: 7px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  width: 327px;
+  height: 552px;
+  background: #fff;
+  border: 1px solid #dfe1e6;
+  border-radius: 16px;
+  order: 0;
+  margin: 7px;
+  padding: 29px;
+}
+
+.section-card .card-header img {
+  width: 100%;
+}
+
+.section-card .card-body h3 {
+  width: 100%;
+  font-family: 'Poppins',serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  color: #172b4d;
+  position: relative;
+}
+
+.section-card .text {
+  display: flex;
+  justify-content: space-around;
+  top: 21px;
+  position: relative;
+  font-family: 'Poppins',serif;
+  font-size: 17px;
+  color: #344563;
+  height: 16px;
+}
+
+.section-card .counter-png {
+  width: 10px;
+  height: 9px;
+  position: relative;
+  top: 6px;
+  left: 10px;
+}
+
+.section-card .text-element-one {
+  font-weight: 700;
+}
+
+.section-card .text-element {
+  width: 88px;
+  height: 16px;
+  font-family: 'Poppins',serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  color: #7a869a;
+  left: 21px;
+  position: relative;
+}
+
+.section-card .description {
+  position: relative;
+  top: 49px;
+  width: 295px;
+  height: 76px;
+  font-family: 'Poppins',serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  color: #344563;
+}
+
+.section-card .container-btns {
+  position: relative;
+  top: 57px;
+}
+
+.section-card .button-group {
+  display: flex;
+  justify-content: space-between;
+}
+
+.section-card .button-group li {
+  background: #ebebff;
+  border-radius: 8px;
+  padding: 6px 23px;
+  font-family: 'Poppins', serif;
+  font-weight: 500;
+  font-size: 12px;
+  letter-spacing: 0.03em;
+  color: #6070ff;
+}
+
+.section-card .box-button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 3px;
+  gap: 10px;
+  position: absolute;
+  width: 124px;
+  height: 48px;
+  left: 0;
+  top: 48px;
+  border: 1px solid #6070ff;
+  border-radius: 8px;
+}
+
+.section-card .btn {
+  font-family: 'Poppins',serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #396df2;
+  border: none;
+  background: transparent;
+}
+
+.box-button:hover {
+  background-color: #396df2;
+}
+
+.btn:hover {
+  color: whitesmoke;
+}
+
+
