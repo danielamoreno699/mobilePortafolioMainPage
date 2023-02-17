@@ -129,7 +129,6 @@ table {
 body {
   width: 417px;
   height: 718px;
-  
 }
 
 header {
@@ -143,9 +142,9 @@ header {
 header .brand {
   position: relative;
   top: 39px;
-  width: 109px;
+  width: 120px;
   height: 20px;
-  font-family: Poppins, serif;
+  font-family: "Poppins", serif;
   font-style: normal;
   font-weight: 700;
   font-size: 28px;
@@ -174,7 +173,7 @@ header .union {
   width: 100%;
 }
 
-.main-page .container {
+.main-page .Main-Page-container {
   background-image: url();
   position: relative;
   height: 718px;
@@ -186,7 +185,7 @@ header .union {
   flex-direction: column;
 }
 
-.main-page .container h2 {
+.Main-Page-container h2 {
   width: 327px;
   height: 150px;
   font-family: 'Poppins', serif;
@@ -205,7 +204,19 @@ header .union {
   top: 34px;
 }
 
-.main-page .container p:first-of-type {
+.languages p {
+  height: 24px;
+  left: 12px;
+  right: 78px;
+  font-family: 'Poppins', serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  position: relative;
+}
+
+.Main-Page-container p:first-of-type {
   width: 327px;
   height: 146px;
   font-family: 'Poppins', serif;
@@ -221,7 +232,7 @@ header .union {
   right: -20px;
 }
 
-.main-page .container p:nth-of-type(2n) {
+.Main-Page-container p:nth-of-type(2n) {
   width: 121px;
   height: 6px;
   font-family: 'Poppins', serif;
@@ -237,7 +248,7 @@ header .union {
   top: 5px;
 }
 
-.main-page ul {
+.Main-Page-container ul {
   width: 170.17px;
   height: 20px;
   flex: 0 0 auto;
@@ -248,23 +259,24 @@ header .union {
   top: 0;
 }
 
-.main-page .media {
+.media {
   display: flex;
   list-style-type: none;
 }
 
-.main-page .media li {
+.media li {
   padding-right: 14px;
   size: 10px;
 }
 
-.main-page .media li:nth-child(3) {
-  bottom: -3px;
-  position: relative;
+.languages li {
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
-.main-page .header-shapes {
-  z-index: 1;
+.media li:nth-child(3) {
+  bottom: -3px;
+  position: relative;
 }
 
 /* styles of section card */
@@ -305,7 +317,7 @@ header .union {
 
 .section-card .card-body h3 {
   width: 100%;
-  font-family: 'Poppins',serif;
+  font-family: 'Poppins', serif;
   font-style: normal;
   font-weight: 700;
   font-size: 32px;
@@ -318,7 +330,7 @@ header .union {
   justify-content: space-around;
   top: 21px;
   position: relative;
-  font-family: 'Poppins',serif;
+  font-family: 'Poppins', serif;
   font-size: 17px;
   color: #344563;
   height: 16px;
@@ -339,7 +351,7 @@ header .union {
 .section-card .text-element {
   width: 88px;
   height: 16px;
-  font-family: 'Poppins',serif;
+  font-family: 'Poppins', serif;
   font-style: normal;
   font-weight: 600;
   font-size: 13px;
@@ -353,7 +365,7 @@ header .union {
   top: 49px;
   width: 295px;
   height: 76px;
-  font-family: 'Poppins',serif;
+  font-family: 'Poppins', serif;
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
@@ -397,7 +409,7 @@ header .union {
 }
 
 .section-card .btn {
-  font-family: 'Poppins',serif;
+  font-family: 'Poppins', serif;
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
@@ -427,122 +439,6 @@ header .union {
   border-top-right-radius: 10%;
 }
 
-/* styles of section Form */
-.form {
-  height: 900px;
-  background: #6070ff;
-  border-top-left-radius: 10%;
-  background-image: url("./background2.png");
-  background-repeat: no-repeat;
-  background-size: 274px 708px;
-}
-
-.form .form-container {
-  padding: 50px;
-}
-
-.form-text {
-  margin-top: 34px;
-}
-
-.form-text .h1-form {
-  padding: 20px;
-  left: 20px;
-}
-
-.form-text h1 {
-  width: 801px;
-  height: 56px;
-  left: -34px;
-  position: relative;
-  font-family: 'Poppins',serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 40px;
-  line-height: 52px;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  color: #fff;
-  top: 20px;
-}
-
-.form-text p {
-  width: 327px;
-  height: 102px;
-  position: relative;
-  font-family: 'Poppins',serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 20px;
-  text-align: center;
-  color: #ebebff;
-  top: 20px;
-}
-
-.text-box {
-  position: relative;
-  top: 76px;
-  display: grid;
-  row-gap: 20px;
-}
-
-.el {
-  height: 48px;
-  width: 327px;
-  border: 1px solid #cfd8dc;
-  border-radius: 8px;
-  margin-top: 20px;
-  font-family: 'Poppins',serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 17px;
-}
-
-.el:nth-of-type(2) {
-  margin-top: 2px;
-}
-
-.el:last-of-type {
-  height: 170px;
-  width: 327px;
-  border-radius: 8px;
-}
-
-.form .box-button {
-  position: relative;
-  width: 142px;
-  height: 48px;
-  background: #fff;
-  border-radius: 8px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 12px 16px;
-  top: 114px;
-}
-
-.box-button .btn {
-  border: none;
-  background: transparent;
-  border: none;
-  background: transparent;
-  font-family: 'Poppins',serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 17px;
-  color: #6070ff;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  letter-spacing: 0.03em;
-  left: 6px;
-  position: relative;
-}
-
-
-
-
 .personal-description .personal-description-container {
   margin: 10%;
 }
@@ -556,7 +452,7 @@ header .union {
 .personal-description .text h2 {
   width: 17px;
   height: 101px;
-  font-family: 'Poppins',serif;
+  font-family: 'Poppins', serif;
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
@@ -569,18 +465,18 @@ header .union {
   margin-top: 30px;
   width: 327px;
   height: 144px;
-  font-family: 'Poppins',serif;
+  font-family: 'Poppins', serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   color: #344563;
 }
 
-.personal-description .text .lets-connect {
+.text .lets-connect {
   top: 20px;
   width: 117px;
   height: 24px;
-  font-family: 'Poppins',serif;
+  font-family: 'Poppins', serif;
   font-weight: 500;
   font-size: 16px;
   color: #7f8cff;
@@ -610,7 +506,7 @@ header .union {
 }
 
 .personal-description .btn {
-  font-family: 'Poppins',serif;
+  font-family: 'Poppins', serif;
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
@@ -629,21 +525,7 @@ header .union {
   position: relative;
 }
 
-.personal-description .languages {
-  margin-top: 167px;
-}
-
-.languages p {
-  height: 24px;
-  left: 12px;
-  right: 78px;
-  font-family: 'Poppins',serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 24px;
-  position: relative;
-}
+.languages { margin-top: 167px; }
 
 .languages .icon {
   align-self: center;
@@ -652,7 +534,7 @@ header .union {
   position: absolute;
 }
 
-.languages li .btn-ellipse {
+.languages .btn-ellipse {
   width: 303px;
   height: 66.72px;
   background: #f7f7f9;
@@ -667,12 +549,6 @@ header .union {
   align-self: center;
 }
 
-.languages li {
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-
 .white-space {
   padding: 20%;
 }
-
