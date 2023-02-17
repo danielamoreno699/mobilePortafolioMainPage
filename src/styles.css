@@ -129,14 +129,17 @@ table {
 body {
   width: 417px;
   height: 718px;
+  background-color: #e5e5e5;;
+ 
 }
 
 header {
-  width: 288px;
+  width: 100%;
   padding: 0  20px;
   display: flex;
   justify-content: space-between;
   height: 100px;
+  background-color: white;
 }
 
 header .brand {
@@ -156,6 +159,10 @@ header .brand {
   text-decoration: none;
 }
 
+header nav{
+  background-color: white;
+}
+
 header .union {
   height: 20px;
   display: flex;
@@ -165,12 +172,16 @@ header .union {
   position: absolute;
   top: 29px;
   border-radius: 8px;
+  left: 336px;
 }
 
 .main-page {
   background-image: url("../assets/header-shapes\ mobile.png");
   background-repeat: not-repeat;
-  width: 100%;
+  border-bottom-left-radius: 80px 80px;
+  background-color: white;
+  height: 79%;
+ 
 }
 
 .main-page .Main-Page-container {
@@ -284,14 +295,16 @@ header .union {
 .section-card {
   width: 100%;
   background: #e5e5e5;
+  
 }
 
 .section-card .card-container {
   display: grid;
   grid-row: auto;
-  row-gap: 50px;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 118px;
+  padding-bottom: 96px;
+  row-gap: 12px;
+  
 }
 
 .section-card .card {
@@ -307,8 +320,9 @@ header .union {
   border: 1px solid #dfe1e6;
   border-radius: 16px;
   order: 0;
-  margin: 7px;
+  margin: 5px;
   padding: 29px;
+  
 }
 
 .section-card .card-header img {
@@ -382,6 +396,7 @@ header .union {
   justify-content: space-between;
 }
 
+
 .section-card .button-group li {
   background: #ebebff;
   border-radius: 8px;
@@ -437,10 +452,12 @@ header .union {
   width: 417px;
   background: #fff;
   border-top-right-radius: 10%;
+  
 }
 
 .personal-description .personal-description-container {
   margin: 10%;
+  margin-top: 6px;
 }
 
 .personal-description .text {
