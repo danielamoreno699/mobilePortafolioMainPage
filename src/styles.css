@@ -129,8 +129,7 @@ table {
 body {
   width: 417px;
   height: 718px;
-  background-color: #e5e5e5;;
- 
+  background-color: #e5e5e5;
 }
 
 header {
@@ -159,7 +158,7 @@ header .brand {
   text-decoration: none;
 }
 
-header nav{
+header nav {
   background-color: white;
 }
 
@@ -181,7 +180,6 @@ header .union {
   border-bottom-left-radius: 80px 80px;
   background-color: white;
   height: 79%;
- 
 }
 
 .main-page .Main-Page-container {
@@ -295,7 +293,6 @@ header .union {
 .section-card {
   width: 100%;
   background: #e5e5e5;
-  
 }
 
 .section-card .card-container {
@@ -304,7 +301,6 @@ header .union {
   padding-top: 118px;
   padding-bottom: 96px;
   row-gap: 12px;
-  
 }
 
 .section-card .card {
@@ -322,7 +318,6 @@ header .union {
   order: 0;
   margin: 5px;
   padding: 29px;
-  
 }
 
 .section-card .card-header img {
@@ -396,7 +391,6 @@ header .union {
   justify-content: space-between;
 }
 
-
 .section-card .button-group li {
   background: #ebebff;
   border-radius: 8px;
@@ -452,7 +446,6 @@ header .union {
   width: 417px;
   background: #fff;
   border-top-right-radius: 10%;
-  
 }
 
 .personal-description .personal-description-container {
