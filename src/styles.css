@@ -427,6 +427,122 @@ header .union {
   border-top-right-radius: 10%;
 }
 
+/* styles of section Form */
+.form {
+  height: 900px;
+  background: #6070ff;
+  border-top-left-radius: 10%;
+  background-image: url("./background2.png");
+  background-repeat: no-repeat;
+  background-size: 274px 708px;
+}
+
+.form .form-container {
+  padding: 50px;
+}
+
+.form-text {
+  margin-top: 34px;
+}
+
+.form-text .h1-form {
+  padding: 20px;
+  left: 20px;
+}
+
+.form-text h1 {
+  width: 801px;
+  height: 56px;
+  left: -34px;
+  position: relative;
+  font-family: 'Poppins',serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  top: 20px;
+}
+
+.form-text p {
+  width: 327px;
+  height: 102px;
+  position: relative;
+  font-family: 'Poppins',serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  text-align: center;
+  color: #ebebff;
+  top: 20px;
+}
+
+.text-box {
+  position: relative;
+  top: 76px;
+  display: grid;
+  row-gap: 20px;
+}
+
+.el {
+  height: 48px;
+  width: 327px;
+  border: 1px solid #cfd8dc;
+  border-radius: 8px;
+  margin-top: 20px;
+  font-family: 'Poppins',serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+}
+
+.el:nth-of-type(2) {
+  margin-top: 2px;
+}
+
+.el:last-of-type {
+  height: 170px;
+  width: 327px;
+  border-radius: 8px;
+}
+
+.form .box-button {
+  position: relative;
+  width: 142px;
+  height: 48px;
+  background: #fff;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 12px 16px;
+  top: 114px;
+}
+
+.box-button .btn {
+  border: none;
+  background: transparent;
+  border: none;
+  background: transparent;
+  font-family: 'Poppins',serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  color: #6070ff;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.03em;
+  left: 6px;
+  position: relative;
+}
+
+
+
+
 .personal-description .personal-description-container {
   margin: 10%;
 }
