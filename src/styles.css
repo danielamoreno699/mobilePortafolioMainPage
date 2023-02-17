@@ -419,4 +419,144 @@ header .union {
   color: whitesmoke;
 }
 
+/* styles of section Personal description */
+
+.personal-description {
+  width: 417px;
+  background: #fff;
+  border-top-right-radius: 10%;
+}
+
+.personal-description .personal-description-container {
+  margin: 10%;
+}
+
+.personal-description .text {
+  top: 116px;
+  padding: 19px;
+  position: relative;
+}
+
+.personal-description .text h2 {
+  width: 17px;
+  height: 101px;
+  font-family: 'Poppins',serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  display: flex;
+  align-items: center;
+  color: #172b4d;
+}
+
+.personal-description .text .p-body {
+  margin-top: 30px;
+  width: 327px;
+  height: 144px;
+  font-family: 'Poppins',serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: #344563;
+}
+
+.personal-description .text .lets-connect {
+  top: 20px;
+  width: 117px;
+  height: 24px;
+  font-family: 'Poppins',serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #7f8cff;
+  position: relative;
+}
+
+.personal-description .social-media {
+  flex-direction: row;
+  display: flex;
+  top: 123px;
+  position: relative;
+}
+
+.personal-description .social-media li {
+  margin: 20px;
+}
+
+.personal-description .box-button {
+  top: 109px;
+  left: 10px;
+  position: relative;
+  height: 48px;
+  border: 2px solid #6070ff;
+  border-radius: 8px;
+  padding: 3px;
+  width: 169px;
+}
+
+.personal-description .btn {
+  font-family: 'Poppins',serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #396df2;
+  border: none;
+  background: transparent;
+  top: 9px;
+  left: 6px;
+  align-content: center;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.personal-description .languages {
+  margin-top: 167px;
+}
+
+.languages p {
+  height: 24px;
+  left: 12px;
+  right: 78px;
+  font-family: 'Poppins',serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  position: relative;
+}
+
+.languages .icon {
+  align-self: center;
+  right: auto;
+  left: 238px;
+  position: absolute;
+}
+
+.languages li .btn-ellipse {
+  width: 303px;
+  height: 66.72px;
+  background: #f7f7f9;
+  border-radius: 8px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: self-start;
+  border: none;
+}
+
+.languages .javascript p {
+  align-self: center;
+}
+
+.languages li {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.white-space {
+  padding: 20%;
+}
 
