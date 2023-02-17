@@ -58,13 +58,13 @@ After you're finished please remove all the comments and instructions!
 - [📝 License](#license)
 
 
-HELLO MICROVERSE 
+PORTAFOLIO MOBILE VERSION
 
-# 📖 [Portafolio project main page] <a name="about-project"></a>
+# 📖 [Portafolio Mobile Version] <a name="about-project"></a>
 
 
 
-**[Portafolio project main page]** is a html mobile front page  
+**[Portafolio Mobile Version]** is a landpage proyect in mobile version
 
 ## 🛠 Built With <a name="built-with"></a>
 
