@@ -127,13 +127,13 @@ table {
 }
 
 body {
-  width: 417px;
+  width: 380px;
   height: 718px;
   background-color: #e5e5e5;
 }
 
 header {
-  width: 100%;
+  width: 89%;
   padding: 0  20px;
   display: flex;
   justify-content: space-between;
@@ -171,7 +171,7 @@ header .union {
   position: absolute;
   top: 29px;
   border-radius: 8px;
-  left: 336px;
+  left: 312px;
 }
 
 .main-page {
@@ -293,6 +293,9 @@ header .union {
 .section-card {
   width: 100%;
   background: #e5e5e5;
+  top: -4px;
+  position: relative;
+  margin-left: 26px;
 }
 
 .section-card .card-container {
@@ -300,24 +303,20 @@ header .union {
   grid-row: auto;
   padding-top: 118px;
   padding-bottom: 96px;
-  row-gap: 12px;
+  row-gap: 20px;
 }
 
 .section-card .card {
-  position: relative;
-  left: 7px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 16px;
   gap: 12px;
-  width: 327px;
+  width: 295px;
   height: 552px;
-  background: #fff;
   border: 1px solid #dfe1e6;
   border-radius: 16px;
-  order: 0;
-  margin: 5px;
-  padding: 29px;
+  background: #fff;
 }
 
 .section-card .card-header img {
@@ -443,9 +442,9 @@ header .union {
 /* styles of section Personal description */
 
 .personal-description {
-  width: 417px;
   background: #fff;
-  border-top-right-radius: 10%;
+  border-top-right-radius: 80px 80px;
+  width: 380px;
 }
 
 .personal-description .personal-description-container {
@@ -455,7 +454,6 @@ header .union {
 
 .personal-description .text {
   top: 116px;
-  padding: 19px;
   position: relative;
 }
 
@@ -471,7 +469,7 @@ header .union {
   color: #172b4d;
 }
 
-.personal-description .text .p-body {
+.text .p-body {
   margin-top: 30px;
   width: 327px;
   height: 144px;
@@ -498,6 +496,7 @@ header .union {
   display: flex;
   top: 123px;
   position: relative;
+  right: 22px;
 }
 
 .personal-description .social-media li {
@@ -505,14 +504,14 @@ header .union {
 }
 
 .personal-description .box-button {
-  top: 109px;
-  left: 10px;
   position: relative;
   height: 48px;
   border: 2px solid #6070ff;
   border-radius: 8px;
   padding: 3px;
   width: 169px;
+  left: -6px;
+  top: 129px;
 }
 
 .personal-description .btn {
@@ -561,4 +560,24 @@ header .union {
 
 .white-space {
   padding: 20%;
+}
+
+.languages .txt-language {
+  height: 24px;
+  left: 12px;
+  right: 78px;
+  font-family: 'Poppins', serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.languages .txt {
+  height: 24px;
+  font-family: 'Poppins', serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
 }
