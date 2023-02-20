@@ -392,7 +392,7 @@ header .union {
 }
 
 .section-card .button-group li {
-  background: blue;
+  background: black;
   border-radius: 8px;
   padding: 6px 23px;
   font-family: 'Poppins', serif;
