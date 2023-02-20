@@ -386,12 +386,13 @@ header .union {
 }
 
 .section-card .button-group {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
 }
 
 .section-card .button-group li {
-  background: #ebebff;
+  background: blue;
   border-radius: 8px;
   padding: 6px 23px;
   font-family: 'Poppins', serif;
