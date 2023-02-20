@@ -386,10 +386,10 @@ header .union {
 }
 
 .section-card .button-group {
-  float: left;
-  width: 20px;
-  height: 50px;
-  padding: 15px;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-gap:20px ;
+
 }
 
 .section-card .button-group li {
