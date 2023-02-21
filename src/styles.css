@@ -194,8 +194,6 @@ header .union {
   flex-direction: column;
 }
 
-
-
 .Main-Page-container h2 {
   width: 327px;
   height: 150px;
@@ -225,6 +223,21 @@ header .union {
   font-size: 20px;
   line-height: 24px;
   position: relative;
+}
+
+.form-text p {
+  width: 327px;
+  height: 102px;
+  position: relative;
+  left: -6px;
+  top: 20px;
+  font-family: 'Poppins', serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  color: #ebebff;
 }
 
 .Main-Page-container p:first-of-type {
@@ -275,6 +288,10 @@ header .union {
   list-style-type: none;
 }
 
+form > ul > li {
+  padding: 10px;
+}
+
 .media li {
   padding-right: 17px;
   size: 10px;
@@ -285,10 +302,17 @@ header .union {
   margin-bottom: 20px;
 }
 
+ul > li:nth-child(2n) {
+  margin-top: -14px;
+}
+
+ul > li:nth-child(3n) {
+  margin-top: -14px;
+}
+
 .media li:nth-child(5) {
   top: -12px;
   position: relative;
-
 }
 
 /* styles of section card */
@@ -460,6 +484,18 @@ header .union {
   position: relative;
 }
 
+.form-text h2 {
+  font-family: 'Poppins', serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  left: -10px;
+  position: relative;
+}
+
 .personal-description .text h2 {
   width: 17px;
   height: 101px;
@@ -555,7 +591,6 @@ header .union {
   display: flex;
   justify-content: self-start;
   border: none;
- 
 }
 
 .languages .javascript p {
@@ -594,82 +629,42 @@ header .union {
   color: whitesmoke;
 }
 
-
-
-/* css contact form styling */
-
-.contact-form{
-    width: 380px;
-    height: 117%;
-    top: -36px;
-    background-image: url("../assets/header-shapes\ mobile.png");
-    background-repeat: not-repeat;
-     background-color: rgb(96, 112, 255);
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border-top-left-radius: 80px 80px;
-  
+.contact-form {
+  width: 380px;
+  height: 117%;
+  top: -36px;
+  background-image: url("../assets/header-shapes\ mobile.png");
+  background-repeat: not-repeat;
+  background-color: rgb(96, 112, 255);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-top-left-radius: 80px 80px;
 }
 
-.form-container{
-  
+.form-container {
   width: 380px;
-  left: 0px;
-  top: 117px; 
+  left: 0;
+  top: 117px;
   display: flex;
   flex-wrap: wrap;
   position: relative;
   justify-content: center;
   padding: 15px 67px;
-
 }
 
-.form-text{
-  font-family: 'Poppins';
+.form-text {
+  font-family: 'Poppins', serif;
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
   align-items: center;
   text-align: center;
-  color: #FFFFFF;
-}
-
-.form-text h2{
-  
-  font-family: 'Poppins';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 40px;
-  align-items: center;
-  text-align: center;
   color: #fff;
-  text-align: center;
-  left: -10px;
-  position: relative;
-
 }
 
-.form-text p{
-
-width: 327px;
-height: 102px;
-position: relative;
-left: -6px;
-top:20px;
-font-family: 'Poppins';
-font-style: normal;
-font-weight: 400;
-font-size: 20px;
-line-height: 28px;
-text-align: center;
-
-color: #EBEBFF;
-}
-
-
-form{
+form {
   top: 77px;
   position: relative;
   width: 370px;
@@ -677,65 +672,42 @@ form{
   margin-left: 24px;
 }
 
-form > ul > li{
-  padding: 10px;
-
-  
-}
-
-ul >li:nth-child(2n){
-  margin-top: -14px;
-}
-
-ul >li:nth-child(3n){
-  margin-top: -14px;
-}
-
-
-#username{
-
-  font-family: 'Poppins';
+#username {
+  font-family: 'Poppins', serif;
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
-
-
 }
 
-#email{
-  font-family: 'Poppins';
+#email {
+  font-family: 'Poppins', serif;
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
 }
 
 #msg {
-  
-  Width: 327px;
-  Height: 170px;
+  width: 327px;
+  height: 170px;
   border-radius: 8px;
   background: #fff;
   border: 1px solid #cfd8dc;
   margin-top: 8px;
   resize: none;
-  font-family: 'Poppins';
+  font-family: 'Poppins', serif;
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
-  
 }
 
 input {
-    
-    border-radius: 8px;
-    background: #fff;
-    border: 1px solid #cfd8dc;
-    margin: 5px 0;
-    Width: 327px;
-    Height: 48px;
-   
+  border-radius: 8px;
+  background: #fff;
+  border: 1px solid #cfd8dc;
+  margin: 5px 0;
+  width: 327px;
+  height: 48px;
 }
-  
 
 .box-button-contact {
   display: flex;
@@ -743,7 +715,6 @@ input {
   align-items: center;
   padding: 3px;
   gap: 15px;
-  
   width: 142px;
   height: 48px;
   left: 8px;
@@ -752,14 +723,9 @@ input {
   background-color: #fff;
   position: relative;
   margin-top: 17px;
-  left: 11px;
-  
-  
 }
 
-
 .btn-submit {
-
   font-family: 'Poppins', serif;
   font-style: normal;
   font-weight: 500;
@@ -772,22 +738,17 @@ input {
   color: #396df2;
   border: none;
   background: transparent;
-  
 }
 
 .input:invalid {
-  border-color:  2px solid red;
+  border-color: 2px solid red;
   color: red;
 }
 
-.box-button-contact:hover{
+.box-button-contact:hover {
   background-color: #396df2;
 }
 
-.btn-submit:hover{
+.btn-submit:hover {
   color: whitesmoke;
 }
-
-
-
-
