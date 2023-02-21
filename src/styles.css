@@ -591,7 +591,13 @@ header .union {
   width: 375px;
   height: 779px;
   background: #6070FF;
-
+  position: relative;
+  padding: 6.4375rem 1.5rem 1.5rem;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  align-items: center
+  
 }
 
 .form-container{
@@ -626,17 +632,41 @@ header .union {
   font-size: 40px;
   align-items: center;
   text-align: center;
-  color: #FFFFFF; 
+  color: #fff;
+  text-align: center;
+
 }
 
 .form-text p{
-  font-family: 'Poppins';
+  /* font-family: 'Poppins';
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
   align-items: center;
   text-align: center;
-  color: #FFFFFF;
+  color: #FFFFFF; */
+  
+width: 327px;
+height: 102px;
+left: 24px;
+top: 4802px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 28px;
+/* or 140% */
+
+text-align: center;
+
+/* Primary/B50 */
+
+color: #EBEBFF;
+
+
+
+
 }
 
 
@@ -648,4 +678,71 @@ form{
 form > ul > li{
   padding: 10px
 }
+
+#msg {
+  
+  Width: 327px;
+  Height: 170px;
+  border-radius: 8px;
+  background: #fff;
+  border: 1px solid #cfd8dc;
+  margin-top: 8px;
+  padding: 1rem;
+  resize: none;
+}
+
+input {
+    
+    border-radius: 8px;
+    background: #fff;
+    border: 1px solid #cfd8dc;
+    margin: 10px 0;
+    height: 48px;
+    padding: 0 1rem;
+    Width: 327px;
+    Height: 48px;
+    Radius: 8px;
+}
+  
+label {
+    display: block;
+    color: #fff;
+}
+.box-button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 3px;
+  gap: 10px;
+  position: absolute;
+  width: 142px;
+  height: 48px;
+  left: 0;
+  border: 1px solid #6070ff;
+  border-radius: 8px;
+  background-color: #fff;
+  
+  
+}
+
+
+.btn-submit {
+
+  font-family: 'Poppins', serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #396df2;
+  border: none;
+  background: transparent;
+  
+}
+
+
+
 
