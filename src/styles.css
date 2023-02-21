@@ -588,7 +588,7 @@ header .union {
 /* css contact form styling */
 
 .contact-form{
-  width: 334px;
+  width: 380px;
     height: 117%;
     top: -25px;
     background: rgb(96, 112, 255);
@@ -601,13 +601,14 @@ header .union {
 
 .form-container{
 
-  width: 100%;
+  width: 380px;
   left: 0px;
   top: 117px; 
   display: flex;
   flex-wrap: wrap;
   position: relative;
   justify-content: center;
+  padding: 15px 67px;
 
 }
 
@@ -687,7 +688,7 @@ form > ul > li{
   background: #fff;
   border: 1px solid #cfd8dc;
   margin-top: 8px;
-  padding: 1rem;
+  /* padding: 1rem; */
   resize: none;
 }
 
@@ -698,7 +699,7 @@ input {
     border: 1px solid #cfd8dc;
     margin: 10px 0;
     height: 48px;
-    padding: 0 1rem;
+    /* padding: 0 1rem; */
     Width: 327px;
     Height: 48px;
     Radius: 8px;
@@ -741,6 +742,12 @@ label {
   border: none;
   background: transparent;
   
+}
+
+.input:invalid {
+  border-color:  2px solid red;
+
+  color: red;
 }
 
 
