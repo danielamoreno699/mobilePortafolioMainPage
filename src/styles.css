@@ -194,6 +194,8 @@ header .union {
   flex-direction: column;
 }
 
+
+
 .Main-Page-container h2 {
   width: 327px;
   height: 150px;
@@ -552,6 +554,7 @@ header .union {
   display: flex;
   justify-content: self-start;
   border: none;
+ 
 }
 
 .languages .javascript p {
