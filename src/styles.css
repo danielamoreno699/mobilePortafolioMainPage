@@ -267,7 +267,7 @@ header .union {
   position: relative;
   left: -35px;
   margin: 15px;
-  top: 0;
+  top: 20px;
 }
 
 .media {
@@ -276,7 +276,7 @@ header .union {
 }
 
 .media li {
-  padding-right: 14px;
+  padding-right: 17px;
   size: 10px;
 }
 
@@ -285,9 +285,10 @@ header .union {
   margin-bottom: 20px;
 }
 
-.media li:nth-child(3) {
-  bottom: -3px;
+.media li:nth-child(5) {
+  top: -12px;
   position: relative;
+
 }
 
 /* styles of section card */
@@ -505,7 +506,7 @@ header .union {
   margin: 20px;
 }
 
-.personal-description .box-button {
+.personal-description .box-button-description {
   position: relative;
   height: 48px;
   border: 2px solid #6070ff;
@@ -516,7 +517,7 @@ header .union {
   top: 129px;
 }
 
-.personal-description .btn {
+.personal-description .btn-personal-description {
   font-family: 'Poppins', serif;
   font-style: normal;
   font-weight: 500;
@@ -585,22 +586,35 @@ header .union {
   line-height: 20px;
 }
 
+.box-button-description:hover {
+  background-color: #396df2;
+}
+
+.btn-personal-description:hover {
+  color: whitesmoke;
+}
+
+
+
 /* css contact form styling */
 
 .contact-form{
-  width: 380px;
+    width: 380px;
     height: 117%;
-    top: -25px;
-    background: rgb(96, 112, 255);
+    top: -36px;
+    background-image: url("../assets/header-shapes\ mobile.png");
+    background-repeat: not-repeat;
+     background-color: rgb(96, 112, 255);
     position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
+    border-top-left-radius: 80px 80px;
   
 }
 
 .form-container{
-
+  
   width: 380px;
   left: 0px;
   top: 117px; 
@@ -611,8 +625,6 @@ header .union {
   padding: 15px 67px;
 
 }
-
-
 
 .form-text{
   font-family: 'Poppins';
@@ -634,50 +646,67 @@ header .union {
   text-align: center;
   color: #fff;
   text-align: center;
+  left: -10px;
+  position: relative;
 
 }
 
 .form-text p{
-  /* font-family: 'Poppins';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 20px;
-  align-items: center;
-  text-align: center;
-  color: #FFFFFF; */
-  
+
 width: 327px;
 height: 102px;
-left: 24px;
-top: 4802px;
-
+position: relative;
+left: -6px;
+top:20px;
 font-family: 'Poppins';
 font-style: normal;
 font-weight: 400;
 font-size: 20px;
 line-height: 28px;
-/* or 140% */
-
 text-align: center;
 
-/* Primary/B50 */
-
 color: #EBEBFF;
-
-
-
-
 }
 
 
 form{
-  top: 42px;
+  top: 77px;
   position: relative;
   width: 370px;
+  margin-right: 28px;
+  margin-left: 24px;
 }
 
 form > ul > li{
-  padding: 10px
+  padding: 10px;
+
+  
+}
+
+ul >li:nth-child(2n){
+  margin-top: -14px;
+}
+
+ul >li:nth-child(3n){
+  margin-top: -14px;
+}
+
+
+#username{
+
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+
+
+}
+
+#email{
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
 }
 
 #msg {
@@ -688,8 +717,12 @@ form > ul > li{
   background: #fff;
   border: 1px solid #cfd8dc;
   margin-top: 8px;
-  /* padding: 1rem; */
   resize: none;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  
 }
 
 input {
@@ -697,31 +730,29 @@ input {
     border-radius: 8px;
     background: #fff;
     border: 1px solid #cfd8dc;
-    margin: 10px 0;
-    height: 48px;
-    /* padding: 0 1rem; */
+    margin: 5px 0;
     Width: 327px;
     Height: 48px;
-    Radius: 8px;
+   
 }
   
-label {
-    display: block;
-    color: #fff;
-}
-.box-button {
+
+.box-button-contact {
   display: flex;
   flex-direction: row;
   align-items: center;
   padding: 3px;
-  gap: 10px;
-  position: absolute;
+  gap: 15px;
+  
   width: 142px;
   height: 48px;
-  left: 0;
+  left: 8px;
   border: 1px solid #6070ff;
   border-radius: 8px;
   background-color: #fff;
+  position: relative;
+  margin-top: 17px;
+  left: 11px;
   
   
 }
@@ -746,8 +777,15 @@ label {
 
 .input:invalid {
   border-color:  2px solid red;
-
   color: red;
+}
+
+.box-button-contact:hover{
+  background-color: #396df2;
+}
+
+.btn-submit:hover{
+  color: whitesmoke;
 }
 
 
