@@ -584,3 +584,68 @@ header .union {
   font-size: 15px;
   line-height: 20px;
 }
+
+/* css contact form styling */
+
+.contact-form{
+  width: 375px;
+  height: 779px;
+  background: #6070FF;
+
+}
+
+.form-container{
+
+  width: 100%;
+  left: 0px;
+  top: 117px; 
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  justify-content: center;
+
+}
+
+
+
+.form-text{
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  align-items: center;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.form-text h2{
+  
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  align-items: center;
+  text-align: center;
+  color: #FFFFFF; 
+}
+
+.form-text p{
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  align-items: center;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+
+form{
+  top: 42px;
+  position: relative;
+}
+
+form > ul > li{
+  padding: 10px
+}
+
