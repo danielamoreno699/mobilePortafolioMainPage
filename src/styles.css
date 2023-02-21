@@ -412,7 +412,7 @@ ul > li:nth-child(3n) {
   top: 57px;
 }
 
-.section-card .button-group {
+.section-card .button-group{
   display: flex;
   justify-content: space-between;
 }
