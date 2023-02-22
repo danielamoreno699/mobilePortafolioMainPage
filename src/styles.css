@@ -302,14 +302,6 @@ form > ul > li {
   margin-bottom: 20px;
 }
 
-ul > li:nth-child(2n) {
-  margin-top: -14px;
-}
-
-ul > li:nth-child(3n) {
-  margin-top: -14px;
-}
-
 .media li:nth-child(5) {
   top: -12px;
   position: relative;
@@ -414,11 +406,12 @@ ul > li:nth-child(3n) {
 
 .section-card .button-group {
   display: grid;
-  grid-template-rows: 1fr 1fr 1fr;
-  grid-gap: 30px;
+  grid-template-columns: auto auto auto;
+  grid-gap: 20px;
 }
 
-.section-card .button-group li {
+.btn-li {
+  margin-top: 0;
   background: #ebebff;
   border-radius: 8px;
   padding: 6px 23px;
@@ -671,6 +664,14 @@ form {
   width: 370px;
   margin-right: 28px;
   margin-left: 24px;
+}
+
+#message-input {
+  margin-top: -14px;
+}
+
+#email-input {
+  margin-top: -14px;
 }
 
 #username {
