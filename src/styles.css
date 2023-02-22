@@ -302,8 +302,8 @@ form > ul > li {
   margin-bottom: 20px;
 }
 
-.media li:nth-child(5) {
-  top: -12px;
+.media .fingers {
+  top: -1px;
   position: relative;
 }
 
@@ -742,10 +742,22 @@ input {
   background: transparent;
 }
 
-.input:invalid {
-  border-color: 2px solid red;
-  color: red;
+input:invalid{
+  border: none;
+  outline: 2px solid red;
+  border-radius: 5px;
+} 
+textarea:invalid {
+  border: none;
+  outline: 2px solid red;
+  border-radius: 5px;
 }
+
+input, textarea:valid{
+  outline: 1px solid black;
+}
+
+
 
 .box-button-contact:hover {
   background-color: #396df2;
