@@ -302,8 +302,8 @@ form > ul > li {
   margin-bottom: 20px;
 }
 
-.media li:nth-child(5) {
-  top: -12px;
+.media .fingers {
+  top: -1px;
   position: relative;
 }
 
