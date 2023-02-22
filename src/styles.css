@@ -415,7 +415,7 @@ ul > li:nth-child(3n) {
 .section-card .button-group {
   display: grid;
   grid-template-rows: 1fr 1fr 1fr;
-  grid-gap:30px;
+  grid-gap: 30px;
 }
 
 .section-card .button-group li {
