@@ -29,7 +29,7 @@ After you're finished please remove all the comments and instructions!
   <!-- You are encouraged to replace this logo with your own! Otherwise you can also remove it. -->
   
 
-  <h3><b>Portafolio project main page</b></h3>
+  <h3><b>Portafolio - Contact Page</b></h3>
 
 </div>
 
@@ -60,11 +60,11 @@ After you're finished please remove all the comments and instructions!
 
 PORTAFOLIO MOBILE VERSION
 
-# 📖 [Portafolio Mobile Version] <a name="about-project"></a>
+# 📖 [Portafolio Mobile Version & contact form with HTML request] <a name="about-project"></a>
 
 
 
-**[Portafolio Mobile Version]** is a landpage proyect in mobile version
+**[Portafolio Mobile Version & contact form with HTML request]** is a landpage proyect in mobile version that includes the contact form and the HTML request
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -205,12 +205,18 @@ Example:
 
 
 
-👤 **Author1**
+👤 **Daniela**
 
 - GitHub: [@githubhandle](https://github.com/danielamoreno699)
 - Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/daniela-moreno-06a139124/)
 
+
+👤 **Stelin**
+
+- GitHub: [@githubhandle](https://github.com/danielamoreno699)
+- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/daniela-moreno-06a139124/)
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -218,8 +224,6 @@ Example:
 <!-- FUTURE FEATURES -->
 
 ## 🔭 Future Features <a name="future-features"></a>
-
-
 
 - [ ] **[new_feature_1]**
 - [ ] **[new_feature_2]**
