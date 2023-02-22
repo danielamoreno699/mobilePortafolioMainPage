@@ -63,13 +63,11 @@ PORTAFOLIO MOBILE VERSION
 # 📖 [Portafolio Mobile Version & contact form with HTML request] <a name="about-project"></a>
 
 
-
 **[Portafolio Mobile Version & contact form with HTML request]** is a landpage proyect in mobile version that includes the contact form and the HTML request
 
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
-
 
 
 <details>
@@ -97,21 +95,15 @@ PORTAFOLIO MOBILE VERSION
 
 ### Key Features <a name="key-features"></a>
 
+- **[Responsiveness]**
+- **[Appealing UI/UX design]**
 
-
-- **[key_feature_1]**
-- **[key_feature_2]**
-- **[key_feature_3]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- LIVE DEMO -->
-
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-
-
-- [Live Demo Link](https://yourdeployedapplicationlink.com)
+- [Live Demo Link](https://danielamoreno699.github.io/mobilePortafolioMainPage/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -119,83 +111,25 @@ PORTAFOLIO MOBILE VERSION
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
-
-
 To get a local copy up and running, follow these steps.
 
 ### Prerequisites
 
 In order to run this project you need:
 
-<!--
-Example command:
-
-```sh
- gem install rails
-```
- -->
+  -there is no known prerequisite to run this project. If you encounter any problem, please leave a comment in the [issue](https://github.com/danielamoreno699/mobilePortafolioMainPage/issues) section of the project.
+  
 
 ### Setup
 
-Clone this repository to your desired folder:
+Clone this repository to your desired folder.
 
-<!--
-Example commands:
-
-```sh
-  cd my-folder
-  git clone git@github.com:myaccount/my-project.git
-```
---->
-
-### Install
-
-Install this project with:
-
-<!--
-Example command:
-
-```sh
-  cd my-project
-  gem install
-```
---->
-
-### Usage
-
-To run the project, execute the following command:
-
-<!--
-Example command:
-
-```sh
-  rails server
-```
---->
-
-### Run tests
-
-To run tests, run the following command:
-
-<!--
-Example command:
-
-```sh
-  bin/rails test test/models/article_test.rb
-```
---->
 
 ### Deployment
 
 You can deploy this project using:
 
-<!--
-Example:
-
-```sh
-
-```
- -->
+hosting services of your choice.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -203,31 +137,21 @@ Example:
 
 ## 👥 Authors <a name="authors"></a>
 
-
-
 👤 **Daniela**
 
-- GitHub: [@githubhandle](https://github.com/danielamoreno699)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
+- GitHub: [@daniela](https://github.com/danielamoreno699)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/daniela-moreno-06a139124/)
 
 
 👤 **Stelin**
 
-- GitHub: [@githubhandle](https://github.com/danielamoreno699)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/daniela-moreno-06a139124/)
+- GitHub: [@stelin](https://github.com/stenlisuryadinata)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/pub/dir/Stenli/Suryadinata)
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- FUTURE FEATURES -->
-
-## 🔭 Future Features <a name="future-features"></a>
-
-- [ ] **[new_feature_1]**
-- [ ] **[new_feature_2]**
-- [ ] **[new_feature_3]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -261,19 +185,6 @@ I would like to thank...
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- FAQ (optional) -->
-
-## ❓ FAQ (OPTIONAL) <a name="faq"></a>
-
-
-
-- **[Question_1]**
-
-  - [Answer_1]
-
-- **[Question_2]**
-
-  - [Answer_2]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

@@ -132,7 +132,7 @@ body {
   background-color: #e5e5e5;
 }
 
-header {
+.toolbar {
   width: 89%;
   padding: 0  20px;
   display: flex;
@@ -141,7 +141,7 @@ header {
   background-color: white;
 }
 
-header .brand {
+.brand {
   position: relative;
   top: 39px;
   width: 120px;
@@ -158,11 +158,11 @@ header .brand {
   text-decoration: none;
 }
 
-header nav {
+.navbar {
   background-color: white;
 }
 
-header .union {
+.union {
   height: 20px;
   display: flex;
   flex-direction: row;
@@ -182,7 +182,7 @@ header .union {
   height: 79%;
 }
 
-.main-page .Main-Page-container {
+.Main-Page-container {
   background-image: url();
   position: relative;
   height: 718px;
@@ -194,7 +194,7 @@ header .union {
   flex-direction: column;
 }
 
-.Main-Page-container h2 {
+.title-mainpage {
   width: 327px;
   height: 150px;
   font-family: 'Poppins', serif;
@@ -213,34 +213,7 @@ header .union {
   top: 34px;
 }
 
-.languages p {
-  height: 24px;
-  left: 12px;
-  right: 78px;
-  font-family: 'Poppins', serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 24px;
-  position: relative;
-}
-
-.form-text p {
-  width: 327px;
-  height: 102px;
-  position: relative;
-  left: -6px;
-  top: 20px;
-  font-family: 'Poppins', serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 28px;
-  text-align: center;
-  color: #ebebff;
-}
-
-.Main-Page-container p:first-of-type {
+.description-mainpage {
   width: 327px;
   height: 146px;
   font-family: 'Poppins', serif;
@@ -256,7 +229,7 @@ header .union {
   right: -20px;
 }
 
-.Main-Page-container p:nth-of-type(2n) {
+.connect-mainpage {
   width: 121px;
   height: 6px;
   font-family: 'Poppins', serif;
@@ -272,7 +245,7 @@ header .union {
   top: 5px;
 }
 
-.Main-Page-container ul {
+.media {
   width: 170.17px;
   height: 20px;
   flex: 0 0 auto;
@@ -281,18 +254,11 @@ header .union {
   left: -35px;
   margin: 15px;
   top: 20px;
-}
-
-.media {
   display: flex;
   list-style-type: none;
 }
 
-form > ul > li {
-  padding: 10px;
-}
-
-.media li {
+.media_item {
   padding-right: 17px;
   size: 10px;
 }
@@ -302,8 +268,8 @@ form > ul > li {
   margin-bottom: 20px;
 }
 
-.media .fingers {
-  top: -1px;
+.media li:nth-child(5) {
+  top: -12px;
   position: relative;
 }
 
@@ -317,7 +283,7 @@ form > ul > li {
   margin-left: 26px;
 }
 
-.section-card .card-container {
+.card-container {
   display: grid;
   grid-row: auto;
   padding-top: 118px;
@@ -325,7 +291,7 @@ form > ul > li {
   row-gap: 20px;
 }
 
-.section-card .card {
+.card {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -338,11 +304,11 @@ form > ul > li {
   background: #fff;
 }
 
-.section-card .card-header img {
+.card-img {
   width: 100%;
 }
 
-.section-card .card-body h3 {
+.card-title {
   width: 100%;
   font-family: 'Poppins', serif;
   font-style: normal;
@@ -352,7 +318,7 @@ form > ul > li {
   position: relative;
 }
 
-.section-card .text {
+.text {
   display: flex;
   justify-content: space-around;
   top: 21px;
@@ -363,7 +329,7 @@ form > ul > li {
   height: 16px;
 }
 
-.section-card .counter-png {
+.counter-png {
   width: 10px;
   height: 9px;
   position: relative;
@@ -371,11 +337,11 @@ form > ul > li {
   left: 10px;
 }
 
-.section-card .text-element-one {
+.one {
   font-weight: 700;
 }
 
-.section-card .text-element {
+.text-element {
   width: 88px;
   height: 16px;
   font-family: 'Poppins', serif;
@@ -387,7 +353,7 @@ form > ul > li {
   position: relative;
 }
 
-.section-card .description {
+.card-description {
   position: relative;
   top: 49px;
   width: 295px;
@@ -399,12 +365,12 @@ form > ul > li {
   color: #344563;
 }
 
-.section-card .container-btns {
+.container-btns {
   position: relative;
   top: 57px;
 }
 
-.section-card .button-group {
+.button-group {
   display: grid;
   grid-template-columns: auto auto auto;
   grid-gap: 20px;
@@ -422,7 +388,7 @@ form > ul > li {
   color: #6070ff;
 }
 
-.section-card .box-button {
+.box-button {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -437,7 +403,7 @@ form > ul > li {
   border-radius: 8px;
 }
 
-.section-card .btn {
+.btn-card {
   font-family: 'Poppins', serif;
   font-style: normal;
   font-weight: 500;
@@ -468,29 +434,17 @@ form > ul > li {
   width: 380px;
 }
 
-.personal-description .personal-description-container {
+.personal-description-container {
   margin: 10%;
   margin-top: 6px;
 }
 
-.personal-description .text {
+.personal-description-text {
   top: 116px;
   position: relative;
 }
 
-.form-text h2 {
-  font-family: 'Poppins', serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 40px;
-  align-items: center;
-  text-align: center;
-  color: #fff;
-  left: -10px;
-  position: relative;
-}
-
-.personal-description .text h2 {
+.personal-description-title {
   width: 17px;
   height: 101px;
   font-family: 'Poppins', serif;
@@ -502,7 +456,7 @@ form > ul > li {
   color: #172b4d;
 }
 
-.text .p-body {
+.personal-description-body {
   margin-top: 30px;
   width: 327px;
   height: 144px;
@@ -513,7 +467,7 @@ form > ul > li {
   color: #344563;
 }
 
-.text .lets-connect {
+.personal-description-connect {
   top: 20px;
   width: 117px;
   height: 24px;
@@ -524,7 +478,7 @@ form > ul > li {
   position: relative;
 }
 
-.personal-description .social-media {
+.social-media {
   flex-direction: row;
   display: flex;
   top: 123px;
@@ -532,11 +486,11 @@ form > ul > li {
   right: 22px;
 }
 
-.personal-description .social-media li {
+.social-media-item {
   margin: 20px;
 }
 
-.personal-description .box-button-description {
+.box-button-description {
   position: relative;
   height: 48px;
   border: 2px solid #6070ff;
@@ -547,7 +501,7 @@ form > ul > li {
   top: 129px;
 }
 
-.personal-description .btn-personal-description {
+.btn-personal-description {
   font-family: 'Poppins', serif;
   font-style: normal;
   font-weight: 500;
@@ -567,16 +521,18 @@ form > ul > li {
   position: relative;
 }
 
+/* languages */
+
 .languages { margin-top: 167px; }
 
-.languages .icon {
+#icon {
   align-self: center;
   right: auto;
   left: 238px;
   position: absolute;
 }
 
-.languages .btn-ellipse {
+.language-technologies-button {
   width: 303px;
   height: 66.72px;
   background: #f7f7f9;
@@ -585,17 +541,10 @@ form > ul > li {
   display: flex;
   justify-content: self-start;
   border: none;
-}
-
-.languages .javascript p {
   align-self: center;
 }
 
-.white-space {
-  padding: 20%;
-}
-
-.languages .txt-language {
+.txt-language {
   height: 24px;
   left: 12px;
   right: 78px;
@@ -606,13 +555,25 @@ form > ul > li {
   line-height: 24px;
 }
 
-.languages .txt {
-  height: 24px;
+.txt-tech {
+  height: 40px;
   font-family: 'Poppins', serif;
   font-style: normal;
   font-weight: 500;
   font-size: 15px;
-  line-height: 20px;
+}
+
+.frameworks {
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.skills {
+  margin-top: 20px;
+}
+
+.white-space {
+  padding: 30%;
 }
 
 .box-button-description:hover {
@@ -622,6 +583,8 @@ form > ul > li {
 .btn-personal-description:hover {
   color: whitesmoke;
 }
+
+/* contact form css */
 
 .contact-form {
   width: 380px;
@@ -648,7 +611,7 @@ form > ul > li {
   padding: 15px 67px;
 }
 
-.form-text {
+.form-description {
   font-family: 'Poppins', serif;
   font-style: normal;
   font-weight: 700;
@@ -658,12 +621,28 @@ form > ul > li {
   color: #fff;
 }
 
-form {
+.form-title {
+  font-family: 'Poppins', serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  left: -10px;
+  position: relative;
+}
+
+.form-contact {
   top: 77px;
   position: relative;
   width: 370px;
   margin-right: 28px;
   margin-left: 24px;
+}
+
+.form-li {
+  padding: 10px;
 }
 
 #message-input {
@@ -742,9 +721,21 @@ input {
   background: transparent;
 }
 
-.input:invalid {
-  border-color: 2px solid red;
-  color: red;
+input,
+textarea:valid {
+  outline: 1px solid black;
+}
+
+input:invalid {
+  border: none;
+  outline: 2px solid red;
+  border-radius: 5px;
+}
+
+textarea:invalid {
+  border: none;
+  outline: 2px solid red;
+  border-radius: 5px;
 }
 
 .box-button-contact:hover {
