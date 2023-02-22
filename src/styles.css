@@ -742,22 +742,22 @@ input {
   background: transparent;
 }
 
-input:invalid{
+input,
+textarea:valid {
+  outline: 1px solid black;
+}
+
+input:invalid {
   border: none;
   outline: 2px solid red;
   border-radius: 5px;
-} 
+}
+
 textarea:invalid {
   border: none;
   outline: 2px solid red;
   border-radius: 5px;
 }
-
-input, textarea:valid{
-  outline: 1px solid black;
-}
-
-
 
 .box-button-contact:hover {
   background-color: #396df2;
