@@ -1,25 +1,20 @@
 * {
+ 
+  box-sizing: inherit;
+  
+}
+
+/* HTML5 display-role reset for older browsers */
+
+html {
   margin: 0;
   padding: 0;
   border: 0;
   font: inherit;
-  font-size: 100%;
+  font-size: 16px;
   vertical-align: baseline;
-}
 
-/* HTML5 display-role reset for older browsers */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-  display: block;
+  /*display: block;*/
 }
 
 ol,
@@ -68,15 +63,15 @@ body {
 }
 
 .union {
-  height: 20px;
+  height: 1.25rem;
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  padding: 8px;
-  position: absolute;
+  padding: .5rem;
+  /*position: absolute;
   top: 29px;
   border-radius: 8px;
-  left: 312px;
+  left: 312px;*/
 }
 
 .main-page {
@@ -471,26 +466,25 @@ body {
 
 /* contact form css */
 
-.contact-form {
+.contact-form{
   background-image: url("../assets/header-shapes\ mobile.png");
   background-repeat: not-repeat;
   background-color: rgb(96, 112, 255);
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   border-top-left-radius: 80px 80px;
+  height: 100%
+
 }
 
 .form-container {
-  left: 0;
-  top: 117px;
-  display: flex;
-  flex-wrap: wrap;
-  position: relative;
-  justify-content: center;
-  padding: 15px 67px;
+
+  display: block;
+  padding: 42px;
+
+  
+ 
 }
+
+
 
 .form-description {
   font-family: 'Poppins', serif;
@@ -501,6 +495,7 @@ body {
   text-align: center;
   color: #fff;
   width: 334px;
+  margin-bottom: 20px;
 }
 
 .form-title {
@@ -515,16 +510,14 @@ body {
   position: relative;
 }
 
-.form-li {
-  padding: 10px;
-}
+
 
 #message-input {
-  margin-top: -14px;
+  
 }
 
 #email-input {
-  margin-top: -14px;
+  
 }
 
 #username {
@@ -541,21 +534,10 @@ body {
   font-size: 15px;
 }
 
-#msg {
-  width: 327px;
-  height: 170px;
-  border-radius: 8px;
-  background: #fff;
-  border: 1px solid #cfd8dc;
-  margin-top: 8px;
-  resize: none;
-  font-family: 'Poppins', serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 15px;
-}
 
-input {
+
+
+.form-input{
   border-radius: 8px;
   background: #fff;
   border: 1px solid #cfd8dc;
@@ -624,7 +606,7 @@ textarea:invalid {
 
 /* @media (min-width: 880px) and (max-width: 1440px)  { */
 
-@media (max-width: 500px) {
+@media (max-width: 425px) {
   body {
     height: 718px;
   }
@@ -632,6 +614,18 @@ textarea:invalid {
   .toolbar {
     padding: 0  20px;
   }
+
+ 
+  .main-page {
+    background-image: url("../assets/backgdeskop.png");
+    background-repeat: not-repeat;
+    background-color: white;
+
+    /* height: 79%;
+    display: flex; */
+    border-bottom-left-radius: 90px 80px;
+  }
+ 
 
   .description-mainpage {
     width: 320px;
@@ -934,34 +928,53 @@ textarea:invalid {
   .contact-form {
     background-image: url("../assets/backgdeskop.png");
     background-repeat: not-repeat;
-    height: 100%;
-    top: -137px;
+   display: block;
   }
 
   .form-container {
     display: flex;
     flex-wrap: wrap;
-    top: 0;
-  }
-
-  .form-title {
-    left: -64px;
-    margin-top: 20px;
-  }
-
-  .form-description {
-    width: 44%;
-    left: 106px;
-    margin-top: 20px;
-    position: relative;
-    margin-bottom: 20px;
+   
   }
 
   .form-text {
     width: 112%;
     margin-top: 20px;
-    left: 57px;
+    left: 105px;
     position: relative;
+  }
+
+  .form-title {
+    left: -96px;
+    margin-top: 20px;
+  }
+
+
+
+  .form-description {
+    width: 44%;
+    left:88px;
+    margin-top: 20px;
+    position: relative;
+    margin-bottom: 20px;
+  }
+
+  
+  .form-contact{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    left: 193px;
+    position: relative;
+  }
+
+
+
+
+  .box-button-contact{
+    left: -88px;
   }
 
   /* input {
@@ -1008,9 +1021,17 @@ textarea:invalid {
     width: 76%;
   } */
 
-  .form-description {
-    left: 20%;
+  .form-text{
+    left:156px;
   }
+
+  .form-title{
+    left: -162px;
+  }
+  .form-contact{
+    left: 288px;
+  }
+ 
 }
 
 @media (min-width: 1440px) {
@@ -1066,7 +1087,11 @@ textarea:invalid {
 
   .form-description {
     margin-top: 20px;
-    left: 288px;
+    left: 209px;
+  }
+
+  .form-contact{
+    left: 503px;
   }
 }
 
@@ -1091,5 +1116,23 @@ textarea:invalid {
   .form-description {
     margin-top: 20px;
     left: 440px;
+  }
+
+  .form-contact{
+    left: 42%;
+  }
+
+  #msg {
+    
+    height: 170px;
+    border-radius: 8px;
+    background: #fff;
+    border: 1px solid #cfd8dc;
+    margin-top: 8px;
+    resize: none;
+    font-family: 'Poppins', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
   }
 }
