@@ -1042,7 +1042,7 @@ textarea:invalid {
  
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1440px)  {
   .Main-Page-container {
     margin-right: 40px;
     left: 246px;
@@ -1057,6 +1057,10 @@ textarea:invalid {
   .media {
     left: 0;
   }
+
+ 
+
+
 
   .card {
     width: 1156px;
@@ -1112,12 +1116,31 @@ textarea:invalid {
     left: 12px;
   }
 
+  .title-mainpage{
+    animation-duration: 3s;
+    animation-name: slidein;
+
+  }
+
+  @keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+
+  
   .personal-description-container {
     margin-top: 32%;
     left: 135px;
   }
 
-  .card-img {
+  .card-img:hover{
 
     width: 800px;
     height: 600px;
