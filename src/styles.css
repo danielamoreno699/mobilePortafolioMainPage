@@ -607,6 +607,10 @@ textarea:invalid {
 /* @media (min-width: 880px) and (max-width: 1440px)  { */
 
 @media (max-width: 425px) {
+  *{
+    box-sizing: inherit;
+  }
+  
   body {
     height: 718px;
   }
@@ -647,6 +651,10 @@ textarea:invalid {
 }
 
 @media (min-width: 768px) {
+  *{
+    box-sizing: inherit;
+  }
+
   .toolbar {
     /* width: 100%;
     display: flex; */
