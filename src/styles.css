@@ -1117,9 +1117,18 @@ textarea:invalid {
     left: 135px;
   }
 
+  .card-img {
+
+    width: 800px;
+    height: 600px;
+    
+  }
+
   .container-languages {
     margin-top: -46px;
   }
+
+  
 
   .form-description {
     margin-top: 20px;
