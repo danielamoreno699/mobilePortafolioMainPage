@@ -58,12 +58,12 @@ After you're finished please remove all the comments and instructions!
 - [📝 License](#license)
 
 
-PORTAFOLIO MOBILE VERSION
+PORTAFOLIO WEB VERSION
 
-# 📖 [Portafolio Mobile Version & contact form with HTML request] <a name="about-project"></a>
+# 📖 [Portafolio Web Version ] <a name="about-project"></a>
 
 
-**[Portafolio Mobile Version & contact form with HTML request]** is a landpage proyect in mobile version that includes the contact form and the HTML request
+**[Portafolio web version]**
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -143,15 +143,10 @@ hosting services of your choice.
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/daniela-moreno-06a139124/)
 
 
-👤 **Stelin**
-
-- GitHub: [@stelin](https://github.com/stenlisuryadinata)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/pub/dir/Stenli/Suryadinata)
-
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- FUTURE FEATURES -->
+- **[Animation]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
