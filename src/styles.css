@@ -35,7 +35,7 @@ body {
   justify-content: space-between;
   height: 100px;
   background-color: white;
-  width: 100%;
+  /*width: 100%;*/
 }
 
 .brand {
@@ -59,6 +59,8 @@ body {
   background-color: white;
   display: flex;
   justify-content: space-between;
+  left: -2%;
+  position: relative;
 }
 
 .ul-navbartool {
@@ -744,20 +746,10 @@ textarea:invalid {
     color: #344563;
     margin-top: 3px;
     animation-duration: 3s;
-    animation-name: slidein;
+   
   }
 
-  @keyframes slidein {
-    from {
-      margin-left: 100%;
-      width: 300%;
-    }
-  
-    to {
-      margin-left: 0%;
-      width: 100%;
-    }
-  }
+
 
 
 
@@ -901,10 +893,11 @@ textarea:invalid {
 
   .personal-description-body{
     width: 68%; 
+    margin:0%;
   }
 
   .personal-description-container {
-    top:6%;
+    
     left:7%;
     display: block;
     flex-direction: column;
@@ -933,8 +926,8 @@ textarea:invalid {
   }
 
   .personal-description-text {
-    width: 82%;
-    top:14%;
+    width: 87%;
+    /*top:14%;¨*/
   }
 
   .personal-description-body {
@@ -949,17 +942,17 @@ textarea:invalid {
   }
 
   .social-media{
-    top: 9%;
+    top: 18%;
     left: -6%;
   }
 
   .box-button-description{
-    top:3%;
+    top:11%;
   }
 
   .languages {
-    margin-top: 6%;
-    padding: 14% 0% 6% 0%;
+    /*margin-top: 6%;
+    padding: 14% 0% 6% 0%;*/
   }
 
   .tech-list {
@@ -997,7 +990,7 @@ textarea:invalid {
   }
 
   .white-space{
-    padding:26%
+    padding:5%
   }
 
   #icon {
@@ -1029,7 +1022,7 @@ textarea:invalid {
   }*/
 
   .white-space{
-    padding:0%
+    padding:5%
   }
 
 
@@ -1204,22 +1197,39 @@ width: auto;
     left: 12px;
   }
 
+  .description-mainpage{
+    animation-name: slidein;
+  }
+
+  @keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+
   .personal-description-container {
    
     left: 135px;
   }
 
   .personal-description-text{
-    top: 35%;
+    top: 24%;
+    width: 69%;
   }
   .social-media{
-    top: 32%;
+    top: 22%;
     left: -3%;
 
   }
 
   .box-button-description{
-    top: 32%;
+    top: 22%;
   }
 
   .container-languages {
