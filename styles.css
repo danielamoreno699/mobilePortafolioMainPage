@@ -81,7 +81,7 @@ body {
 }
 
 .main-page {
-  background-image: url("../assets/header-shapes\ mobile.png");
+  background-image: url("./assets/header-shapes\ mobile.png");
   background-repeat: not-repeat;
   border-bottom-left-radius: 80px 80px;
   background-color: white;
@@ -481,7 +481,7 @@ hr {
 /* contact form css */
 
 .contact-form {
-  background-image: url("../assets/header-shapes\ mobile.png");
+  background-image: url("./assets/header-shapes\ mobile.png");
   background-repeat: not-repeat;
   background-color: rgb(96, 112, 255);
   border-top-left-radius: 80px 80px;
@@ -613,7 +613,7 @@ textarea:invalid {
   }
 
   .main-page {
-    background-image: url("../assets/backgdeskop.png");
+    background-image: url("./assets/backgdeskop.png");
     background-repeat: not-repeat;
     background-color: white;
 
@@ -677,7 +677,7 @@ textarea:invalid {
   }
 
   .main-page {
-    background-image: url("../assets/backgdeskop.png");
+    background-image: url("./assets/backgdeskop.png");
     background-repeat: not-repeat;
     background-color: white;
 
@@ -749,19 +749,7 @@ textarea:invalid {
   .media_item {
     width: 30px;
     height: 30px;
-
-    /* animation: fadeIn 5s; */
   }
-
-  /* @keyframes fadeIn {
-    0% { opacity: 0; }
-    100% { opacity: 1; }
-  } */
-
-  /* .media_item:hover{
-
-    background:  #a19ace;
-  } */
 
   .section-card {
     width: 100%;
@@ -799,10 +787,6 @@ textarea:invalid {
     display: grid;
     grid-column: 2;
     grid-row: 1;
-
-    /* display: grid;
-    grid-column: 2/2;
-    top: 82px; */
   }
 
   .header-4 {
@@ -840,13 +824,13 @@ textarea:invalid {
   }
 
   .txt-language::after {
-    content: url(../assets/icon.png);
+    content: url(./assets/icon.png);
     position: absolute;
     right: 10px;
   }
 
   .txt-language.active::after {
-    content: url(../assets/icon.png);
+    content: url(./assets/icon.png);
     transform: rotate(90deg);
     position: absolute;
     right: 10px;
@@ -961,7 +945,7 @@ textarea:invalid {
   }
 
   .contact-form {
-    background-image: url("../assets/backgdeskop.png");
+    background-image: url("./assets/backgdeskop.png");
     background-repeat: not-repeat;
     display: block;
   }
@@ -1138,13 +1122,13 @@ textarea:invalid {
   }
 
   .txt-language::after {
-    content: url(../assets/icon.png);
+    content: url(./assets/icon.png);
     position: absolute;
     right: 0;
   }
 
   .txt-language.active::after {
-    content: url(../assets/icon.png);
+    content: url(./assets/icon.png);
     transform: rotate(90deg);
     position: absolute;
     right: 0;
