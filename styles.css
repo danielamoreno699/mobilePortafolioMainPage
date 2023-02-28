@@ -680,6 +680,7 @@ textarea:invalid {
     background-image: url("./assets/backgdeskop.png");
     background-repeat: not-repeat;
     background-color: white;
+    background-size: 100%;
 
     /* height: 79%;
     display: flex; */
