@@ -187,7 +187,6 @@ body {
 .card-img {
   width: 100%;
 }
-
 .card-title {
   width: 100%;
   font-family: 'Poppins', serif;
@@ -499,7 +498,6 @@ hr {
 .form-description {
   font-family: 'Poppins', serif;
   font-style: normal;
-  font-weight: 700;
   font-size: 20px;
   align-items: center;
   text-align: center;
@@ -603,43 +601,7 @@ textarea:invalid {
 
 /* @media (min-width: 880px) and (max-width: 1440px)  { */
 
-@media (max-width: 425px) {
-  body {
-    height: 718px;
-  }
 
-  .toolbar {
-    padding: 0  20px;
-  }
-
-  .main-page {
-    background-image: url("./assets/backgdeskop.png");
-    background-repeat: not-repeat;
-    background-color: white;
-
-    /* height: 79%;
-    display: flex; */
-    border-bottom-left-radius: 90px 80px;
-  }
-
-  .description-mainpage {
-    width: 320px;
-    height: 146px;
-    top: 5px;
-    right: -20px;
-  }
-
-  .personal-description-title {
-    width: 17px;
-    height: 101px;
-    font-weight: 700;
-    font-size: 40px;
-  }
-
-  .container-languages {
-    padding: 0%;
-  }
-}
 
 @media (min-width: 768px) {
   .brand {
@@ -678,12 +640,10 @@ textarea:invalid {
 
   .main-page {
     background-image: url("./assets/backgdeskop.png");
-    background-repeat: not-repeat;
+    background-repeat: no-repeat;
     background-color: white;
-
-    /* height: 79%;
-    display: flex; */
     border-bottom-left-radius: 90px 80px;
+    background-size: 100% 
   }
 
   .Main-Page-container {
@@ -783,16 +743,32 @@ textarea:invalid {
     position: relative;
   }
 
-  .header-2 {
-    display: grid;
-    grid-column: 2;
-    grid-row: 1;
+  .header-1{
+    content: url("./assets/SnapshootPortfolio1.png");
   }
 
-  .header-4 {
+  .header-2 {
+    content: url("./assets/snapshotPortafolio2.png");
     display: grid;
     grid-column: 2;
     grid-row: 1;
+    left: -35px; 
+  }
+
+
+  .header-3{
+    content: url("./assets/Snapshoot\ Portfolio3.png");
+  }
+
+
+  .header-4{
+    content: url("./assets/SnapshootPortfolio4.png");
+    display: grid;
+    grid-column: 2;
+    grid-row: 1;
+    left: -35px; 
+
+
   }
 
   .card-header:hover {
@@ -802,9 +778,9 @@ textarea:invalid {
   .card-body {
     /* width: 277px; */
     position: relative;
-    top: -69px;
+    top: -112px;
     width: 79%;
-    right: 6px;
+    /*right: 6px;*/
   }
 
   .card-description {
@@ -819,8 +795,17 @@ textarea:invalid {
     height: 81%;
   }
 
-  .card4 .card-body {
-    left: 53px;
+  .card4 .card-body{  
+    left: 63px;
+  }
+
+  .container-btns{
+    top:20px;
+  }
+
+  .button-group{
+    width: 53px;
+    height: 24px;
   }
 
   .txt-language::after {
@@ -853,7 +838,8 @@ textarea:invalid {
   }
 
   .personal-description-container {
-    left: 7%;
+    /*left: 7%;*/
+    left:20%;
     display: block;
     flex-direction: column;
     align-items: center;
@@ -862,8 +848,9 @@ textarea:invalid {
   }
 
   .container-languages {
-    width: 80%;
-    left: 6%;
+    width: 67%;
+    left:13%;
+    
   }
 
   .personal-description-title {
@@ -900,6 +887,19 @@ textarea:invalid {
 
   .box-button-description {
     top: 11%;
+  }
+
+  .txt-language::after {
+    content: url(./assets/icon.png);
+    position: absolute;
+    right: 0;
+  }
+
+  .txt-language.active::after {
+    content: url(./assets/icon.png);
+    transform: rotate(90deg);
+    position: absolute;
+    right: 0;
   }
 
   .languages {
@@ -945,9 +945,10 @@ textarea:invalid {
   }
 
   .contact-form {
-    background-image: url("./assets/backgdeskop.png");
-    background-repeat: not-repeat;
-    display: block;
+    background-image: url("./assets/contact\ form\ background\ shapes@2x.png");
+    background-repeat: no-repeat;
+    /*display: block;*/
+    background-size: 100%;
   }
 
   .form-container {
@@ -971,12 +972,16 @@ textarea:invalid {
     padding: 5%;
   }
 
+
+
   .form-description {
-    width: 44%;
+    /*width: 44%;*/
     margin-top: 20px;
     position: relative;
     margin-bottom: 20px;
   }
+
+
 
   .form-contact {
     display: flex;
@@ -986,6 +991,11 @@ textarea:invalid {
     align-items: center;
     left: 193px;
     position: inherit;
+  }
+
+  .form-input{
+    width: 27.938rem;
+    height: 3rem;
   }
 }
 
@@ -1070,6 +1080,8 @@ textarea:invalid {
   .container-languages {
     /* width: 100%; */
     margin: auto;
+    
+    /*width: 83%;*/
   }
 
   .languages {
@@ -1121,19 +1133,6 @@ textarea:invalid {
     right: auto;
   }
 
-  .txt-language::after {
-    content: url(./assets/icon.png);
-    position: absolute;
-    right: 0;
-  }
-
-  .txt-language.active::after {
-    content: url(./assets/icon.png);
-    transform: rotate(90deg);
-    position: absolute;
-    right: 0;
-  }
-
   .form-container {
     justify-content: center;
   }
@@ -1153,7 +1152,10 @@ textarea:invalid {
 
 @media (min-width: 2560px) {
   .Main-Page-container {
-    /* left: 17%; */
+    top: 32%;
+    left: 27%;
+    width: 42%;
+    
   }
 
   .brand {
