@@ -127,7 +127,7 @@ Clone this repository to your desired folder.
 
 ### Deployment
 
-You can deploy this project using:  https://danielamoreno699.github.io/mobilePortafolioMainPage/
+You can deploy this project using: https://danielamoreno699.github.io/mobilePortafolioMainPage/
 
 hosting services of your choice.
 
