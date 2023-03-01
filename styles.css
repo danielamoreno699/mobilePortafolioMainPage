@@ -33,8 +33,6 @@ body {
   justify-content: space-between;
   height: 100px;
   background-color: white;
-
-  /* width: 100%; */
 }
 
 .brand {
@@ -47,9 +45,6 @@ body {
   font-weight: 700;
   font-size: 28px;
   line-height: 20px;
-  display: flex;
-  align-items: center;
-  text-align: center;
   color: rgb(96, 112, 255);
   text-decoration: none;
 }
@@ -73,20 +68,15 @@ body {
   flex-direction: row;
   align-items: flex-start;
   padding: 0.5rem;
-
-  /* position: absolute;
-  top: 29px;
-  border-radius: 8px;
-  left: 312px; */
 }
 
 .main-page {
   background-image: url("./assets/header-shapes\ mobile.png");
-  background-repeat: not-repeat;
+  background-repeat: no-repeat;
   border-bottom-left-radius: 80px 80px;
   background-color: white;
   height: 80vh;
-  width: 100%;
+ 
 }
 
 .Main-Page-container {
@@ -106,8 +96,7 @@ body {
   display: flex;
   align-items: center;
   color: #172b4d;
-  flex: none;
-  position: relative;
+ 
   margin: 15px;
 }
 
@@ -119,8 +108,7 @@ body {
   font-size: 16px;
   line-height: 24px;
   color: #344563;
-  flex: none;
-  position: relative;
+  
 }
 
 .connect-mainpage {
@@ -132,18 +120,14 @@ body {
   font-size: 16px;
   line-height: 24px;
   color: #7f8cff;
-  flex: none;
-  flex-grow: 0;
   margin: 15px;
-  top: 5px;
+  top: 5px; 
 }
 
 .media {
   padding-left: 0;
   width: 170.17px;
   height: 20px;
-  flex: 0 0 auto;
-  order: 3;
   margin: 15px;
   display: flex;
   list-style-type: none;
@@ -152,6 +136,10 @@ body {
 .media_item {
   padding-right: 17px;
   size: 10px;
+}
+
+.media_item:hover{
+  transform: translateY(-10px);
 }
 
 /* styles of section card */
@@ -201,44 +189,40 @@ body {
 
 .text {
   display: flex;
-  justify-content: space-around;
-  top: 10px;
-  position: relative;
+  /*justify-content: space-around;*/
+  justify-content: stretch;
+  /*top: 10px;
+  position: relative;*/
   font-family: 'Poppins', serif;
   font-size: 17px;
   color: #344563;
   height: 16px;
-  width: 70%;
+  width: 126%;
 }
 
-.counter-png {
-  width: 10px;
-  height: 9px;
-  position: relative;
-  top: 16px;
-  left: -18px;
+
+.text-element::after{
+  content:url(./assets/Counter.png);
+  margin-left: 40px;
+  font-size: 14px;
 }
 
 .one {
   font-weight: 700;
 }
-
 .text-element {
-  width: 88px;
+ width:30%;
   height: 16px;
   font-family: 'Poppins', serif;
   font-style: normal;
   font-weight: 600;
   font-size: 13px;
   color: #7a869a;
-  left: 21px;
+  /*left: 21px;*/
 }
 
 .card-description {
   position: relative;
-  top: 49px;
-  width: 295px;
-  height: 76px;
   font-family: 'Poppins', serif;
   font-style: normal;
   font-weight: 400;
@@ -248,7 +232,6 @@ body {
 
 .container-btns {
   position: relative;
-  top: 57px;
 }
 
 .button-group {
@@ -256,6 +239,7 @@ body {
   grid-template-columns: auto auto auto;
   grid-gap: 20px;
   padding-left: 0;
+
 }
 
 .btn-li {
@@ -268,7 +252,16 @@ body {
   font-size: 12px;
   letter-spacing: 0.03em;
   color: #6070ff;
+  transition: 0.3s;
+  
+  
 }
+
+.btn-li:hover {
+  background-color: #3a12db;
+  color: white;
+}
+
 
 .box-button {
   display: flex;
@@ -315,10 +308,6 @@ body {
   border-top-right-radius: 80px 80px;
 }
 
-.personal-description-container {/*
-  margin: 10%;
-  margin-top: 6px; */
-}
 
 .personal-description-text {
   top: 116px;
@@ -463,6 +452,7 @@ body {
 
 hr {
   border-style: groove;
+  width: 90%;
 }
 
 .white-space {
@@ -481,10 +471,11 @@ hr {
 
 .contact-form {
   background-image: url("./assets/header-shapes\ mobile.png");
-  background-repeat: not-repeat;
+  background-repeat: no-repeat;
   background-color: rgb(96, 112, 255);
   border-top-left-radius: 80px 80px;
-  height: 100%;
+  background-size: 100%;
+  
 }
 
 .form-container {
@@ -530,6 +521,18 @@ hr {
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
+}
+
+#msg {
+  height: 170px;
+  border-radius: 8px;
+  background: #fff;
+  border: 1px solid #cfd8dc;
+  margin-top: 8px;
+  resize: none;
+  font-family: 'Poppins', serif;
+  font-style: normal;
+  font-weight: 400;
 }
 
 .form-input {
@@ -647,9 +650,13 @@ textarea:invalid {
   }
 
   .Main-Page-container {
-    top: 181px;
+   top: 181px;
     left: 64px;
     width: 84%;
+
+    /*top: 217px;
+    left: 360px;
+    width: 61%;*/
 
     /* padding: 0% 14%;
   top: 166px; */
@@ -726,7 +733,7 @@ textarea:invalid {
 
   .card {
     display: grid;
-    grid-template-columns: 1fr 50%;
+    grid-template-columns: auto auto;
     grid-gap: 40px;
     color: white;
     right: 0;
@@ -734,13 +741,17 @@ textarea:invalid {
     bottom: 0;
     height: 496px;
     position: relative;
-    width: 100%;
+    /*width: 100%;*/
+    width: 88%;
+    left: 5%;
+   
   }
 
   .card-header {
     display: grid;
-    left: 15px;
+    /*left: 15px;*/
     position: relative;
+    transition: transform 2s;
   }
 
   .header-1{
@@ -752,7 +763,8 @@ textarea:invalid {
     display: grid;
     grid-column: 2;
     grid-row: 1;
-    left: -35px; 
+    flex-grow: 1;
+  
   }
 
 
@@ -766,41 +778,39 @@ textarea:invalid {
     display: grid;
     grid-column: 2;
     grid-row: 1;
-    left: -35px; 
+   
 
 
   }
 
   .card-header:hover {
-    width: 80%;
+    transform:scale(1.1)
   }
 
   .card-body {
     /* width: 277px; */
     position: relative;
     top: -112px;
-    width: 79%;
     /*right: 6px;*/
   }
 
+  .card2 .card-body{
+    left:10%;
+  }
+
+  .card4 .card-body{
+    left:10%;
+  }
+
   .card-description {
-    /* width: 180%; */
-    width: 100%;
-  }
-
-  .card2 .card-body {
-    top: 4%;
-    left: 63px;
+    width: 400px;
+    font-weight: 800;
     width: 91%;
-    height: 81%;
   }
 
-  .card4 .card-body{  
-    left: 63px;
-  }
 
   .container-btns{
-    top:20px;
+    /*top:20px;*/
   }
 
   .button-group{
@@ -821,13 +831,13 @@ textarea:invalid {
     right: 10px;
   }
 
-  .two-columns {
+  /*.two-columns {
     display: grid;
     grid-template-columns: 1fr 50%;
     max-width: 1200px;
     width: 80%;
     margin: auto;
-  }
+  }*/
 
   .personal-description {
     display: grid;
@@ -930,15 +940,15 @@ textarea:invalid {
     margin-left: 15px;
   }
 
-  .frameworks {
+  .frameworks .skills {
     margin-bottom: 3%;
     margin-top: 3%;
   }
 
-  .skills {
+  /*.skills {
     margin-bottom: 3%;
     margin-top: 3%;
-  }
+  }*/
 
   #icon {
     display: none;
@@ -948,7 +958,7 @@ textarea:invalid {
     background-image: url("./assets/contact\ form\ background\ shapes@2x.png");
     background-repeat: no-repeat;
     /*display: block;*/
-    background-size: 100%;
+    background-size:100%;
   }
 
   .form-container {
@@ -1001,7 +1011,7 @@ textarea:invalid {
 
 @media (max-width: 767px) {
   .main-page {
-    height: 65vh;
+    height: 90vh;
   }
 
   .Main-Page-container {
@@ -1020,7 +1030,7 @@ textarea:invalid {
   }
 
   .toolbar {
-    width: 100%;
+    /*width: 100%;*/
     padding: 0;
   }
 
@@ -1037,6 +1047,10 @@ textarea:invalid {
     width: 100%;
     margin: auto;
     justify-content: center;
+  }
+
+  .card-img{
+    width: 100%;
   }
 
   .card-body {
@@ -1080,6 +1094,7 @@ textarea:invalid {
   .container-languages {
     /* width: 100%; */
     margin: auto;
+    width: 90%;
     
     /*width: 83%;*/
   }
@@ -1150,75 +1165,3 @@ textarea:invalid {
   }
 }
 
-@media (min-width: 2560px) {
-  .Main-Page-container {
-    top: 32%;
-    left: 27%;
-    width: 42%;
-    
-  }
-
-  .brand {
-    left: 12px;
-  }
-
-  .description-mainpage {
-    animation-name: slidein;
-  }
-
-  @keyframes slidein {
-    from {
-      margin-left: 100%;
-      width: 300%;
-    }
-
-    to {
-      margin-left: 0%;
-      width: 100%;
-    }
-  }
-
-  .personal-description-container {
-    left: 135px;
-  }
-
-  .personal-description-text {
-    top: 24%;
-    width: 69%;
-  }
-
-  .social-media {
-    top: 22%;
-    left: -3%;
-  }
-
-  .box-button-description {
-    top: 22%;
-  }
-
-  .container-languages {
-    margin-top: -46px;
-  }
-
-  .form-description {
-    margin-top: 20px;
-  }
-
-  .form-contact {
-    left: 42%;
-  }
-
-  #msg {
-    height: 170px;
-    border-radius: 8px;
-    background: #fff;
-    border: 1px solid #cfd8dc;
-    margin-top: 8px;
-    resize: none;
-    font-family: 'Poppins', serif;
-    font-style: normal;
-    font-weight: 400;
-
-    /* font-size: 15px; */
-  }
-}
