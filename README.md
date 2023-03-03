@@ -131,6 +131,9 @@ You can deploy this project using: https://danielamoreno699.github.io/mobilePort
 
 hosting services of your choice.
 
+informative video: 
+https://www.loom.com/share/a216f873fd7d4276a8e5a62378c82584
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- AUTHORS -->
