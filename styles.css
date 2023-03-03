@@ -190,34 +190,43 @@ body {
 .text {
   display: flex;
   /*justify-content: space-around;*/
-  justify-content: stretch;
+  /*justify-content: stretch;*/
   /*top: 10px;
   position: relative;*/
   font-family: 'Poppins', serif;
   font-size: 17px;
   color: #344563;
   height: 16px;
-  width: 126%;
+  /*width: 126%;*/
 }
 
 
-.text-element::after{
+.one::after{
   content:url(./assets/Counter.png);
-  margin-left: 40px;
+  /*margin-left: 40px;*/
   font-size: 14px;
+  left: 15px; 
 }
 
 .one {
-  font-weight: 700;
+  font-weight: 800;
+}
+
+.two::after{
+  content:url(./assets/Counter.png);
+  /*margin-left: 40px;*/
+  font-size: 14px;
+  left: 15px; 
 }
 .text-element {
- width:30%;
+  /*width:30%;*/
   height: 16px;
   font-family: 'Poppins', serif;
   font-style: normal;
   font-weight: 600;
   font-size: 13px;
   color: #7a869a;
+  margin-left: 4%;
   /*left: 21px;*/
 }
 
@@ -235,10 +244,13 @@ body {
 }
 
 .button-group {
-  display: grid;
+  display: flex;
+  justify-content: space-between;
+
+  /*display: grid;
   grid-template-columns: auto auto auto;
   grid-gap: 20px;
-  padding-left: 0;
+  padding-left: 0;*/
 
 }
 
@@ -246,7 +258,8 @@ body {
   margin-top: 0;
   background: #ebebff;
   border-radius: 8px;
-  padding: 6px 23px;
+  padding: 3px 19px;
+  /*padding: 6px 23px;*/
   font-family: 'Poppins', serif;
   font-weight: 500;
   font-size: 12px;
@@ -826,8 +839,12 @@ textarea:invalid {
   }
 
   .button-group{
-    width: 53px;
-    height: 24px;
+    left: -46px;
+    position: relative;
+    justify-content:flex-start;
+    gap: 20px;
+    /*width: 53px;
+    height: 24px;*/
   }
 
   .txt-language::after {
