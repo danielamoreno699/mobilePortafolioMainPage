@@ -71,26 +71,25 @@ body {
   display: block;
 }
 
-.noDisplay{
+.noDisplay {
   display: none;
 }
 
-.displayBlock{
+.displayBlock {
   display:block
 }
 
-.backgroundNav{
+.backgroundNav {
   background-color: #6070FF;
   mix-blend-mode: multiply;
   height: 100vh;
- 
 }
 
-.blurryEffect{
+.blurryEffect {
   filter: blur(5px);
 }
 
-.effect-ul{
+.effect-ul {
   position: absolute;
   display: flex;
   flex-direction: column;
@@ -104,7 +103,7 @@ body {
   
 }
 
-.effect-li{
+.effect-li {
   color: white;
   margin-top: 7%;
   text-decoration:none;
@@ -114,7 +113,7 @@ body {
   font-size: 32px;
 }
 
-.effect-icon{
+.effect-icon {
   display: flex;
   justify-self: end;
 }
@@ -123,10 +122,10 @@ body {
 .main-page {
   background-image: url("./assets/header-shapes\ mobile.png");
   background-repeat: no-repeat;
+  background-size: cover;
   border-bottom-left-radius: 80px 80px;
   background-color: white;
   height: 80vh;
- 
 }
 
 .Main-Page-container {
