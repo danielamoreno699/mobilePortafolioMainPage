@@ -59,6 +59,8 @@ const CloseMenu=()=>{
             union.style.display = 'block'
         };
     }
+    document.getElementById('main-page-text').style.display = "block"
+     document.getElementById('main-page-title').style.display ="block"
 
 
 }
@@ -180,8 +182,6 @@ const projectDetailList = [
     console.log('detail', detail)
 
     for(let el = 0; el < detail.technologies.length; el++ ){
-
-        
       let y =  `<li class="modal-btn-li">${detail.technologies[el]}</li>`
         arrayString.push(y)
       
