@@ -107,7 +107,11 @@ body {
 .effect-li{
   color: white;
   margin-top: 7%;
-  text-decoration:none
+  text-decoration:none;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
 }
 
 .effect-icon{
@@ -221,7 +225,8 @@ body {
 .card-img {
   width: 100%;
 }
-.card-title {
+
+.card-title, .modal-title {
   width: 100%;
   font-family: 'Poppins', serif;
   font-style: normal;
@@ -233,7 +238,7 @@ body {
   margin-top: 0;
 }
 
-.text {
+.text, .modal-text {
   display: flex;
   /*justify-content: space-around;*/
   /*justify-content: stretch;*/
@@ -264,7 +269,8 @@ body {
   font-size: 14px;
   left: 15px; 
 }
-.text-element {
+
+.text-element, .modal-text-element {
   /*width:30%;*/
   height: 16px;
   font-family: 'Poppins', serif;
@@ -276,7 +282,7 @@ body {
   /*left: 21px;*/
 }
 
-.card-description {
+.card-description, .modal-description{
   position: relative;
   font-family: 'Poppins', serif;
   font-style: normal;
@@ -285,11 +291,11 @@ body {
   color: #344563;
 }
 
-.container-btns {
+.container-btns, .modal-container-btns {
   position: relative;
 }
 
-.button-group {
+.button-group, .modal-button-group{
   display: flex;
   justify-content: space-between;
 
@@ -300,7 +306,7 @@ body {
 
 }
 
-.btn-li {
+.btn-li, .modal-btn-li {
   margin-top: 0;
   background: #ebebff;
   border-radius: 8px;
@@ -321,8 +327,14 @@ body {
   color: white;
 }
 
+.modal-box-buttons-group{
+  display: flex;
+  justify-content: space-between;
 
-.box-button {
+}
+
+
+.box-button, .modal-box-button {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -337,7 +349,7 @@ body {
   border-radius: 8px;
 }
 
-.btn-card {
+.btn-card, .btn-modal {
   font-family: 'Poppins', serif;
   font-style: normal;
   font-weight: 500;
@@ -894,6 +906,7 @@ textarea:invalid {
     height: 24px;*/
   }
 
+  /* personal description css*/ 
   .txt-language::after {
     content: url(./assets/icon.png);
     position: absolute;
@@ -1143,11 +1156,15 @@ textarea:invalid {
 
   .text,
   .card-description,
-  .container-btns {
+  .container-btns,
+  .modal-text,
+  .modal-description,
+  .modal-container-btns {
     position: inherit;
   }
 
-  .text-element {
+  .text-element,
+  .modal-text-element {
     left: 0;
   }
 
@@ -1156,17 +1173,20 @@ textarea:invalid {
     left: -5px;
   }
 
-  .box-button {
+  .box-button,
+  .modal-box-button {
     position: inherit;
     top: 0;
   }
 
-  .card-title {
+  .card-title,
+  .modal-title {
     margin-bottom: 0;
     margin-top: 0;
   }
 
-  .button-group {
+  .button-group,
+  .modal-button-group {
     padding: 0;
   }
 

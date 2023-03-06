@@ -30,16 +30,17 @@
         <img class="union" src="./assets/Union.png" alt="union" id="union" onclick="OpenMenu()">
     </nav>
     
+    <!--overlayout div-->
     <div class="OverlayoutNav" id="OverlayoutNav" style="display:none;">
         <a class="close-btn" id="cross-icon" onclick="CloseMenu()" >
-            <img src="./assets/icons8-close-50.png" alt="" >
+            <span style="font-size: 28px;">&times;</span>
+            <!--<img src="./assets/icons8-close-50.png" alt="" >-->
         </a>
         <div class="layout-content" id="layout-content" >
-            <a class="pop-nav" href="#portafolio" >Portafolio</a>
-            <a class="pop-nav" href="#about" >About</a>
-            <a class="pop-nav" href="#contact" >Contact</a>
+            <a class="pop-nav" href="./portafolio" >Portafolio</a>
+            <a class="pop-nav" href="./about" >About</a>
+            <a class="pop-nav" href="./contact" >Contact</a>
         </div>
-
     </div>
 
 </header>
@@ -68,7 +69,7 @@
     <div class="card-container">
 
      <!--here starts content of card 1-->            
-     <div class="card card1">
+        <div class="card card1">
 
         <div class="card-header header-1">
             <img class="card-img img-portafolio-1"src="./assets/SnapshootPortfolio1.png" alt="">
@@ -96,13 +97,13 @@
                     </ul> 
                 </div>
                 <div class="box-button">
-                    <button class="btn-card">
+                    <button class="btn-card" onclick="onProjectButtonClick(0)">
                     See Project
                     </button>
                  </div>
             </div>
         </div>
-    </div>
+        </div>
 
         <!--here starts content of card 2--> 
         <div class="card card2">
@@ -112,7 +113,7 @@
             </div>
 
             <div class="card-body ">
-                <h3 class="card-title">Tonic</h3>
+                <h3 class="card-title">Multi-post stories</h3>
                     <div class="text">    
                         <p class="text-element one"> FACEBOOK </p>
                        <!--- <img class="counter-png" src="./assets/Counter.png" alt=""> -->
@@ -132,7 +133,7 @@
                         </ul> 
 
                     <div class="box-button">
-                        <button class="btn-card">
+                        <button class="btn-card" onclick="onProjectButtonClick(1)">
                         See Project
                         </button>
                      </div>
@@ -148,9 +149,9 @@
             </div>
 
             <div class="card-body">
-                <h3 class="card-title">Tonic</h3>
+                <h3 class="card-title">Facebook 360</h3>
                     <div class="text">    
-                        <p class="text-element one"> CANOPY </p>
+                        <p class="text-element one"> Facebook </p>
                          <!--- <img class="counter-png" src="./assets/Counter.png" alt=""> -->
                         <p class="text-element two">Backend</p>
                          <!--- <img class="counter-png" src="./assets/Counter.png" alt=""> -->
@@ -169,7 +170,7 @@
                         </ul> 
                     </div>
                     <div class="box-button">
-                        <button class="btn-card">
+                        <button class="btn-card" onclick="onProjectButtonClick(2)">
                         See Project
                         </button>
                      </div>
@@ -205,7 +206,7 @@
                         </ul> 
 
                     <div class="box-button">
-                        <button class="btn-card">
+                        <button class="btn-card" onclick="onProjectButtonClick(3)">
                         See Project
                         </button>
                      </div>
@@ -213,45 +214,14 @@
             </div>
         </div>
 
-        <!--here starts modal-->
-        <div class="modal" >
-
-    <div class="modal-header ">
-        <img class="card-modal"src="./assets/Portfolio.png" alt="">
-    </div>
-
-    <div class="modal-body">
-        <h3 class="modal-title">Tonic</h3>
-            <div class="modal-text">    
-                <p class="modal-text-element one"> CANOPY </p>
-                 <!--- <img class="counter-png" src="./assets/Counter.png" alt=""> -->
-                <p class="modal-text-element">Backend</p>
-                 <!--- <img class="counter-png" src="./assets/Counter.png" alt=""> -->
-                <p class="modal-text-element">2015</p>
-            </div>
-        <p class="modal-card-description">
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent
-        </p>          
-        <!--Here starts labels and button-->
-            <div class="modal-container-btns">
-                <div class="modal-buttons-are">
-                <ul class="modal-button-group">
-                    <li class="modal-btn-li">html</li>
-                    <li class="modal-btn-li">css</li>
-                    <li class="modal-btn-li">javascript</li>
-                </ul> 
-            </div>
-            <div class="modal-box-button">
-                <button class="btn-modal">
-                  See live
-                </button>
-                <button class="btn-modal">
-                    See Source
-                </button>
-             </div>
+        <!--here starts modal-mobile-version-->
+        <div class="modal-mobile" id="modal-template-mobile" >
+                
         </div>
-    </div>
-        </div>
+
+
+
+
         
     </div>
 </section>
