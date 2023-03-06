@@ -68,7 +68,53 @@ body {
   flex-direction: row;
   align-items: flex-start;
   padding: 0.5rem;
+  display: block;
 }
+
+.noDisplay{
+  display: none;
+}
+
+.displayBlock{
+  display:block
+}
+
+.backgroundNav{
+  background-color: #6070FF;
+  mix-blend-mode: multiply;
+  height: 100vh;
+ 
+}
+
+.blurryEffect{
+  filter: blur(5px);
+}
+
+.effect-ul{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 11%;
+  /*top: 30%;*/
+  margin-left: 34px;
+  font-size: 50px;
+  color: white;
+  text-decoration:none
+  
+}
+
+.effect-li{
+  color: white;
+  margin-top: 7%;
+  text-decoration:none
+}
+
+.effect-icon{
+  display: flex;
+  justify-self: end;
+}
+
 
 .main-page {
   background-image: url("./assets/header-shapes\ mobile.png");
@@ -159,7 +205,7 @@ body {
   row-gap: 20px;
 }
 
-.card {
+.card, .modal {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -613,9 +659,10 @@ textarea:invalid {
   color: whitesmoke;
 }
 
-/* Responsiveness with media queries */
+/*modal */
+.modal{
 
-/* @media (min-width: 880px) and (max-width: 1440px)  { */
+}
 
 
 
@@ -1064,6 +1111,8 @@ textarea:invalid {
     /*width: 100%;*/
     padding: 0;
   }
+
+ 
 
   /* hero section */
   .description-mainpage {

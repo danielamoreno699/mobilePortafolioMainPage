@@ -18,24 +18,36 @@
 <body>
 
 <!---Here starts Header Main Page-->
-<header class="toolbar" >
+<header class="toolbar" id="toolbar" >
     
-    <a class="brand" href="">My logo</a>
-    <nav class="navbar">
-        <ul class="ul-navbartool">
-            <li class="li-navbartool">Portafolio</li>
-            <li class="li-navbartool">About</li>
-            <li class="li-navbartool">Contact</li>
+    <a class="brand" href="" id="brand">My logo</a>
+    <nav class="navbar" id="navbar">
+        <ul class="ul-navbartool" id="ul-demo">
+            <li class="li-navbartool" id="portfolio">Portafolio</li>
+            <li class="li-navbartool" id="about">About</li>
+            <li class="li-navbartool" id="contact">Contact</li>
         </ul>
-        <img class="union" src="./assets/Union.png" alt="">
+        <img class="union" src="./assets/Union.png" alt="union" id="union" onclick="OpenMenu()">
     </nav>
+    
+    <div class="OverlayoutNav" id="OverlayoutNav" style="display:none;">
+        <a class="close-btn" id="cross-icon" onclick="CloseMenu()" >
+            <img src="./assets/icons8-close-50.png" alt="" >
+        </a>
+        <div class="layout-content" id="layout-content" >
+            <a class="pop-nav" href="#portafolio" >Portafolio</a>
+            <a class="pop-nav" href="#about" >About</a>
+            <a class="pop-nav" href="#contact" >Contact</a>
+        </div>
+
+    </div>
 
 </header>
 
 <!---Here starts Section of Main Page-->
-<section class="main-page" >
+<section class="main-page" id="main-page" >
     <div class="Main-Page-container">
-    <div class="main-page-text">
+    <div class="main-page-text" id="main-page-text">
         <h2 class="main-text title-mainpage">I'm Daniela Glad to see you</h2>
          <p class="main-text description-mainpage" >I’m a software developer! I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hestiate to contact me.</p> 
          <p class="main-text connect-mainpage">LETS CONNECT</p> 
@@ -200,6 +212,46 @@
                 </div>
             </div>
         </div>
+
+        <!--here starts modal-->
+        <div class="modal" >
+
+    <div class="modal-header ">
+        <img class="card-modal"src="./assets/Portfolio.png" alt="">
+    </div>
+
+    <div class="modal-body">
+        <h3 class="modal-title">Tonic</h3>
+            <div class="modal-text">    
+                <p class="modal-text-element one"> CANOPY </p>
+                 <!--- <img class="counter-png" src="./assets/Counter.png" alt=""> -->
+                <p class="modal-text-element">Backend</p>
+                 <!--- <img class="counter-png" src="./assets/Counter.png" alt=""> -->
+                <p class="modal-text-element">2015</p>
+            </div>
+        <p class="modal-card-description">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent
+        </p>          
+        <!--Here starts labels and button-->
+            <div class="modal-container-btns">
+                <div class="modal-buttons-are">
+                <ul class="modal-button-group">
+                    <li class="modal-btn-li">html</li>
+                    <li class="modal-btn-li">css</li>
+                    <li class="modal-btn-li">javascript</li>
+                </ul> 
+            </div>
+            <div class="modal-box-button">
+                <button class="btn-modal">
+                  See live
+                </button>
+                <button class="btn-modal">
+                    See Source
+                </button>
+             </div>
+        </div>
+    </div>
+        </div>
         
     </div>
 </section>
@@ -307,6 +359,9 @@
 </section>
 
 
+
+
+<script src="./main.js"></script>
 </body>
 </html>
 
