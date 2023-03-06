@@ -3,7 +3,9 @@
 const OpenMenu =()=>{
 
      document.getElementById('brand').style.filter ="blur(5px)"
-     document.getElementById('main-page-text').style.filter ="blur(10px)"
+     //document.getElementById('main-page-text').style.filter ="blur(10px)"
+     document.getElementById('main-page-text').style.display = "none"
+     document.getElementById('main-page-title').style.display ="none"
     
     const icon = document.getElementById("cross-icon")
     icon.style.position = "absolute";
@@ -38,6 +40,7 @@ const OpenMenu =()=>{
 
    newListArray.forEach(el => { 
     el.className = ("effect-li")
+    
     //console.log('el',el)
         
 });

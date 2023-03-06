@@ -83,6 +83,8 @@ body {
   background-color: #6070FF;
   mix-blend-mode: multiply;
   height: 100vh;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .blurryEffect {
