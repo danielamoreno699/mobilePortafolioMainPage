@@ -1,92 +1,87 @@
 * {
-    box-sizing: inherit;
-  }
-  
-  /* HTML5 display-role reset for older browsers */
-  
-  html {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font: inherit;
-    font-size: 16px;
-    vertical-align: baseline;
-  
-    /* display: block; */
-  }
-  
-  ol,
-  ul {
-    list-style: none;
-  }
-  
-  body {
-    background-color: #f7f7f9;
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
-  }
+  box-sizing: inherit;
+}
 
-  .container-modal-web{
-    
-    background-color: white;
-    height: 1163px;
-    width: 1156px;
-    left: 0px;
-    top: 0px;
-    border-radius: 16px;
+/* HTML5 display-role reset for older browsers */
 
-  }
+html {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 16px;
+  vertical-align: baseline;
 
-  .modal-text-content-web {
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-    
-  }
+  /* display: block; */
+}
 
-  .modal-title-web{
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 40px;
-    line-height: 52px;
-    color: #091E42;
-  }
+ol,
+ul {
+  list-style: none;
+}
 
-  span{
-    margin:2%;
-  }
+body {
+  background-color: #f7f7f9;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
 
-  .modal-text-web{
-    display: flex;
-    gap: 3%;
-    
+.container-modal-web {
+  background-color: white;
+  height: 1163px;
+  width: 1156px;
+  left: 0;
+  top: 0;
+  border-radius: 16px;
+}
+
+.modal-text-content-web {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.modal-title-web {
+  font-family: 'Poppins', serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  color: #091e42;
+}
+
+span {
+  margin: 2%;
+}
+
+.modal-text-web {
+  display: flex;
+  gap: 3%;
   font-family: 'Poppins', serif;
   font-style: normal;
   font-weight: 400;
   font-size: 13px;
   color: #7a869a;
   margin-left: 4%;
-    
-  }
+}
 
-  
+.one::after {
+  content: url(./assets/Counter.png);
 
-  .one::after{
-    content:url(./assets/Counter.png);
-    /*margin-left: 40px;*/
-    font-size: 14px;
-    left: 15px; 
-  }
-  
-  .one {
-    font-weight: 1000;
-  }
-  
-  .two::after{
-    content:url(./assets/Counter.png);
-    /*margin-left: 40px;*/
-    font-size: 14px;
-    left: 15px; 
-  }
+  /* margin-left: 40px; */
+  font-size: 14px;
+  left: 15px;
+}
+
+.one {
+  font-weight: 1000;
+}
+
+.two::after {
+  content: url(./assets/Counter.png);
+
+  /* margin-left: 40px; */
+  font-size: 14px;
+  left: 15px;
+}

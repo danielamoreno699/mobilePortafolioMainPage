@@ -40,7 +40,7 @@ const OpenMenu =()=>{
 
    newListArray.forEach(el => { 
     el.className = ("effect-li")
-    
+
     //console.log('el',el)
         
 });
