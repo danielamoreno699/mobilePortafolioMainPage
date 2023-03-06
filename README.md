@@ -58,12 +58,12 @@ After you're finished please remove all the comments and instructions!
 - [📝 License](#license)
 
 
-PORTAFOLIO WEB VERSION
+PORTAFOLIO WEB & MOBILE VERSION
 
-# 📖 [Portafolio Web Version ] <a name="about-project"></a>
+# 📖 [Portafolio Web & Mobile Version ] <a name="about-project"></a>
 
 
-**[Portafolio web version]**
+**[Portafolio web & mobile version]**
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -97,6 +97,8 @@ PORTAFOLIO WEB VERSION
 
 - **[Responsiveness]**
 - **[Appealing UI/UX design]**
+- **[javascript functionalities]**
+
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -149,7 +151,10 @@ https://www.loom.com/share/a216f873fd7d4276a8e5a62378c82584
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- FUTURE FEATURES -->
-- **[Animation]**
+- **[popup modal window for project in mobile and desktop version]**
+- **[validation of form with javaScript code]**
+- **[Inclusion of browser storage]**
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

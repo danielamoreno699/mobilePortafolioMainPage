@@ -122,7 +122,8 @@ body {
 .main-page {
   background-image: url("./assets/header-shapes\ mobile.png");
   background-repeat: no-repeat;
-  /*background-size: cover;*/
+
+  /* background-size: cover; */
   border-bottom-left-radius: 80px 80px;
   background-color: white;
   height: 80vh;
