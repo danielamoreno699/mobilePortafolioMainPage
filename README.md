@@ -150,7 +150,8 @@ https://www.loom.com/share/a216f873fd7d4276a8e5a62378c82584
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- FUTURE FEATURES -->
+ FUTURE FEATURES 
+ 
 - **[popup modal window for project in mobile and desktop version]**
 - **[validation of form with javaScript code]**
 - **[Inclusion of browser storage]**

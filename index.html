@@ -33,13 +33,13 @@
     <!--overlayout div-->
     <div class="OverlayoutNav" id="OverlayoutNav" style="display:none;">
         <a class="close-btn" id="cross-icon" onclick="CloseMenu()" >
-            <span style="font-size: 28px;">&times;</span>
+            <span style="font-size: 28px; color: #ffffff;">&times;</span>
             <!--<img src="./assets/icons8-close-50.png" alt="" >-->
         </a>
         <div class="layout-content" id="layout-content" >
-            <a class="pop-nav" href="./portafolio.html" >Portafolio</a>
-            <a class="pop-nav" href="./about.html" >About</a>
-            <a class="pop-nav" href="./contact.html" >Contact</a>
+            <a class="pop-nav" href="#portafolio.html"  active >Portafolio</a>
+            <a class="pop-nav" href="#about.html" active >About</a>
+            <a class="pop-nav" href="#contact.html" active>Contact</a>
         </div>
     </div>
 
@@ -47,7 +47,7 @@
 
 <!---Here starts Section of Main Page-->
 <section class="main-page" id="main-page" >
-    <div class="Main-Page-container">
+    <div class="Main-Page-container" id="main-page-container">
     <div class="main-page-text" id="main-page-text">
         <h2 class="main-text title-mainpage" id="main-page-title">I'm Daniela Glad to see you</h2>
          <p class="main-text description-mainpage" >I’m a software developer! I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hestiate to contact me.</p> 
@@ -62,6 +62,12 @@
         </ul>
     </div>
 </div>
+
+    <!--here starts modal-mobile-version-->
+    <div class="modal-mobile" id="modal-template-mobile" >
+                
+    </div>
+
 </section>
 
 <!--here starts Section Card-->
@@ -214,11 +220,7 @@
             </div>
         </div>
 
-        <!--here starts modal-mobile-version-->
-        <div class="modal-mobile" id="modal-template-mobile" >
-                
-        </div>
-
+        
 
 
 

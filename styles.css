@@ -2,8 +2,6 @@
   box-sizing: inherit;
 }
 
-/* HTML5 display-role reset for older browsers */
-
 html {
   margin: 0;
   padding: 0;
@@ -11,8 +9,6 @@ html {
   font: inherit;
   font-size: 16px;
   vertical-align: baseline;
-
-  /* display: block; */
 }
 
 ol,
@@ -95,9 +91,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-top: 11%;
-
-  /* top: 30%; */
+  margin-top: 14%;
   margin-left: 34px;
   font-size: 50px;
   color: white;
@@ -105,25 +99,25 @@ body {
 }
 
 .effect-li {
+  z-index: 1;
   color: white;
-  margin-top: 7%;
+  margin-top: 10%;
+  margin-bottom: 5%;
   text-decoration: none;
   font-family: 'Poppins', serif;
   font-style: normal;
-  font-weight: 600;
   font-size: 32px;
 }
 
 .effect-icon {
-  display: flex;
-  justify-self: end;
+  left: 77%;
+  position: absolute;
+  margin-top: 5%;
 }
 
 .main-page {
   background-image: url("./assets/header-shapes\ mobile.png");
   background-repeat: no-repeat;
-
-  /* background-size: cover; */
   border-bottom-left-radius: 80px 80px;
   background-color: white;
   height: 80vh;
@@ -173,10 +167,9 @@ body {
 }
 
 .media {
-  padding-left: 0;
+  padding-left: 2%;
   width: 170.17px;
   height: 20px;
-  margin: 15px;
   display: flex;
   list-style-type: none;
 }
@@ -772,16 +765,11 @@ textarea:invalid {
     font-size: 16px;
     line-height: 24px;
     color: #7f8cff;
-
-    /* left: 151px; */
     top: -7px;
   }
 
   .media {
-    top: -37px;
     left: 0;
-
-    /* left: 148px; */
   }
 
   .media_item {
@@ -812,16 +800,12 @@ textarea:invalid {
     bottom: 0;
     height: 496px;
     position: relative;
-
-    /* width: 100%; */
     width: 88%;
     left: 5%;
   }
 
   .card-header {
     display: grid;
-
-    /* left: 15px; */
     position: relative;
     transition: transform 2s;
   }
@@ -854,11 +838,8 @@ textarea:invalid {
   }
 
   .card-body {
-    /* width: 277px; */
     position: relative;
     top: -112px;
-
-    /* right: 6px; */
   }
 
   .card2 .card-body {
@@ -870,7 +851,6 @@ textarea:invalid {
   }
 
   .card-description {
-    /* width: 400px; */
     font-weight: 800;
     width: 91%;
   }
@@ -880,18 +860,7 @@ textarea:invalid {
     position: relative;
     justify-content: flex-start;
     gap: 20px;
-
-    /* width: 53px;
-    height: 24px; */
   }
-
-  /* personal description css */
-
-  /* .txt-language::after {
-    content: url(./assets/icon.png);
-    position: absolute;
-    right: 10px;
-  } */
 
   .txt-language.active::after {
     content: url(./assets/icon.png);
@@ -899,14 +868,6 @@ textarea:invalid {
     position: absolute;
     right: 10px;
   }
-
-  /* .two-columns {
-    display: grid;
-    grid-template-columns: 1fr 50%;
-    max-width: 1200px;
-    width: 80%;
-    margin: auto;
-  } */
 
   .personal-description {
     display: grid;
@@ -944,8 +905,6 @@ textarea:invalid {
 
   .personal-description-text {
     width: 87%;
-
-    /* top:14%;¨ */
   }
 
   .personal-description-body {
@@ -971,18 +930,6 @@ textarea:invalid {
     content: url(./assets/icon.png);
     position: absolute;
     right: 0;
-  }
-
-  /* .txt-language.active::after {
-    content: url(./assets/icon.png);
-    transform: rotate(90deg);
-    position: absolute;
-    right: 0;
-  } */
-
-  .languages {
-    /* margin-top: 6%;
-    padding: 14% 0% 6% 0%; */
   }
 
   .tech-list {
@@ -1014,11 +961,6 @@ textarea:invalid {
     margin-top: 3%;
   }
 
-  /* .skills {
-    margin-bottom: 3%;
-    margin-top: 3%;
-  } */
-
   #icon {
     display: none;
   }
@@ -1026,8 +968,6 @@ textarea:invalid {
   .contact-form {
     background-image: url("./assets/contact\ form\ background\ shapes@2x.png");
     background-repeat: no-repeat;
-
-    /* display: block; */
     background-size: 100%;
   }
 
@@ -1043,17 +983,11 @@ textarea:invalid {
     position: relative;
   }
 
-  /* .form-title {
-    left: -96px;
-    margin-top: 20px;
-  } */
-
   .white-space {
     padding: 5%;
   }
 
   .form-description {
-    /* width: 44%; */
     margin-top: 20px;
     position: relative;
     margin-bottom: 20px;
@@ -1078,7 +1012,7 @@ textarea:invalid {
 
 @media (max-width: 767px) {
   .main-page {
-    height: 90vh;
+    height: 65vh;
   }
 
   .Main-Page-container {
@@ -1097,7 +1031,6 @@ textarea:invalid {
   }
 
   .toolbar {
-    /* width: 100%; */
     padding: 0;
   }
 
@@ -1166,11 +1099,8 @@ textarea:invalid {
 
   /* About section */
   .container-languages {
-    /* width: 100%; */
     margin: auto;
     width: 90%;
-
-    /* width: 83%; */
   }
 
   .languages {

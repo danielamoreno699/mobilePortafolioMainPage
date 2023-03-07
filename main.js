@@ -1,38 +1,29 @@
-
-
+// function for open menu
 const OpenMenu =()=>{
 
-     document.getElementById('brand').style.filter ="blur(5px)"
-     //document.getElementById('main-page-text').style.filter ="blur(10px)"
-     document.getElementById('main-page-text').style.display = "none"
-     document.getElementById('main-page-title').style.display ="none"
+     document.getElementById('brand').style.filter ="blur(5px)" 
+     document.getElementById('main-page-text').style.filter ="blur(7px)" 
+     document.getElementById('main-page').style.opacity ="0.7"
+     document.getElementById('union').style.display ="none"
+    
     
     const icon = document.getElementById("cross-icon")
-    icon.style.position = "absolute";
-    icon.style.top = "3%";
-    icon.style.right = "8%"
-    icon.style.display = "flex"
-    icon.style.justifyContent = "end"
+
     icon.className = ("effect-icon")
    
 
     const overlayout = document.getElementById('OverlayoutNav')
-    const union = document.getElementById("union")
     const popnav = document.getElementById("layout-content")
     const list = popnav.getElementsByClassName("pop-nav")
-    //console.log(list)
+   
     let newListArray = Array.from(list)
-    //console.log('list', newListArray)
-
-    if(union){
-        //console.log('union exist')
-        union.style.display = 'none';
-    }
-
+  
+    overlayout.style.zIndex = "1"
     overlayout.style.position = "absolute";
     overlayout.style.top = "0";
     overlayout.style.left = "0";
     overlayout.style.width = "100%";
+    overlayout.style.height = "84%";
     overlayout.style.display = 'flex';
     overlayout.className = ("backgroundNav")
 
@@ -40,92 +31,31 @@ const OpenMenu =()=>{
 
    newListArray.forEach(el => { 
     el.className = ("effect-li")
-
-    //console.log('el',el)
-        
 });
     
 }
-
+// function to close menu
 const CloseMenu=()=>{
     const union = document.getElementById("union")
     document.getElementById('brand').style.filter ="blur(0px)"
-     document.getElementById('main-page-text').style.filter ="blur(0px)"
+    document.getElementById('main-page-text').style.filter ="blur(0px)"
+    document.getElementById('main-page').style.opacity ="1"
     const overlayout = document.getElementById('OverlayoutNav')
     overlayout.style.display = "none"
     if(union){
-        //console.log('union exist')
         if(union.style.display = 'none'){
             union.style.display = 'block'
         };
     }
-    document.getElementById('main-page-text').style.display = "block"
-     document.getElementById('main-page-title').style.display ="block"
-
-
 }
 
-
-
-const onToggleMenu=()=>{
-    let array = []
-    const ul = document.getElementById("ul-demo")
-    
-    if(ul){
-        for (const child of ul.children){
-            //document.body.appendChild(child)
-           child.className=("effect-li");
-            array.push( child)
-            console.log(ul)
-        }
-    }
-    const union = document.getElementById("union")
-
-    if(union){
-        //console.log('union exist')
-        union.classList.add("noDisplay")
-    }
-
-    //document.body.className = ("blurryEffect")
-
-    const newDiv = document.createElement('div')
-    newDiv.style.position = "absolute";
-    newDiv.style.top = "0";
-    newDiv.style.left = "0";
-    newDiv.style.width = "100%";
-    //newDiv.style.opacity = "0.8";
-    newDiv.className = ("backgroundNav")
-
-    for (let i = 0; i < array.length; i++){
-        console.log('ss', array[i])
-        //array.forEach(list => newDiv.appendChild(array[list]))
-        newDiv.appendChild(array[0])
-        //newDiv.appendChild(array[1])
-        
-    }
-
-    //newDiv.appendChild(ul)
-    //newDiv.appendChild(array)
-    document.body.appendChild(newDiv)
-    //console.log(typeof array)
-    console.log(array)
-
-
-
-}
-
-
-//const button = document.querySelector
-
-
-
+// data of projects
 const projectDetailList = [
-
     {
         id: 0,
         name: 'Tonic',
         description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-        imageLink: './assets/Portfolio.png.png',
+        imageLink: './assets/Portfolio.png',
         technologies: ['html', 'css', 'javascript'],
         role: 'Back end dev',
         company: 'canopy',
@@ -171,27 +101,24 @@ const projectDetailList = [
       },
 ]
 
+// function of modla pop up window
  const onProjectButtonClick =(idProject) =>{
 
     let detail = projectDetailList.find((detail) => detail.id === idProject )
-    console.log('funciona el boton de card')
     const modal_template_mobile = document.getElementById("modal-template-mobile")
 
-
     let arrayString = []
-    console.log('detail', detail)
-
+    
     for(let el = 0; el < detail.technologies.length; el++ ){
       let y =  `<li class="modal-btn-li">${detail.technologies[el]}</li>`
         arrayString.push(y)
-      
     }
 
-    let projectString = arrayString.join()
+    let projectString = arrayString.join('')
     
     const detail_html = `
     <div class="modal">
-
+    <span>&times;</span>
     <div class="modal-header"  id="modal-heading-${detail.id}" >
         <img "src="${detail.imageLink}" alt="">
     </div>
@@ -233,10 +160,8 @@ const projectDetailList = [
 </div>`;
 
 modal_template_mobile.innerHTML = detail_html
- modal_template_mobile.style.display = "block"    
- console.log(idProject)
-   
-
+modal_template_mobile.style.display = "block"    
+ 
 }
 
 
