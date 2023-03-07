@@ -23,25 +23,18 @@
     <a class="brand" href="" id="brand">My logo</a>
     <nav class="navbar" id="navbar">
         <ul class="ul-navbartool" id="ul-demo">
-            <li class="li-navbartool" id="portfolio">Portafolio</li>
-            <li class="li-navbartool" id="about">About</li>
-            <li class="li-navbartool" id="contact">Contact</li>
+
+            <li class="li-navbartool"> <a href="#portafolio" class="li-navbartool">Portafolio</a></li>
+            <li class="li-navbartool"> <a href="#about" class="li-navbartool">About</a></li>
+            <li class="li-navbartool"> <a href="#contact" class="li-navbartool">Contact</a></li>
+
         </ul>
-        <img class="union" src="./assets/Union.png" alt="union" id="union" onclick="OpenMenu()">
+        <img class="union" src="./assets/Union.png" alt="union" id="union" onclick="openMenu()">
     </nav>
     
     <!--overlayout div-->
     <div class="OverlayoutNav" id="OverlayoutNav" style="display:none;">
-        <a class="close-btn" id="cross-icon" onclick="CloseMenu()" >
-            <span style="font-size: 28px; color: #ffffff;">&times;</span>
-            <!--<img src="./assets/icons8-close-50.png" alt="" >-->
-        </a>
-        <div class="layout-content" id="layout-content" >
-            <li class="pop-nav"> <a href="#portafolio" class="pop-nav">Portafolio</a></li>
-            <li class="pop-nav"> <a href="#about" class="pop-nav">About</a></li>
-            <li class="pop-nav"> <a href="#contact" class="pop-nav">Contact</a></li>
-            
-        </div>
+        
     </div>
 
 </header>

@@ -96,6 +96,7 @@ body {
   font-size: 50px;
   color: white;
   text-decoration: none;
+  list-style: none;
 }
 
 .effect-li {
@@ -235,25 +236,14 @@ body {
 .text,
 .modal-text {
   display: flex;
-
-  /* justify-content: space-around; */
-
-  /* justify-content: stretch; */
-
-  /* top: 10px;
-  position: relative; */
   font-family: 'Poppins', serif;
   font-size: 17px;
   color: #344563;
   height: 16px;
-
-  /* width: 126%; */
 }
 
 .one::after {
   content: url(./assets/Counter.png);
-
-  /* margin-left: 40px; */
   font-size: 14px;
   left: 15px;
 }
@@ -264,15 +254,12 @@ body {
 
 .two::after {
   content: url(./assets/Counter.png);
-
-  /* margin-left: 40px; */
   font-size: 14px;
   left: 15px;
 }
 
 .text-element,
 .modal-text-element {
-  /* width:30%; */
   height: 16px;
   font-family: 'Poppins', serif;
   font-style: normal;
@@ -303,11 +290,6 @@ body {
 .modal-button-group {
   display: flex;
   justify-content: space-between;
-
-  /* display: grid;
-  grid-template-columns: auto auto auto;
-  grid-gap: 20px;
-  padding-left: 0; */
 }
 
 .btn-li,
@@ -736,8 +718,6 @@ textarea:invalid {
     align-items: center;
     letter-spacing: 0.37px;
     width: 391px;
-
-    /* left: 157px; */
     height: 122px;
   }
 
