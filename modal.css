@@ -85,3 +85,26 @@ span {
   font-size: 14px;
   left: 15px;
 }
+
+.modal-body{
+  display: grid;
+  grid-template-columns: 70% 30%;
+}
+
+.modal-button-group{
+  display: flex;
+  justify-content: flex-center;
+  flex-wrap: wrap;
+  gap: 3%;
+}
+
+.modal-box-buttons-group{
+  display: flex;
+  justify-content: flex-center;
+  flex-wrap: wrap;
+  gap: 3%
+}
+
+.modal-box-button{
+  
+}
