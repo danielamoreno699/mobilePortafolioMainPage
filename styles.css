@@ -729,8 +729,10 @@ textarea:invalid {
 #error {
   display: none;
   color: white;
-  font-style: normal;
   font-weight: 400;
+  font-family: 'Poppins', serif;
+  font-style: normal;
+  font-size: 20px;
   }
   
 #error.visible{
