@@ -18,25 +18,32 @@
 <body>
 
 <!---Here starts Header Main Page-->
-<header class="toolbar" >
+<header class="toolbar" id="toolbar" >
     
-    <a class="brand" href="">My logo</a>
-    <nav class="navbar">
-        <ul class="ul-navbartool">
-            <li class="li-navbartool">Portafolio</li>
-            <li class="li-navbartool">About</li>
-            <li class="li-navbartool">Contact</li>
+    <a class="brand" href="" id="brand">My logo</a>
+    <nav class="navbar" id="navbar">
+        <ul class="ul-navbartool" id="ul-demo">
+
+            <li class="li-navbartool"> <a href="#portafolio" class="li-navbartool">Portafolio</a></li>
+            <li class="li-navbartool"> <a href="#about" class="li-navbartool">About</a></li>
+            <li class="li-navbartool"> <a href="#contact" class="li-navbartool">Contact</a></li>
+
         </ul>
-        <img class="union" src="./assets/Union.png" alt="">
+        <img class="union" src="./assets/Union.png" alt="union" id="union" onclick="openMenu()">
     </nav>
+    
+    <!--overlayout div-->
+    <div class="OverlayoutNav" id="OverlayoutNav" style="display:none;">
+        
+    </div>
 
 </header>
 
 <!---Here starts Section of Main Page-->
-<section class="main-page" >
-    <div class="Main-Page-container">
-    <div class="main-page-text">
-        <h2 class="main-text title-mainpage">I'm Daniela Glad to see you</h2>
+<section class="main-page" id="main-page" >
+    <div class="Main-Page-container" id="main-page-container">
+    <div class="main-page-text" id="main-page-text">
+        <h2 class="main-text title-mainpage" id="main-page-title">I'm Daniela Glad to see you</h2>
          <p class="main-text description-mainpage" >I’m a software developer! I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hestiate to contact me.</p> 
          <p class="main-text connect-mainpage">LETS CONNECT</p> 
      
@@ -49,14 +56,20 @@
         </ul>
     </div>
 </div>
+
+    <!--here starts modal-mobile-version-->
+    <div class="modal-mobile" id="modal-template-mobile" >
+                
+    </div>
+
 </section>
 
 <!--here starts Section Card-->
-<section class="section-card" >
+<section class="section-card" id="portfolio" >
     <div class="card-container">
 
      <!--here starts content of card 1-->            
-     <div class="card card1">
+        <div class="card card1">
 
         <div class="card-header header-1">
             <img class="card-img img-portafolio-1"src="./assets/SnapshootPortfolio1.png" alt="">
@@ -84,13 +97,13 @@
                     </ul> 
                 </div>
                 <div class="box-button">
-                    <button class="btn-card">
+                    <button class="btn-card" onclick="onProjectButtonClick(0)">
                     See Project
                     </button>
                  </div>
             </div>
         </div>
-    </div>
+        </div>
 
         <!--here starts content of card 2--> 
         <div class="card card2">
@@ -100,7 +113,7 @@
             </div>
 
             <div class="card-body ">
-                <h3 class="card-title">Tonic</h3>
+                <h3 class="card-title">Multi-post stories</h3>
                     <div class="text">    
                         <p class="text-element one"> FACEBOOK </p>
                        <!--- <img class="counter-png" src="./assets/Counter.png" alt=""> -->
@@ -120,7 +133,7 @@
                         </ul> 
 
                     <div class="box-button">
-                        <button class="btn-card">
+                        <button class="btn-card" onclick="onProjectButtonClick(1)">
                         See Project
                         </button>
                      </div>
@@ -136,9 +149,9 @@
             </div>
 
             <div class="card-body">
-                <h3 class="card-title">Tonic</h3>
+                <h3 class="card-title">Facebook 360</h3>
                     <div class="text">    
-                        <p class="text-element one"> CANOPY </p>
+                        <p class="text-element one"> Facebook </p>
                          <!--- <img class="counter-png" src="./assets/Counter.png" alt=""> -->
                         <p class="text-element two">Backend</p>
                          <!--- <img class="counter-png" src="./assets/Counter.png" alt=""> -->
@@ -157,7 +170,7 @@
                         </ul> 
                     </div>
                     <div class="box-button">
-                        <button class="btn-card">
+                        <button class="btn-card" onclick="onProjectButtonClick(2)">
                         See Project
                         </button>
                      </div>
@@ -193,19 +206,24 @@
                         </ul> 
 
                     <div class="box-button">
-                        <button class="btn-card">
+                        <button class="btn-card" onclick="onProjectButtonClick(3)">
                         See Project
                         </button>
                      </div>
                 </div>
             </div>
         </div>
+
+        
+
+
+
         
     </div>
 </section>
 
 <!--here starts section personal description-->
-<section class="personal-description"> 
+<section class="personal-description" id="about"> 
         
     <div class="personal-description-container">
         <div class="personal-description-text">
@@ -278,7 +296,7 @@
 </section>
 
 <!--here starts Contact form-->
-<section class="contact-form">
+<section class="contact-form" id="contact">
 
     <div class="form-container">
         <div class="form-text">
@@ -307,6 +325,9 @@
 </section>
 
 
+
+
+<script src="./main.js"></script>
 </body>
 </html>
 
