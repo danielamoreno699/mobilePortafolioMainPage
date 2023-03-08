@@ -43,15 +43,6 @@ body {
   align-items: baseline;
 }
 
-.modal-title-web {
-  font-family: 'Poppins', serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 40px;
-  line-height: 52px;
-  color: #091e42;
-}
-
 span {
   margin: 2%;
   width: 20%;
@@ -68,7 +59,7 @@ span {
   margin-left: 4%;
 }
 
-.modal-title-web{
+.modal-title-web {
   left: 4%;
   position: relative;
 }
@@ -93,38 +84,35 @@ span {
   left: 15px;
 }
 
-.modal-body-web{
+.modal-body-web {
   display: grid;
   grid-template-columns: 70% 30%;
 }
 
-.modal-button-group-web{
+.modal-button-group-web {
   display: flex;
   flex-wrap: wrap;
   justify-content: start;
   gap: 3%;
 }
 
-.modal-box-buttons-group-web{
+/* .modal-box-buttons-group-web {
   display: flex;
   justify-content: center;
   gap: 4%;
-  /*grid-template-columns: auto auto;*/
   column-gap: 3%;
+} */
+
+.modal-description-web {
+  font-family: 'Poppins', serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  left: 5%;
+  position: relative;
 }
 
-.modal-description-web{
-
-
-font-family: 'Poppins';
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-left: 5%;
-position: relative;
-}
-
-.modal-btn-li{
+.modal-btn-li {
   margin-top: 0;
   background: #ebebff;
   border-radius: 8px;
@@ -137,28 +125,25 @@ position: relative;
   transition: 0.3s;
 }
 
-.modal-box-buttons-group-web{
+.modal-box-buttons-group-web {
   position: relative;
-  top:17%;
+  top: 17%;
 }
 
-.modal-box-button-web{
-  
+.modal-box-button-web {
   gap: 10px;
-  
   width: 124px;
   height: 33px;
   border: 1px solid #6070ff;
   border-radius: 8px;
 }
 
-.btn-modal-web{
+.btn-modal-web {
   font-family: 'Poppins', serif;
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 33px;
-  
   align-items: center;
   text-align: center;
   letter-spacing: 0.03em;
@@ -167,14 +152,10 @@ position: relative;
   background: transparent;
 }
 
-.img-modal{
+.img-modal {
   height: 586px;
   width: 1108px;
-  left: 0px;
-  top: 0px;
-border-radius: 8px;
-
+  left: 0;
+  top: 0;
+  border-radius: 8px;
 }
-
-
-

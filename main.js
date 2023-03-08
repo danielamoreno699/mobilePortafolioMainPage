@@ -102,7 +102,7 @@ const projectDetailList = [
   },
 ];
 
-// SETTING ERROR
+// stric check of str
 
 const checkLowerCase = (str) => {
   const check = str.toString().toLowerCase();
@@ -112,7 +112,9 @@ const checkLowerCase = (str) => {
   return false;
 };
 
-const validateInputs = (e) => {
+// validation form - email must be in lowercase
+
+const validateInputEmail = (e) => {
   e.preventDefault();
   const error = document.getElementById('error');
   const form = document.getElementById('form');
@@ -127,4 +129,4 @@ const validateInputs = (e) => {
 };
 
 const form = document.getElementById('form');
-form.addEventListener('submit', validateInputs);
+form.addEventListener('submit', validateInputEmail);
