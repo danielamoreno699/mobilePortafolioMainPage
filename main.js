@@ -24,9 +24,10 @@ const openMenu = () => {
     <span class="effect-icon" style="font-size: 28px; color: #ffffff;">&times;</span>
 
     <div class="effect-ul" id="layout-content">
-        <li class="pop-nav"> <a href="#portafolio" class="effect-li"  onclick="closeMenu()">Portafolio</a></li>
-        <li class="pop-nav"> <a href="#about" class="effect-li"  onclick="closeMenu()">About</a></li>
-        <li class="pop-nav"> <a href="#contact" class="effect-li"  onclick="closeMenu()">Contact</a></li>
+
+        <li class="pop-nav"> <a href="#portafolio" class="effect-li" onclick="closeMenu()">Portafolio</a></li>
+        <li class="pop-nav"> <a href="#about" class="effect-li" onclick="closeMenu()">About</a></li>
+        <li class="pop-nav"> <a href="#contact" class="effect-li" onclick="closeMenu()">Contact</a></li>
     </div>
     </a>
     `;
