@@ -185,6 +185,8 @@ body {
   transform: translateY(-10px);
 }
 
+
+
 /* styles of section card */
 
 .section-card {
@@ -202,8 +204,7 @@ body {
   row-gap: 20px;
 }
 
-.card,
-.modal {
+.card {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -216,12 +217,26 @@ body {
   background: #fff;
 }
 
+.modal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 16px;
+  gap: 12px;
+  width: 295px;
+  height: auto;
+  border: 1px solid #dfe1e6;
+  border-radius: 16px;
+  background: #fff;
+
+}
+
 .card-img {
   width: 100%;
 }
 
 .card-title,
-.modal-title {
+.modal-title{
   width: 100%;
   font-family: 'Poppins', serif;
   font-style: normal;
@@ -271,8 +286,7 @@ body {
   /* left: 21px; */
 }
 
-.card-description,
-.modal-description {
+.card-description {
   position: relative;
   font-family: 'Poppins', serif;
   font-style: normal;
@@ -281,16 +295,36 @@ body {
   color: #344563;
 }
 
-.container-btns,
-.modal-container-btns {
+.modal-description{
+  position: relative;
+  font-family: 'Poppins', serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  color: #344563;
+  top: 3%;
+}
+
+.container-btns {
   position: relative;
 }
 
-.button-group,
-.modal-button-group {
+.modal-container-btns{
+  position: relative;
+  top: 10%;
+}
+
+.button-group {
   display: flex;
   justify-content: space-between;
 }
+
+.modal-button-group{
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+}
+
 
 .btn-li,
 .modal-btn-li {
@@ -298,7 +332,6 @@ body {
   background: #ebebff;
   border-radius: 8px;
   padding: 3px 19px;
-
   /* padding: 6px 23px; */
   font-family: 'Poppins', serif;
   font-weight: 500;
@@ -313,13 +346,14 @@ body {
   color: white;
 }
 
-.modal-box-buttons-group {
+.modal-box-buttons-group{
   display: flex;
   justify-content: space-between;
+  top: 14%;
+  position: relative;
 }
 
-.box-button,
-.modal-box-button {
+.box-button{
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -334,14 +368,42 @@ body {
   border-radius: 8px;
 }
 
-.btn-card,
-.btn-modal {
+.modal-box-button{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 1px;
+  gap: 10px;
+  width: 124px;
+  left: 0;
+  border: 1px solid #6070ff;
+  border-radius: 8px;
+
+ 
+}
+
+.btn-card {
   font-family: 'Poppins', serif;
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
   line-height: 24px;
   display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #396df2;
+  border: none;
+  background: transparent;
+}
+
+.btn-modal {
+  font-family: 'Poppins', serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 33px;
+  
   align-items: center;
   text-align: center;
   letter-spacing: 0.03em;
@@ -655,6 +717,30 @@ textarea:invalid {
   color: whitesmoke;
 }
 
+/* effects modal web*/
+.blur-background{
+
+}
+
+.display{
+  display: block;
+}
+
+#error {
+  display: none;
+  color: white;
+  font-style: normal;
+  font-weight: 400;
+  }
+  
+#error.visible{
+    display: block;
+  }
+  
+  #email.invalid {
+    border-color: red;
+   }
+
 @media (min-width: 768px) {
   .brand {
     right: -43px;
@@ -757,6 +843,8 @@ textarea:invalid {
     width: 30px;
     height: 30px;
   }
+
+
 
   .section-card {
     width: 100%;
@@ -989,6 +1077,12 @@ textarea:invalid {
     height: 3rem;
     margin-bottom: 20px;
   }
+
+  /* effects */
+  .backgroundModalWeb {
+    background-color: #C1C7D0;
+    filter:blur(5px);
+  }
 }
 
 @media (max-width: 767px) {
@@ -1034,19 +1128,19 @@ textarea:invalid {
     width: 100%;
   }
 
-  .card-body {
+  .card-body,
+  .modal-body {
     width: 100%;
   }
 
-  .card-description {
+  .card-description,
+  .modal-description {
     margin-top: 40px;
   }
 
   .text,
   .card-description,
   .container-btns,
-  .modal-text,
-  .modal-description,
   .modal-container-btns {
     position: inherit;
   }
@@ -1062,7 +1156,7 @@ textarea:invalid {
   }
 
   .box-button,
-  .modal-box-button {
+  .modal-box-button{
     position: inherit;
     top: 0;
   }

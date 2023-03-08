@@ -7,6 +7,7 @@
     <meta name="description" content="My First Portfolio">
     <title>Portafolio Main Page</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="modal.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
@@ -58,8 +59,14 @@
 </div>
 
     <!--here starts modal-mobile-version-->
-    <div class="modal-mobile" id="modal-template-mobile" >
+    <div class="modal-mobile" id="modal-template-mobile" style="display: none">
                 
+    </div>
+
+    <!--here starts modal for web version-->
+    <div class="container-modal-web" id="modal-template-web" style="display: none">
+        
+
     </div>
 
 </section>
@@ -97,8 +104,8 @@
                     </ul> 
                 </div>
                 <div class="box-button">
-                    <button class="btn-card" onclick="onProjectButtonClick(0)">
-                    See Project
+                    <button id="myBtnModal" class="btn-card" onclick="onProjectButtonClick(0)">
+                     See Project
                     </button>
                  </div>
             </div>
@@ -186,13 +193,13 @@
             </div>
 
             <div class="card-body ">
-                <h3 class="card-title">Tonic</h3>
+                <h3 class="card-title">Uber Navigation</h3>
                     <div class="text">    
-                        <p class="text-element one"> CANOPY </p>
+                        <p class="text-element one"> Uber </p>
                        <!--- <img class="counter-png" src="./assets/Counter.png" alt=""> -->
-                        <p class="text-element two">Backend</p>
+                        <p class="text-element two">Lead developer</p>
                        <!--- <img class="counter-png" src="./assets/Counter.png" alt=""> -->
-                        <p class="text-element">2015</p>
+                        <p class="text-element">2018</p>
                     </div>
                 <p class="card-description">
                     A daily selection of privately personalized reads; no accounts or sign-ups required.
@@ -303,23 +310,22 @@
             <h2 class="form-title">contact me</h2>
             <p class="form-description">If you have an application you are interested in developing, a feature that you need built or a project that needs coding. I’d love to help with it </p>
         </div>
-        <form class="form-contact" action= "https://formspree.io/f/mvonawkj" method="POST">
+        
+        
+
+        <form class="form-contact" id="form" name ="form" action="https://formspree.io/f/mvonawkj"  method="POST" onsubmit="validationForm()">
           
                   <input class= "form-input" type="text" id="username" name="username" placeholder="type name" required maxlength="30" minlength = "5" required/>
                
                   <input class= "form-input" type="email" id="email" name="email" placeholder="type email" minlength = "5" required/>
-               
+                  <div class="error" id="error"> error </div>
+
                   <textarea class= "form-input" id="msg" name="user_message" placeholder="write your message here" maxlength="500" minlength = "5" required ></textarea>
-              
-            
+                
             <div class="box-button-contact">
-                <button type="submit" class="btn-submit">Get in touch</button>
+                <button type="submit" class="btn-submit" >Get in touch</button>
             </div>
-            
-        </form>
-        
-       
-        
+        </form> 
     </div>
    
 </section>

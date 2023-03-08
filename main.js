@@ -1,3 +1,4 @@
+/* eslint-disable no-plusplus */
 /* eslint-disable no-unused-vars */
 /* eslint linebreak-style: ["error", "windows"] */
 
@@ -23,9 +24,9 @@ const openMenu = () => {
     <span class="effect-icon" style="font-size: 28px; color: #ffffff;">&times;</span>
 
     <div class="effect-ul" id="layout-content">
-        <li class="pop-nav"> <a href="#portafolio" class="effect-li">Portafolio</a></li>
-        <li class="pop-nav"> <a href="#about" class="effect-li">About</a></li>
-        <li class="pop-nav"> <a href="#contact" class="effect-li">Contact</a></li>
+        <li class="pop-nav"> <a href="#portafolio" class="effect-li"  onclick="closeMenu()">Portafolio</a></li>
+        <li class="pop-nav"> <a href="#about" class="effect-li"  onclick="closeMenu()">About</a></li>
+        <li class="pop-nav"> <a href="#contact" class="effect-li"  onclick="closeMenu()">Contact</a></li>
     </div>
     </a>
     `;
@@ -52,6 +53,7 @@ const projectDetailList = [
     name: 'Tonic',
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     imageLink: './assets/Portfolio.png',
+    imageLink2: './assets/SnapshootPortfolio1.png',
     technologies: ['html', 'css', 'javascript'],
     role: 'Back end dev',
     company: 'canopy',
@@ -64,6 +66,7 @@ const projectDetailList = [
     name: 'Multi-post stories',
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     imageLink: './assets/Portfolio2.png',
+    imageLink2: './assets/snapshotPortafolio2.png',
     technologies: ['html', 'css', 'javascript'],
     role: 'Full Stack Dev',
     company: 'Facebook',
@@ -76,6 +79,7 @@ const projectDetailList = [
     name: 'Facebook 360',
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. ',
     imageLink: './assets/Portfolio3.png',
+    imageLink2: './assets/Snapshoot Portfolio3.png',
     technologies: ['html', 'css', 'javascript'],
     role: 'Back end Dev',
     company: 'Facebook',
@@ -88,6 +92,7 @@ const projectDetailList = [
     name: 'Uber Navigation',
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     imageLink: './assets/Portfolio4.png',
+    imageLink2: './assets/Snapshoot Portfolio4.png',
     technologies: ['html', 'css', 'javascript'],
     role: 'Lead developer',
     company: 'Uber',
@@ -97,65 +102,29 @@ const projectDetailList = [
   },
 ];
 
-// function of modla pop up window
-const onProjectButtonClick = (idProject) => {
+// SETTING ERROR
 
-  let detail = projectDetailList.find((detail) => detail.id === idProject )
-  const modal_template_mobile = document.getElementById('modal-template-mobile')
-
-  let arrayString = []
-    
-  for(let el = 0; el < detail.technologies.length; el ++ ) {
-    let y =  `<li class="modal-btn-li">${detail.technologies[el]}</li>`
-    arrayString.push(y)
+const checkLowerCase = (str) => {
+  const check = str.toString().toLowerCase();
+  if (str === check) {
+    return true;
   }
-
-  const projectString = arrayString.join('');
-
-  const detailHtml = `
-    <div class="modal">
-    <span>&times;</span>
-    <div class="modal-header"  id="modal-heading-${detail.id}" >
-        <img "src="${detail.imageLink}" alt="">
-    </div>
-
-    <div class="modal-body">
-        <h3 class="modal-title"> ${detail.name} </h3>
-            <div class="modal-text">    
-                <p class="modal-text-element one"> ${detail.company}  </p>
-                 <!--- <img class="counter-png" src="./assets/Counter.png" alt=""> -->
-                <p class="modal-text-element two"> ${detail.role}</p>
-                 <!--- <img class="counter-png" src="./assets/Counter.png" alt=""> -->
-                <p class="modal-text-element"> ${detail.year}</p>
-            </div>
-        <p class="modal-description"> ${detail.description}  </p>          
-        
-            <div class="modal-container-btns">
-                <div class="modal-buttons-are">
-                <ul class="modal-button-group">
-                    ${projectString}
-                             
-                </ul> 
-            </div>
-            <div class="modal-box-buttons-group">
-                <div class="modal-box-button">
-                    <button class="btn-modal">
-                      See live
-                    </button>
-                </div>
-                <div class="modal-box-button">
-                    <button class="btn-modal">
-                      See Source
-                    </button>
-                </div>
-            </div>
-           
-             </div>
-        </div>
-    </div>
-</div>`;
-
-  // eslint-disable-next-line camelcase
-  modal_template_mobile.innerHTML = detail_html;
-  modal_template_mobile.style.display = 'block';
+  return false;
 };
+
+const validateInputs = (e) => {
+  e.preventDefault();
+  const error = document.getElementById('error');
+  const form = document.getElementById('form');
+  const email = document.getElementById('email').value;
+  const emailChecker = checkLowerCase(email);
+  if (emailChecker) {
+    form.action = 'https://formspree.io/f/mvonawkj';
+    form.submit();
+  } else {
+    error.classList.add('visible');
+  }
+};
+
+const form = document.getElementById('form');
+form.addEventListener('submit', validateInputs);
