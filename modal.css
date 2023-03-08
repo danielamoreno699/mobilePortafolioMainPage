@@ -11,8 +11,6 @@ html {
   font: inherit;
   font-size: 16px;
   vertical-align: baseline;
-
-  /* display: block; */
 }
 
 ol,
@@ -66,8 +64,6 @@ span {
 
 .one::after {
   content: url(./assets/Counter.png);
-
-  /* margin-left: 40px; */
   font-size: 14px;
   left: 15px;
 }
@@ -78,8 +74,6 @@ span {
 
 .two::after {
   content: url(./assets/Counter.png);
-
-  /* margin-left: 40px; */
   font-size: 14px;
   left: 15px;
 }
@@ -95,13 +89,6 @@ span {
   justify-content: start;
   gap: 3%;
 }
-
-/* .modal-box-buttons-group-web {
-  display: flex;
-  justify-content: center;
-  gap: 4%;
-  column-gap: 3%;
-} */
 
 .modal-description-web {
   font-family: 'Poppins', serif;
