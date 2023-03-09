@@ -135,20 +135,16 @@ form.addEventListener('submit', validateInputEmail);
 // function to display Modal depending on media query size
 const onMediaQueryModal = (width) => {
   if (window.matchMedia('(min-width: 767px)').matches) {
-    console.log('matches');
     return true;
   }
-  console.log('no matches');
   return false;
 };
 
 // function to display Modal depending on media query size
 const onMediaQueryModalMobile = (width) => {
   if (window.matchMedia('(max-width: 767px)').matches) {
-    console.log('matches');
     return true;
   }
-  console.log('no matches');
   return false;
 };
 
@@ -213,24 +209,33 @@ const effectsOnModalWeb = () => {
     el.addEventListener('click', () => {
       modalTemplateWeb.style.display = 'block';
 
-      document.getElementById('main-page-text').style.filter = 'blur(5px)';
-      const toolbar = document.getElementById('toolbar');
-      toolbar.style.backgroundColor = '#C1C7D0';
-      toolbar.style.opacity = '0.7';
+      document.getElementById('toolbar').style.display = ('none');
+      document.getElementById('portafolio').style.display = ('none');
+      document.getElementById('main-page-conatiner').style.display = ('none');
+      //document.getElementById('about').style.display = ('none');
+      //document.getElementById('contact').style.display = ('none');
 
-      const navbar = document.getElementById('navbar');
-      navbar.style.backgroundColor = '#C1C7D0';
-      navbar.style.opacity = '0.7';
+      const body = document.querySelector('body');
+      body.style.backgroundColor = ('rgb(227, 227, 227)');
+      body.style.size = ('100%');
 
-      const mainPage = document.getElementById('main-page');
-      mainPage.style.backgroundColor = '#C1C7D0';
-      mainPage.style.opacity = '0.7';
-      mainPage.style.height = '100vh';
-      console.log('click');
 
-      modalTemplateWeb.style.left = ('-27%');
-      modalTemplateWeb.style.top = ('-86px');
-      modalTemplateWeb.style.height = ('105%');
+      // document.getElementById('main-page-text').style.filter = 'blur(5px)';
+      // const toolbar = document.getElementById('toolbar');
+      // toolbar.style.backgroundColor = '#C1C7D0';
+      // toolbar.style.opacity = '0.7';
+
+      // const navbar = document.getElementById('navbar');
+      // navbar.style.backgroundColor = '#C1C7D0';
+      // navbar.style.opacity = '0.7';
+
+      // const mainPage = document.getElementById('main-page');
+      // mainPage.style.backgroundColor = '#C1C7D0';
+      // mainPage.style.opacity = '1';
+
+      // modalTemplateWeb.style.left = ('-27%');
+      // modalTemplateWeb.style.top = ('-86px');
+      // modalTemplateWeb.style.height = ('105%');
     });
   });
 };
@@ -252,7 +257,6 @@ const closeModalWeb = () => {
   mainPage.style.backgroundColor = 'white';
   mainPage.style.opacity = '1';
   document.getElementById('main-page-text').style.filter = 'blur(0px)';
-  console.log('click close');
 };
 
 // function of modal pop up window
