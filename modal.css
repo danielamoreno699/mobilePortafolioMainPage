@@ -29,9 +29,7 @@ body {
 
 .container-modal-web {
   background-color: white;
-
   width: 1156px;
- 
   position: relative;
   border-radius: 16px;
 }
@@ -40,10 +38,6 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
-}
-
-.modal-title-web{
-
 }
 
 .modal-text-web{
@@ -75,14 +69,11 @@ span {
 .modal-title-web {
   left: 4%;
   position: relative;
-  font-family: 'Poppins', serif;
-  
+  font-family: 'Poppins', serif;  
 }
 
 .one::after {
   content: url(./assets/Counter.png);
-
-  /* margin-left: 40px; */
   font-size: 14px;
   left: 15px;
 }

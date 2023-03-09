@@ -59,7 +59,7 @@
 </div>
 
     <!--here starts modal-mobile-version-->
-    <div class="modal-mobile" id="modal-template-mobile" style="display: none">
+    <div class="modal" id="modal-template-mobile" style="display: none">
                 
     </div>
 
@@ -86,9 +86,9 @@
             <h3 class="card-title">Tonic</h3>
                 <div class="text">    
                     <p class="text-element one"> CANOPY </p>
-                     <!--- <img class="counter-png" src="./assets/Counter.png" alt=""> -->
+                     
                     <p class="text-element">Backend</p>
-                     <!--- <img class="counter-png" src="./assets/Counter.png" alt=""> -->
+                    
                     <p class="text-element">2015</p>
                 </div>
             <p class="card-description">
@@ -104,7 +104,7 @@
                     </ul> 
                 </div>
                 <div class="box-button">
-                    <button id="myBtnModal" class="btn-card" onclick="onProjectButtonClick(0)">
+                    <button id="myBtnModal" class="btn-card" onclick="onProjectButtonClick(0, event)">
                      See Project
                     </button>
                  </div>
@@ -140,7 +140,7 @@
                         </ul> 
 
                     <div class="box-button">
-                        <button class="btn-card" onclick="onProjectButtonClick(1)">
+                        <button class="btn-card" onclick="onProjectButtonClick(1, event)">
                         See Project
                         </button>
                      </div>
@@ -177,7 +177,7 @@
                         </ul> 
                     </div>
                     <div class="box-button">
-                        <button class="btn-card" onclick="onProjectButtonClick(2)">
+                        <button class="btn-card" onclick="onProjectButtonClick(2, event)">
                         See Project
                         </button>
                      </div>
@@ -213,7 +213,7 @@
                         </ul> 
 
                     <div class="box-button">
-                        <button class="btn-card" onclick="onProjectButtonClick(3)">
+                        <button class="btn-card" onclick="onProjectButtonClick(3, event)">
                         See Project
                         </button>
                      </div>

@@ -228,9 +228,11 @@ body {
   background: #fff;
 }
 
-.card-img {
+.card-img,
+.img-modal {
   width: 100%;
 }
+
 
 .card-title,
 .modal-title {
@@ -1071,7 +1073,7 @@ textarea:invalid {
 
 @media (max-width: 767px) {
   .main-page {
-    height: 65vh;
+    height: 90vh;
   }
 
   .Main-Page-container {
