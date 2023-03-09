@@ -326,8 +326,6 @@ body {
   background: #ebebff;
   border-radius: 8px;
   padding: 3px 19px;
-
-  /* padding: 6px 23px; */
   font-family: 'Poppins', serif;
   font-weight: 500;
   font-size: 12px;
@@ -806,8 +804,6 @@ textarea:invalid {
     line-height: 28px;
     height: 98px;
     align-self: self-end;
-
-    /* left: 167px; */
     color: #344563;
     margin-top: 3px;
     animation-duration: 3s;

@@ -11,6 +11,8 @@ html {
   font: inherit;
   font-size: 16px;
   vertical-align: baseline;
+
+  /* display: block; */
 }
 
 ol,
@@ -27,10 +29,9 @@ body {
 
 .container-modal-web {
   background-color: white;
-  height: 1163px;
+
   width: 1156px;
-  display: block;
-  left: -22%;
+ 
   position: relative;
   border-radius: 16px;
 }
@@ -41,12 +42,27 @@ body {
   align-items: baseline;
 }
 
+.modal-title-web{
+
+}
+
+.modal-text-web{
+  display: flex;
+  gap: 3%;
+  font-family: 'Poppins', serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  color: #7a869a;
+  margin-left: 4%;
+}
+
 span {
   margin: 2%;
   width: 20%;
 }
 
-.modal-text-web {
+.modal-description-web {
   display: flex;
   gap: 3%;
   font-family: 'Poppins', serif;
@@ -60,10 +76,14 @@ span {
 .modal-title-web {
   left: 4%;
   position: relative;
+  font-family: 'Poppins', serif;
+  
 }
 
 .one::after {
   content: url(./assets/Counter.png);
+
+  /* margin-left: 40px; */
   font-size: 14px;
   left: 15px;
 }
@@ -83,23 +103,21 @@ span {
   grid-template-columns: 70% 30%;
 }
 
-.modal-button-group-web {
+.modal-button-group {
   display: flex;
+  justify-content: flex-center;
   flex-wrap: wrap;
-  justify-content: start;
   gap: 3%;
 }
 
-.modal-description-web {
-  font-family: 'Poppins', serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  left: 5%;
-  position: relative;
+.modal-button-group-web {
+  display: flex;
+  justify-content: flex-center;
+  flex-wrap: wrap;
+  gap: 3%;
 }
 
-.modal-btn-li {
+.modal-btn-li-web{
   margin-top: 0;
   background: #ebebff;
   border-radius: 8px;
@@ -112,20 +130,27 @@ span {
   transition: 0.3s;
 }
 
-.modal-box-buttons-group-web {
+.modal-box-buttons-group-web{
+  display:flex;
+  top: 30%; 
+  gap: 6%;
   position: relative;
-  top: 17%;
+  left: 10%; 
 }
 
-.modal-box-button-web {
+.modal-box-button-web{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 1px;
   gap: 10px;
   width: 124px;
-  height: 33px;
+  left: 0;
   border: 1px solid #6070ff;
   border-radius: 8px;
 }
 
-.btn-modal-web {
+.btn-modal-web{
   font-family: 'Poppins', serif;
   font-style: normal;
   font-weight: 500;
@@ -137,12 +162,4 @@ span {
   color: #396df2;
   border: none;
   background: transparent;
-}
-
-.img-modal {
-  height: 586px;
-  width: 1108px;
-  left: 0;
-  top: 0;
-  border-radius: 8px;
 }
