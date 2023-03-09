@@ -142,6 +142,16 @@ const onMediaQueryModal = (width) => {
   return false;
 };
 
+// function to display Modal depending on media query size
+const onMediaQueryModalMobile = (width) => {
+  if (window.matchMedia('(max-width: 767px)').matches) {
+    console.log('matches');
+    return true;
+  }
+  console.log('no matches');
+  return false;
+};
+
 // function of pop up modal mobile
 
 const effectsOnMobile = () => {
@@ -220,7 +230,7 @@ const effectsOnModalWeb = () => {
 
       modalTemplateWeb.style.left = ('-27%');
       modalTemplateWeb.style.top = ('-86px');
-      modalTemplateWeb.style.opacity = ('2');
+      modalTemplateWeb.style.height = ('105%');
     });
   });
 };
@@ -252,7 +262,8 @@ const onProjectButtonClick = (idProject, event) => {
 
   if ((onMediaQueryModal(event.screenX)) === true) {
     effectsOnModalWeb();
-  } else {
+  }
+  if ((onMediaQueryModalMobile(event.screenX)) === true) {
     effectsOnMobile();
   }
 
