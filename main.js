@@ -80,7 +80,7 @@ const projectDetailList = [
     name: 'Facebook 360',
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. ',
     imageLink: './assets/Portfolio3.png',
-    imageLink2: './assets/Snapshoot Portfolio3.png',
+    imageLink2: './assets/SnapshootPortfolio3.png',
     technologies: ['html', 'css', 'javascript'],
     role: 'Back end Dev',
     company: 'Facebook',
@@ -93,7 +93,7 @@ const projectDetailList = [
     name: 'Uber Navigation',
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     imageLink: './assets/Portfolio4.png',
-    imageLink2: './assets/Snapshoot Portfolio4.png',
+    imageLink2: './assets/SnapshootPortfolio4.png',
     technologies: ['html', 'css', 'javascript'],
     role: 'Lead developer',
     company: 'Uber',
@@ -209,9 +209,7 @@ const effectsOnModalWeb = () => {
     el.addEventListener('click', () => {
       modalTemplateWeb.style.display = 'block';
 
-      document.getElementById('toolbar').style.display = ('none');
-      document.getElementById('portafolio').style.display = ('none');
-      document.getElementById('main-page-conatiner').style.display = ('none');
+
       //document.getElementById('about').style.display = ('none');
       //document.getElementById('contact').style.display = ('none');
 
@@ -245,19 +243,19 @@ const closeModalWeb = () => {
   const modalTemplateWeb = document.getElementById('modal-template-web');
   modalTemplateWeb.style.display = 'none';
 
-  document.getElementById('main-page-text').style.filter = 'blur(5px)';
-  const toolbar = document.getElementById('toolbar');
-  toolbar.style.backgroundColor = 'white';
-  toolbar.style.opacity = '1';
+  // document.getElementById('main-page-text').style.filter = 'blur(5px)';
+  // const toolbar = document.getElementById('toolbar');
+  // toolbar.style.backgroundColor = 'white';
+  // toolbar.style.opacity = '1';
 
-  const navbar = document.getElementById('navbar');
-  navbar.style.backgroundColor = 'white';
-  navbar.style.opacity = '1';
+  // const navbar = document.getElementById('navbar');
+  // navbar.style.backgroundColor = 'white';
+  // navbar.style.opacity = '1';
 
-  const mainPage = document.getElementById('main-page');
-  mainPage.style.backgroundColor = 'white';
-  mainPage.style.opacity = '1';
-  document.getElementById('main-page-text').style.filter = 'blur(0px)';
+  // const mainPage = document.getElementById('main-page');
+  // mainPage.style.backgroundColor = 'white';
+  // mainPage.style.opacity = '1';
+  // document.getElementById('main-page-text').style.filter = 'blur(0px)';
 };
 
 // function of modal pop up window
@@ -283,6 +281,7 @@ const onProjectButtonClick = (idProject, event) => {
 
   // dynamic template for mobile
   const detailHtmlMobile = `
+  
   <div class="modal-header"  id="modal-${detail.id}" >
   <span onclick="MobileModalClose()" >&times;</span>
       <img class="img-modal" src= ${detail.imageLink2} alt="">
@@ -316,6 +315,7 @@ const onProjectButtonClick = (idProject, event) => {
             
           </div>
   </div>
+ 
   
    `;
 
@@ -323,11 +323,13 @@ const onProjectButtonClick = (idProject, event) => {
 
   // dynamic template for web
   const detailHtmlWebModal = `
+  
   <div class="modal-header-web " id="modal-heading-${detail.id}">
-  <div class="modal-text-content-web">
-      <h2 class="modal-title-web" > ${detail.name}</h2>
-      <span onclick="closeModalWeb()" >&times;</span>
-  </div>
+    <div class="wrapper-web">
+        <div class="modal-text-content-web">
+        <h2 class="modal-title-web" > ${detail.name}</h2>
+        <span onclick="closeModalWeb()" >&times;</span>
+  
 
       <div class="modal-text-web">    
           <p class="modal-text-element-web one"> ${detail.company} </p>
@@ -366,8 +368,10 @@ const onProjectButtonClick = (idProject, event) => {
           </div>
           
       </div>
-  
+      </div>
   </div>
+  </div>
+  
   `;
   modalTemplateWeb.innerHTML = detailHtmlWebModal;
 };

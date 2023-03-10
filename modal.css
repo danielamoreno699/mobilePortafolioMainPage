@@ -1,14 +1,20 @@
-
-
 .container-modal-web{
-  position: absolute;
-  top: 50%;
-  left: 13%;
-  height: 1163px;
-  width: 1156px;  
-border-radius: 16px;
-left: 27%;
-z-index: 1;
-background-color: red;
+  width: 100%;
+  /*background-color: rgba(237, 232, 232, 0.936);*/
+  opacity: 1;
+  background-image: url("./assets/backgdeskop.png");
+  background-repeat: no-repeat;
+  backdrop-filter: blur(5px);
+  background-size: 100%;
+}
 
+.wrapper-web{
+  background-color: white;
+  height: 1163px;
+  width: 1156px; 
+  border-radius: 16px;
+  z-index:2 ;
+  position: relative;
+  left: 20%;
+  
 }
