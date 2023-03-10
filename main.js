@@ -125,7 +125,6 @@ const SavinLocalStorage = () => {
 
 window.addEventListener('load', () => {
   
-  console.log('click')
     
   const dataString = localStorage.getItem('InputData');
 
