@@ -1,6 +1,4 @@
-/* eslint-disable no-plusplus */
-/* eslint-disable no-unused-vars */
-/* eslint linebreak-style: ["error", "windows"] */
+
 
 const openMenu = () => {
   document.getElementById('brand').style.filter = 'blur(5px)';
@@ -208,7 +206,7 @@ const onProjectButtonClick = (idProject, event) => {
 
   if ((onMediaQueryModal(event.screenX)) === true) {
     effectsOnModalWeb();
-    console.log('max')
+    console.log('max');
   }
   if ((onMediaQueryModalMobile(event.screenX)) === true) {
     effectsOnMobile();
