@@ -1,7 +1,4 @@
-/* eslint-disable no-plusplus */
 /* eslint-disable no-unused-vars */
-/* eslint linebreak-style: ["error", "windows"] */
-
 const openMenu = () => {
   document.getElementById('brand').style.filter = 'blur(5px)';
   document.getElementById('main-page-text').style.filter = 'blur(7px)';
@@ -47,62 +44,6 @@ const closeMenu = () => {
   }
 };
 
-// data of projects
-const projectDetailList = [
-  {
-    id: 0,
-    name: 'Tonic',
-    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    imageLink: './assets/Portfolio.png',
-    imageLink2: './assets/SnapshootPortfolio1.png',
-    technologies: ['html', 'css', 'javascript'],
-    role: 'Back end dev',
-    company: 'canopy',
-    year: '2015',
-    sourceLink: '#',
-    demoLink: '#',
-  },
-  {
-    id: 1,
-    name: 'Multi-post stories',
-    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    imageLink: './assets/Portfolio2.png',
-    imageLink2: './assets/snapshotPortafolio2.png',
-    technologies: ['html', 'css', 'javascript'],
-    role: 'Full Stack Dev',
-    company: 'Facebook',
-    year: '2015',
-    sourceLink: '#',
-    demoLink: '#',
-  },
-  {
-    id: 2,
-    name: 'Facebook 360',
-    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. ',
-    imageLink: './assets/Portfolio3.png',
-    imageLink2: './assets/Snapshoot Portfolio3.png',
-    technologies: ['html', 'css', 'javascript'],
-    role: 'Back end Dev',
-    company: 'Facebook',
-    year: '2015',
-    sourceLink: '#',
-    demoLink: '#',
-  },
-  {
-    id: 3,
-    name: 'Uber Navigation',
-    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    imageLink: './assets/Portfolio4.png',
-    imageLink2: './assets/Snapshoot Portfolio4.png',
-    technologies: ['html', 'css', 'javascript'],
-    role: 'Lead developer',
-    company: 'Uber',
-    year: '2018',
-    sourceLink: '#',
-    demoLink: '#',
-  },
-];
-
 // save in localStorage
 
 const SavinLocalStorage = () => {
@@ -130,7 +71,7 @@ window.addEventListener('load', () => {
   const formData = JSON.parse(dataString);
   const formControl = document.getElementById('form');
 
-  for (let i = 0; i < formControl.elements.length; i++) {
+  for (let i = 0; i < formControl.elements.length; i + 1) {
     const element = formControl.elements[i];
     const value = formData[element.name];
     if (value !== undefined) {
