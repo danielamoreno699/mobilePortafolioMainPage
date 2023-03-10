@@ -103,6 +103,42 @@ const projectDetailList = [
   },
 ];
 
+// save in localStorage
+
+const SavinLocalStorage = () => {
+  const form = document.getElementById('form');
+  const InputData = {
+
+    username: form.elements.username.value,
+    email: form.elements.email.value,
+    msg: form.elements.msg.value,
+  };
+
+  if (InputData !== '') {
+    localStorage.setItem('InputData', JSON.stringify(InputData));
+  } else {
+    return false;
+  }
+
+  window.addEventListener('load', () => {
+  const dataString = localStorage.getItem('InputData');
+
+  const formData = JSON.parse(dataString);
+  const formControl = document.getElementById('form');
+
+// Iterate through the form elements and set their values
+
+  for (let i = 0; i < formControl.elements.length; i++) {
+    const element = formControl.elements[i];
+    const value = formData[element.name];
+    if (value !== undefined) {
+      element.value = value;
+      console.log(value);
+    }
+  }
+});
+};
+
 // stric check of str
 
 const checkLowerCase = (str) => {
@@ -117,6 +153,7 @@ const checkLowerCase = (str) => {
 
 const validateInputEmail = (e) => {
   e.preventDefault();
+  SavinLocalStorage();
   const error = document.getElementById('error');
   const form = document.getElementById('form');
   const email = document.getElementById('email').value;
