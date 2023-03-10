@@ -1,3 +1,4 @@
+/* eslint-disable no-plusplus */
 
 
 const openMenu = () => {
@@ -44,7 +45,7 @@ const closeMenu = () => {
   }
 };
 
-// data of projects
+// // data of projects
 const projectDetailList = [
   {
     id: 0,
@@ -100,7 +101,7 @@ const projectDetailList = [
   },
 ];
 
-// stric check of str
+// // stric check of str
 
 const checkLowerCase = (str) => {
   const check = str.toString().toLowerCase();
@@ -129,6 +130,7 @@ const validateInputEmail = (e) => {
 const form = document.getElementById('form');
 form.addEventListener('submit', validateInputEmail);
 
+
 // function to display Modal depending on media query size
 const onMediaQueryModal = (width) => {
   if (window.matchMedia('(min-width: 767px)').matches) {
@@ -136,8 +138,6 @@ const onMediaQueryModal = (width) => {
   }
   return false;
 };
-//
-
 
 // function to display Modal depending on media query size
 const onMediaQueryModalMobile = (width) => {
@@ -147,8 +147,6 @@ const onMediaQueryModalMobile = (width) => {
   return false;
 };
 
-// function of pop up modal mobile
-
 const effectsOnMobile = () => {
   const modalTemplateMobile = document.getElementById('modal-template-mobile');
 
@@ -157,21 +155,14 @@ const effectsOnMobile = () => {
   Array.from(arBtns).forEach((el) => {
     el.addEventListener('click', () => {
       modalTemplateMobile.style.display = 'block';
-      modalTemplateMobile.style.position = ('relative');
-      modalTemplateMobile.style.zIndex = '1';
-      modalTemplateMobile.style.opacity = ('1');
     });
   });
 };
-
-// function to close mobile modal window
 
 const MobileModalClose = () => {
   const modalTemplateMobile = document.getElementById('modal-template-mobile');
   modalTemplateMobile.style.display = ('none');
 };
-
-// function to pop up modal web
 
 const effectsOnModalWeb = () => {
   const modalTemplateWeb = document.getElementById('modal-template-web');
@@ -180,9 +171,6 @@ const effectsOnModalWeb = () => {
   Array.from(arBtns).forEach((el) => {
     el.addEventListener('click', () => {
       modalTemplateWeb.style.display = 'block';
-      const body = document.querySelector('body');
-      body.style.backgroundColor = ('rgb(227, 227, 227)');
-      body.style.size = ('100%');
     });
   });
 };
@@ -192,12 +180,6 @@ const closeModalWeb = () => {
   modalTemplateWeb.style.display = 'none';
 };
 
-//
-window.addEventListener('load', () => {
-  closeModalWeb();
-  MobileModalClose();
-  console.log('window');
-});
 
 // function of modal pop up window
 const onProjectButtonClick = (idProject, event) => {
@@ -206,11 +188,9 @@ const onProjectButtonClick = (idProject, event) => {
 
   if ((onMediaQueryModal(event.screenX)) === true) {
     effectsOnModalWeb();
-    console.log('max');
   }
   if ((onMediaQueryModalMobile(event.screenX)) === true) {
     effectsOnMobile();
-    console.log('min')
   }
 
   const detail = projectDetailList.find((detail) => detail.id === idProject);
@@ -224,7 +204,6 @@ const onProjectButtonClick = (idProject, event) => {
 
   // dynamic template for mobile
   const detailHtmlMobile = `
-  
   <div class="modal-header"  id="modal-${detail.id}" >
   <span onclick="MobileModalClose()" >&times;</span>
       <img class="img-modal" src= ${detail.imageLink2} alt="">
@@ -258,7 +237,6 @@ const onProjectButtonClick = (idProject, event) => {
             
           </div>
   </div>
- 
   
    `;
 
@@ -266,14 +244,11 @@ const onProjectButtonClick = (idProject, event) => {
 
   // dynamic template for web
   const detailHtmlWebModal = `
-  
   <div class="modal-header-web " id="modal-heading-${detail.id}">
-    <div class="wrapper-web">
-        <div class="modal-text-content-web">
-        <h2 class="modal-title-web" > ${detail.name}</h2>
-        <span onclick="closeModalWeb()" >&times;</span>
-  
-
+  <div class="modal-text-content-web">
+      <h2 class="modal-title-web" > ${detail.name}</h2>
+      <span onclick="closeModalWeb()" >&times;</span>
+  </div>
       <div class="modal-text-web">    
           <p class="modal-text-element-web one"> ${detail.company} </p>
            
@@ -311,10 +286,8 @@ const onProjectButtonClick = (idProject, event) => {
           </div>
           
       </div>
-      </div>
-  </div>
-  </div>
   
+  </div>
   `;
   modalTemplateWeb.innerHTML = detailHtmlWebModal;
 };
