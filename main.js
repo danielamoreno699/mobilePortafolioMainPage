@@ -42,41 +42,7 @@ const closeMenu = () => {
     union.style.display = 'block';
   }
 };
-
-// save in localStorage
-
-  const inputElements = document.querySelectorAll('input');
-  const inputData = {};
-
-inputElements.forEach((inputElement) => {
-  inputElement.addEventListener('change', () => {
-    const inputValue = inputElement.value;
-    const inputName = inputElement.name;
-    inputData[inputName] = inputValue;
-    localStorage.setItem('formData', JSON.stringify(inputData));
-  });
-});
-
-
-// Iterate through the form elements and set their values
-
-window.addEventListener('load', () => {
-  const dataString = localStorage.getItem('InputData');
-
-  const formData = JSON.parse(dataString);
-  const formControl = document.getElementById('form');
-
-  for (let i = 0; i < formControl.elements.length; i + 1) {
-    const element = formControl.elements[i];
-    const value = formData[element.name];
-    if (value !== undefined) {
-      element.value = value;
-    }
-  }
-});
-
 // stric check of str
-
 const checkLowerCase = (str) => {
   const check = str.toString().toLowerCase();
   if (str === check) {
@@ -89,7 +55,6 @@ const checkLowerCase = (str) => {
 
 const validateInputEmail = (e) => {
   e.preventDefault();
-  SavinLocalStorage();
   const error = document.getElementById('error');
   const form = document.getElementById('form');
   const email = document.getElementById('email').value;
@@ -104,3 +69,59 @@ const validateInputEmail = (e) => {
 
 const form = document.getElementById('form');
 form.addEventListener('submit', validateInputEmail);
+
+document.addEventListener('DOMContentLoaded', () => {
+  form.addEventListener('submit', validateInputEmail);
+
+  const formInput = JSON.parse(localStorage.getItem('formInput'));
+  const formStorage = {
+    name: '',
+    mail: '',
+    text: '',
+  };
+  const name = document.getElementById('username');
+  const mail = document.getElementById('email');
+  const text = document.getElementById('msg');
+
+  name.addEventListener('input', () => {
+    if (formInput) {
+      formInput.name = name.value;
+      localStorage.setItem('formInput', JSON.stringify(formInput));
+    } else {
+      formStorage.name = name.value;
+      localStorage.setItem('formInput', JSON.stringify(formStorage));
+    }
+  });
+
+  mail.addEventListener('input', () => {
+    if (formInput) {
+      formInput.mail = mail.value;
+      localStorage.setItem('formInput', JSON.stringify(formInput));
+    } else {
+      formStorage.mail = mail.value;
+      localStorage.setItem('formInput', JSON.stringify(formStorage));
+    }
+  });
+
+  text.addEventListener('input', () => {
+    if (formInput) {
+      formInput.text = text.value;
+      localStorage.setItem('formInput', JSON.stringify(formInput));
+    } else {
+      formStorage.text = text.value;
+      localStorage.setItem('formInput', JSON.stringify(formStorage));
+    }
+  });
+
+  if (formInput) {
+    document.getElementById('username').value = formInput.name;
+    document.getElementById('email').value = formInput.mail;
+    document.getElementById('msg').value = formInput.text;
+  }
+
+  if (localStorage.getItem(formInput)) {
+    document.getElementById('username').value = formInput.name;
+    document.getElementById('email').value = formInput.mail;
+    document.getElementById('msg').value = formInput.text;
+  }
+});
