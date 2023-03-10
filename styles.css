@@ -185,11 +185,10 @@ body {
   transform: translateY(-10px);
 }
 
-/*Overlayout Menu*/
-#OverlayoutNav{
+/* Overlayout Menu */
+#OverlayoutNav {
   display: none;
 }
-
 
 /* styles of section card */
 
@@ -717,7 +716,6 @@ textarea:invalid {
 .display {
   display: block;
 }
-
 
 #error {
   display: none;
