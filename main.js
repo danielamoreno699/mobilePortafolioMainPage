@@ -38,7 +38,6 @@ const closeMenu = () => {
   document.getElementById('main-page').style.opacity = '1';
   const overlayout = document.getElementById('OverlayoutNav');
   overlayout.style.display = 'none';
-
   if (union) {
     union.style.display = 'block';
   }
@@ -46,22 +45,18 @@ const closeMenu = () => {
 
 // save in localStorage
 
-const SavinLocalStorage = () => {
-  const form = document.getElementById('form');
+  const inputElements = document.querySelectorAll('input');
+  const inputData = {};
 
-  const InputData = {
-    username: form.elements.username.value,
-    email: form.elements.email.value,
-    msg: form.elements.msg.value,
-  };
+inputElements.forEach((inputElement) => {
+  inputElement.addEventListener('change', () => {
+    const inputValue = inputElement.value;
+    const inputName = inputElement.name;
+    inputData[inputName] = inputValue;
+    localStorage.setItem('formData', JSON.stringify(inputData));
+  });
+});
 
-  if (InputData !== '') {
-    localStorage.setItem('InputData', JSON.stringify(InputData));
-  } else {
-    return false;
-  }
-  return InputData;
-};
 
 // Iterate through the form elements and set their values
 
