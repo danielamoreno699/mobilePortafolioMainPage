@@ -219,7 +219,7 @@ body {
   background: #fff;
 }
 
-.modal {
+/*.modal {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -230,7 +230,7 @@ body {
   border: 1px solid #dfe1e6;
   border-radius: 16px;
   background: #fff;
-}
+}*/
 
 .card-img,
 .img-modal {
