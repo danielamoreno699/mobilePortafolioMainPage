@@ -29,9 +29,7 @@ body {
 
 .container-modal-web {
   background-color: white;
-
   width: 1156px;
- 
   position: relative;
   border-radius: 16px;
 }
@@ -42,11 +40,7 @@ body {
   align-items: baseline;
 }
 
-.modal-title-web{
-
-}
-
-.modal-text-web{
+.modal-text-web {
   display: flex;
   gap: 3%;
   font-family: 'Poppins', serif;
@@ -77,13 +71,10 @@ span {
   left: 4%;
   position: relative;
   font-family: 'Poppins', serif;
-  
 }
 
 .one::after {
   content: url(./assets/Counter.png);
-
-  /* margin-left: 40px; */
   font-size: 14px;
   left: 15px;
 }
@@ -117,7 +108,7 @@ span {
   gap: 3%;
 }
 
-.modal-btn-li-web{
+.modal-btn-li-web {
   margin-top: 0;
   background: #ebebff;
   border-radius: 8px;
@@ -130,15 +121,15 @@ span {
   transition: 0.3s;
 }
 
-.modal-box-buttons-group-web{
-  display:flex;
-  top: 30%; 
+.modal-box-buttons-group-web {
+  display: flex;
+  top: 30%;
   gap: 6%;
   position: relative;
-  left: 10%; 
+  left: 10%;
 }
 
-.modal-box-button-web{
+.modal-box-button-web {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -150,7 +141,7 @@ span {
   border-radius: 8px;
 }
 
-.btn-modal-web{
+.btn-modal-web {
   font-family: 'Poppins', serif;
   font-style: normal;
   font-weight: 500;
