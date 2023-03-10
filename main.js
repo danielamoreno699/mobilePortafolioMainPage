@@ -122,16 +122,13 @@ const SavinLocalStorage = () => {
   return InputData;
 };
 
-// Input filled
+// Iterate through the form elements and set their values
 
 window.addEventListener('load', () => {
-  
   const dataString = localStorage.getItem('InputData');
 
   const formData = JSON.parse(dataString);
   const formControl = document.getElementById('form');
-
-// Iterate through the form elements and set their values
 
   for (let i = 0; i < formControl.elements.length; i++) {
     const element = formControl.elements[i];
