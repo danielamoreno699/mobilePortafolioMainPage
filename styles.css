@@ -185,6 +185,11 @@ body {
   transform: translateY(-10px);
 }
 
+/* Overlayout Menu */
+#OverlayoutNav {
+  display: none;
+}
+
 /* styles of section card */
 
 .section-card {

@@ -1,7 +1,4 @@
-/* eslint-disable no-plusplus */
 /* eslint-disable no-unused-vars */
-/* eslint linebreak-style: ["error", "windows"] */
-
 const openMenu = () => {
   document.getElementById('brand').style.filter = 'blur(5px)';
   document.getElementById('main-page-text').style.filter = 'blur(7px)';
@@ -41,70 +38,11 @@ const closeMenu = () => {
   document.getElementById('main-page').style.opacity = '1';
   const overlayout = document.getElementById('OverlayoutNav');
   overlayout.style.display = 'none';
-
   if (union) {
     union.style.display = 'block';
   }
 };
-
-// data of projects
-const projectDetailList = [
-  {
-    id: 0,
-    name: 'Tonic',
-    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    imageLink: './assets/Portfolio.png',
-    imageLink2: './assets/SnapshootPortfolio1.png',
-    technologies: ['html', 'css', 'javascript'],
-    role: 'Back end dev',
-    company: 'canopy',
-    year: '2015',
-    sourceLink: '#',
-    demoLink: '#',
-  },
-  {
-    id: 1,
-    name: 'Multi-post stories',
-    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    imageLink: './assets/Portfolio2.png',
-    imageLink2: './assets/snapshotPortafolio2.png',
-    technologies: ['html', 'css', 'javascript'],
-    role: 'Full Stack Dev',
-    company: 'Facebook',
-    year: '2015',
-    sourceLink: '#',
-    demoLink: '#',
-  },
-  {
-    id: 2,
-    name: 'Facebook 360',
-    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. ',
-    imageLink: './assets/Portfolio3.png',
-    imageLink2: './assets/Snapshoot Portfolio3.png',
-    technologies: ['html', 'css', 'javascript'],
-    role: 'Back end Dev',
-    company: 'Facebook',
-    year: '2015',
-    sourceLink: '#',
-    demoLink: '#',
-  },
-  {
-    id: 3,
-    name: 'Uber Navigation',
-    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    imageLink: './assets/Portfolio4.png',
-    imageLink2: './assets/Snapshoot Portfolio4.png',
-    technologies: ['html', 'css', 'javascript'],
-    role: 'Lead developer',
-    company: 'Uber',
-    year: '2018',
-    sourceLink: '#',
-    demoLink: '#',
-  },
-];
-
 // stric check of str
-
 const checkLowerCase = (str) => {
   const check = str.toString().toLowerCase();
   if (str === check) {
@@ -131,3 +69,59 @@ const validateInputEmail = (e) => {
 
 const form = document.getElementById('form');
 form.addEventListener('submit', validateInputEmail);
+
+document.addEventListener('DOMContentLoaded', () => {
+  form.addEventListener('submit', validateInputEmail);
+
+  const formInput = JSON.parse(localStorage.getItem('formInput'));
+  const formStorage = {
+    name: '',
+    mail: '',
+    text: '',
+  };
+  const name = document.getElementById('username');
+  const mail = document.getElementById('email');
+  const text = document.getElementById('msg');
+
+  name.addEventListener('input', () => {
+    if (formInput) {
+      formInput.name = name.value;
+      localStorage.setItem('formInput', JSON.stringify(formInput));
+    } else {
+      formStorage.name = name.value;
+      localStorage.setItem('formInput', JSON.stringify(formStorage));
+    }
+  });
+
+  mail.addEventListener('input', () => {
+    if (formInput) {
+      formInput.mail = mail.value;
+      localStorage.setItem('formInput', JSON.stringify(formInput));
+    } else {
+      formStorage.mail = mail.value;
+      localStorage.setItem('formInput', JSON.stringify(formStorage));
+    }
+  });
+
+  text.addEventListener('input', () => {
+    if (formInput) {
+      formInput.text = text.value;
+      localStorage.setItem('formInput', JSON.stringify(formInput));
+    } else {
+      formStorage.text = text.value;
+      localStorage.setItem('formInput', JSON.stringify(formStorage));
+    }
+  });
+
+  if (formInput) {
+    document.getElementById('username').value = formInput.name;
+    document.getElementById('email').value = formInput.mail;
+    document.getElementById('msg').value = formInput.text;
+  }
+
+  if (localStorage.getItem(formInput)) {
+    document.getElementById('username').value = formInput.name;
+    document.getElementById('email').value = formInput.mail;
+    document.getElementById('msg').value = formInput.text;
+  }
+});

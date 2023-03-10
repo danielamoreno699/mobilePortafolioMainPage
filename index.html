@@ -33,8 +33,8 @@
         <img class="union" src="./assets/Union.png" alt="union" id="union" onclick="openMenu()">
     </nav>
     
-    <!--overlayout div-->
-    <div class="OverlayoutNav" id="OverlayoutNav" style="display:none;">
+   <!---Overlayout-->
+    <div class="OverlayoutNav" id="OverlayoutNav">
         
     </div>
 
@@ -57,17 +57,6 @@
         </ul>
     </div>
 </div>
-
-    <!--here starts modal-mobile-version-->
-    <div class="modal-mobile" id="modal-template-mobile" style="display: none">
-                
-    </div>
-
-    <!--here starts modal for web version-->
-    <div class="container-modal-web" id="modal-template-web" style="display: none">
-        
-
-    </div>
 
 </section>
 
@@ -313,13 +302,13 @@
         
         
 
-        <form class="form-contact" id="form" name ="form" action="https://formspree.io/f/mvonawkj"  method="POST" onsubmit="validationForm()">
+        <form class="form-contact" id="form" name ="form" action="https://formspree.io/f/mvonawkj"  method="POST">
           
                   <input class= "form-input" type="text" id="username" name="username" placeholder="type name" required maxlength="30" minlength = "5" required/>
                
                   <input class= "form-input" type="email" id="email" name="email" placeholder="type email" minlength = "5" required/>
 
-                  <textarea class= "form-input" id="msg" name="user_message" placeholder="write your message here" maxlength="500" minlength = "5" required ></textarea>
+                  <textarea class= "form-input" id="msg" name="msg" placeholder="write your message here" maxlength="500" minlength = "5" required ></textarea>
                 
             <div class="error" id="error"> Email should be written in lower case</div>
             <div class="box-button-contact">
@@ -336,5 +325,3 @@
 <script src="./main.js"></script>
 </body>
 </html>
-
-
