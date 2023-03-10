@@ -119,14 +119,13 @@ const SavinLocalStorage = () => {
   } else {
     return false;
   }
+  return InputData;
 };
 
 // Input filled
 
 window.addEventListener('load', () => {
   
-  console.log('click')
-    
   const dataString = localStorage.getItem('InputData');
 
   const formData = JSON.parse(dataString);
@@ -139,7 +138,6 @@ window.addEventListener('load', () => {
     const value = formData[element.name];
     if (value !== undefined) {
       element.value = value;
-      console.log(value);
     }
   }
 });
