@@ -240,6 +240,7 @@ const effectsOnModalWeb = () => {
   });
 };
 
+
 const closeModalWeb = () => {
   const modalTemplateWeb = document.getElementById('modal-template-web');
   modalTemplateWeb.style.display = 'none';
