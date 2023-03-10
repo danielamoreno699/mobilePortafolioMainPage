@@ -107,8 +107,8 @@ const projectDetailList = [
 
 const SavinLocalStorage = () => {
   const form = document.getElementById('form');
-  const InputData = {
 
+  const InputData = {
     username: form.elements.username.value,
     email: form.elements.email.value,
     msg: form.elements.msg.value,
@@ -119,8 +119,14 @@ const SavinLocalStorage = () => {
   } else {
     return false;
   }
+};
 
-  window.addEventListener('load', () => {
+// Input filled
+
+window.addEventListener('load', () => {
+  
+  console.log('click')
+    
   const dataString = localStorage.getItem('InputData');
 
   const formData = JSON.parse(dataString);
@@ -137,7 +143,6 @@ const SavinLocalStorage = () => {
     }
   }
 });
-};
 
 // stric check of str
 
