@@ -112,7 +112,7 @@ body {
 }
 
 .effect-icon {
-  left: 77%;
+  left: 89%;
   position: absolute;
   margin-top: 5%;
 }
@@ -183,6 +183,10 @@ body {
 
 .media_item:hover {
   transform: translateY(-10px);
+}
+
+#OverlayoutNav{
+  display: none;
 }
 
 /* styles of section card */

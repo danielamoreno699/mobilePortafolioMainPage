@@ -14,7 +14,6 @@ const openMenu = () => {
   overlayout.style.top = '0';
   overlayout.style.left = '0';
   overlayout.style.width = '100%';
-  overlayout.style.height = '84%';
   overlayout.style.display = 'flex';
   overlayout.className = ('backgroundNav');
 
@@ -139,6 +138,8 @@ const onMediaQueryModal = (width) => {
   }
   return false;
 };
+//
+
 
 // function to display Modal depending on media query size
 const onMediaQueryModalMobile = (width) => {
@@ -158,21 +159,6 @@ const effectsOnMobile = () => {
   Array.from(arBtns).forEach((el) => {
     el.addEventListener('click', () => {
       modalTemplateMobile.style.display = 'block';
-
-      document.getElementById('main-page-text').style.filter = 'blur(5px)';
-      const toolbar = document.getElementById('toolbar');
-      toolbar.style.backgroundColor = '#C1C7D0';
-      toolbar.style.opacity = '0.7';
-
-      const navbar = document.getElementById('navbar');
-      navbar.style.backgroundColor = '#C1C7D0';
-      navbar.style.opacity = '0.7';
-
-      const mainPage = document.getElementById('main-page');
-      mainPage.style.backgroundColor = '#C1C7D0';
-
-      modalTemplateMobile.style.left = ('13%');
-      modalTemplateMobile.style.top = ('-88%');
       modalTemplateMobile.style.position = ('relative');
       modalTemplateMobile.style.zIndex = '1';
       modalTemplateMobile.style.opacity = ('1');
@@ -185,18 +171,6 @@ const effectsOnMobile = () => {
 const MobileModalClose = () => {
   const modalTemplateMobile = document.getElementById('modal-template-mobile');
   modalTemplateMobile.style.display = ('none');
-
-  document.getElementById('main-page-text').style.filter = 'blur(0px)';
-  const toolbar = document.getElementById('toolbar');
-  toolbar.style.backgroundColor = 'white';
-  toolbar.style.opacity = '1';
-
-  const navbar = document.getElementById('navbar');
-  navbar.style.backgroundColor = 'white';
-  navbar.style.opacity = '1';
-
-  const mainPage = document.getElementById('main-page');
-  mainPage.style.backgroundColor = 'white';
 };
 
 // function to pop up modal web
@@ -208,55 +182,24 @@ const effectsOnModalWeb = () => {
   Array.from(arBtns).forEach((el) => {
     el.addEventListener('click', () => {
       modalTemplateWeb.style.display = 'block';
-
-
-      //document.getElementById('about').style.display = ('none');
-      //document.getElementById('contact').style.display = ('none');
-
       const body = document.querySelector('body');
       body.style.backgroundColor = ('rgb(227, 227, 227)');
       body.style.size = ('100%');
-
-
-      // document.getElementById('main-page-text').style.filter = 'blur(5px)';
-      // const toolbar = document.getElementById('toolbar');
-      // toolbar.style.backgroundColor = '#C1C7D0';
-      // toolbar.style.opacity = '0.7';
-
-      // const navbar = document.getElementById('navbar');
-      // navbar.style.backgroundColor = '#C1C7D0';
-      // navbar.style.opacity = '0.7';
-
-      // const mainPage = document.getElementById('main-page');
-      // mainPage.style.backgroundColor = '#C1C7D0';
-      // mainPage.style.opacity = '1';
-
-      // modalTemplateWeb.style.left = ('-27%');
-      // modalTemplateWeb.style.top = ('-86px');
-      // modalTemplateWeb.style.height = ('105%');
     });
   });
 };
 
-
 const closeModalWeb = () => {
   const modalTemplateWeb = document.getElementById('modal-template-web');
   modalTemplateWeb.style.display = 'none';
-
-  // document.getElementById('main-page-text').style.filter = 'blur(5px)';
-  // const toolbar = document.getElementById('toolbar');
-  // toolbar.style.backgroundColor = 'white';
-  // toolbar.style.opacity = '1';
-
-  // const navbar = document.getElementById('navbar');
-  // navbar.style.backgroundColor = 'white';
-  // navbar.style.opacity = '1';
-
-  // const mainPage = document.getElementById('main-page');
-  // mainPage.style.backgroundColor = 'white';
-  // mainPage.style.opacity = '1';
-  // document.getElementById('main-page-text').style.filter = 'blur(0px)';
 };
+
+//
+window.addEventListener('load', () => {
+  closeModalWeb();
+  MobileModalClose();
+  console.log('window');
+});
 
 // function of modal pop up window
 const onProjectButtonClick = (idProject, event) => {
@@ -265,9 +208,11 @@ const onProjectButtonClick = (idProject, event) => {
 
   if ((onMediaQueryModal(event.screenX)) === true) {
     effectsOnModalWeb();
+    console.log('max')
   }
   if ((onMediaQueryModalMobile(event.screenX)) === true) {
     effectsOnMobile();
+    console.log('min')
   }
 
   const detail = projectDetailList.find((detail) => detail.id === idProject);
