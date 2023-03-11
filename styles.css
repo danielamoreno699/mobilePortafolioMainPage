@@ -188,44 +188,8 @@ body {
   transform: translateY(-10px);
 }
 
-<<<<<<< HEAD
 #OverlayoutNav {
   display: none;
-=======
-/* Overlayout Menu */
-#OverlayoutNav {
-  display: none;
-}
-
-/* styles of section card */
-
-.section-card {
-  width: 100%;
-  background: #f7f7f9;
-  top: -4px;
-  position: relative;
-}
-
-.card-container {
-  display: grid;
-  grid-template-rows: auto auto auto auto;
-  padding-top: 116px;
-  padding-bottom: 96px;
-  row-gap: 20px;
-}
-
-.card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 16px;
-  gap: 12px;
-  width: 295px;
-  height: auto;
-  border: 1px solid #dfe1e6;
-  border-radius: 16px;
-  background: #fff;
->>>>>>> master
 }
 
 /* styles of section card */
@@ -353,6 +317,27 @@ body {
   border-radius: 8px;
 }
 
+.btn-card {
+  font-family: 'Poppins', serif;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #396df2;
+  background: transparent;
+  width: 8rem;
+  background-color: white;
+  border: 1px solid #6070ff;
+  border-radius: 10px;
+  height: 3rem;
+  font-size: 1.3rem;
+  text-transform: capitalize;
+  -webkit-text-stroke: 0.3px;
+}
+
 .modal-box-buttons-group {
   display: flex;
   justify-content: space-between;
@@ -381,26 +366,6 @@ body {
   border-radius: 10px;
   width: 100%;
   height: 2rem;
-}
-
-.btn-card {
-  width: 8rem;
-  background-color: white;
-  border: 1px solid #6070ff;
-  border-radius: 10px;
-  height: 3rem;
-  color: #6070ff;
-  font-size: 1.3rem;
-  text-transform: capitalize;
-  -webkit-text-stroke: 0.3px;
-  font-family: 'Poppins', serif;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 24px;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  letter-spacing: 0.03em;
 }
 
 .btn-card:hover {
@@ -849,10 +814,10 @@ textarea:invalid {
     column-gap: 1rem;
     row-gap: 7rem;
     margin-top: 0;
+    box-shadow: 0 0 134px -28px rgb(0, 0, 0) !important;
   }
 
   .personal-description-container {
-    /* left: 7%; */
     left: 20%;
     display: block;
     flex-direction: column;
@@ -1032,11 +997,6 @@ textarea:invalid {
     margin-top: 40px;
   }
 
-  .personal-description {
-    box-shadow: 0 0 134px -28px rgb(0, 0, 0) !important;
-    width: 100%;
-  }
-
   .text,
   .container-btns,
   .modal-container-btns {
@@ -1089,6 +1049,10 @@ textarea:invalid {
   .language-technologies-button {
     align-items: center;
     width: 90%;
+  }
+
+  .personal-description {
+    width: 100%;
   }
 
   .personal-description-container {
@@ -1173,7 +1137,6 @@ textarea:invalid {
 }
 
 .card-container {
-  /* change here */
   width: 80%;
   height: auto;
   display: flex;

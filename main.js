@@ -1,5 +1,6 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable no-plusplus */
+
 const arBtns = document.getElementsByClassName('btn-card');
 const overlayout = document.getElementById('OverlayoutNav');
 
@@ -18,9 +19,12 @@ const openMenu = () => {
   overlayout.className = ('backgroundNav');
 
   const layoutHtml = `
+
     <a class="close-btn" id="cross-icon" onclick="closeMenu()" >
     <span class="effect-icon" style="font-size: 28px; color: #ffffff;">&times;</span>
+
     <div class="effect-ul" id="layout-content">
+
         <li class="pop-nav"> <a href="#portafolio" class="effect-li" onclick="closeMenu()">Portafolio</a></li>
         <li class="pop-nav"> <a href="#about" class="effect-li" onclick="closeMenu()">About</a></li>
         <li class="pop-nav"> <a href="#contact" class="effect-li" onclick="closeMenu()">Contact</a></li>
@@ -41,8 +45,6 @@ const closeMenu = () => {
     union.style.display = 'block';
   }
 };
-
-// // stric check of str
 
 const checkLowerCase = (str) => {
   const check = str.toString().toLowerCase();
@@ -137,7 +139,7 @@ const projectDetailList = [
 
 const sectionCard = document.querySelector('.section-card');
 
-projectDetailList.forEach((card) => {
+projectDetailList.forEach((card, i) => {
   const newCard = document.createElement('div'); // We create a new element in this case; Div
   newCard.classList.add('card-container', 'justify-center'); // We add a class to the element in this case; card-container
   newCard.innerHTML = `
@@ -189,7 +191,6 @@ const onMediaQueryModalMobile = (width) => {
   return false;
 };
 
-<<<<<<< HEAD
 const effectsOnMobile = () => {
   const backgroundModalmobile = document.getElementById('modal-wraper-mobile');
 
@@ -206,60 +207,10 @@ const effectsOnMobile = () => {
       backgroundModalmobile.style.width = ('100%');
       backgroundModalmobile.style.overflow = ('auto');
       backgroundModalmobile.style.background = ('rgba(0,0,0,0.2)');
-=======
-const form = document.getElementById('form');
-form.addEventListener('submit', validateInputEmail);
-
-// function to display Modal depending on media query size
-const onMediaQueryModal = (width) => {
-  if (window.matchMedia('(min-width: 767px)').matches) {
-    return true;
-  }
-  return false;
-};
-
-// function to display Modal depending on media query size
-const onMediaQueryModalMobile = (width) => {
-  if (window.matchMedia('(max-width: 767px)').matches) {
-    return true;
-  }
-  return false;
-};
-
-// function of pop up modal mobile
-
-const effectsOnMobile = () => {
-  const modalTemplateMobile = document.getElementById('modal-template-mobile');
-
-  const arBtns = document.getElementsByClassName('btn-card');
-
-  Array.from(arBtns).forEach((el) => {
-    el.addEventListener('click', () => {
-      modalTemplateMobile.style.display = 'block';
-
-      document.getElementById('main-page-text').style.filter = 'blur(5px)';
-      const toolbar = document.getElementById('toolbar');
-      toolbar.style.backgroundColor = '#C1C7D0';
-      toolbar.style.opacity = '0.7';
-
-      const navbar = document.getElementById('navbar');
-      navbar.style.backgroundColor = '#C1C7D0';
-      navbar.style.opacity = '0.7';
-
-      const mainPage = document.getElementById('main-page');
-      mainPage.style.backgroundColor = '#C1C7D0';
-
-      modalTemplateMobile.style.left = ('13%');
-      modalTemplateMobile.style.top = ('-88%');
-      modalTemplateMobile.style.position = ('relative');
-      modalTemplateMobile.style.zIndex = '1';
-      modalTemplateMobile.style.opacity = ('1');
->>>>>>> master
     });
   });
 };
 
-<<<<<<< HEAD
 const MobileModalClose = () => {
   const backgroundModalmobile = document.getElementById('modal-wraper-mobile');
   const modalTemplateMobile = document.getElementById('modal-template-mobile');
@@ -288,96 +239,20 @@ const effectsOnModalWeb = () => {
 
   const modalTemplateWeb = document.getElementById('modal-template-web');
   modalTemplateWeb.style.display = ('block');
-=======
-// function to close mobile modal window
-
-const MobileModalClose = () => {
-  const modalTemplateMobile = document.getElementById('modal-template-mobile');
-  modalTemplateMobile.style.display = ('none');
-
-  document.getElementById('main-page-text').style.filter = 'blur(0px)';
-  const toolbar = document.getElementById('toolbar');
-  toolbar.style.backgroundColor = 'white';
-  toolbar.style.opacity = '1';
-
-  const navbar = document.getElementById('navbar');
-  navbar.style.backgroundColor = 'white';
-  navbar.style.opacity = '1';
-
-  const mainPage = document.getElementById('main-page');
-  mainPage.style.backgroundColor = 'white';
-};
-
-// function to pop up modal web
-
-const effectsOnModalWeb = () => {
-  const modalTemplateWeb = document.getElementById('modal-template-web');
-  const arBtns = document.getElementsByClassName('btn-card');
->>>>>>> master
 
   Array.from(arBtns).forEach((el) => {
     el.addEventListener('click', () => {
       modalTemplateWeb.style.display = 'block';
-<<<<<<< HEAD
-=======
-
-      document.getElementById('toolbar').style.display = ('none');
-      document.getElementById('portafolio').style.display = ('none');
-      document.getElementById('main-page-conatiner').style.display = ('none');
-      //document.getElementById('about').style.display = ('none');
-      //document.getElementById('contact').style.display = ('none');
-
-      const body = document.querySelector('body');
-      body.style.backgroundColor = ('rgb(227, 227, 227)');
-      body.style.size = ('100%');
-
-
-      // document.getElementById('main-page-text').style.filter = 'blur(5px)';
-      // const toolbar = document.getElementById('toolbar');
-      // toolbar.style.backgroundColor = '#C1C7D0';
-      // toolbar.style.opacity = '0.7';
-
-      // const navbar = document.getElementById('navbar');
-      // navbar.style.backgroundColor = '#C1C7D0';
-      // navbar.style.opacity = '0.7';
-
-      // const mainPage = document.getElementById('main-page');
-      // mainPage.style.backgroundColor = '#C1C7D0';
-      // mainPage.style.opacity = '1';
-
-      // modalTemplateWeb.style.left = ('-27%');
-      // modalTemplateWeb.style.top = ('-86px');
-      // modalTemplateWeb.style.height = ('105%');
->>>>>>> master
     });
   });
 };
 
 const closeModalWeb = () => {
-<<<<<<< HEAD
   const backgroundModalWeb = document.getElementById('modal-wraper-web');
   backgroundModalWeb.style.display = 'none';
 
   const modalTemplateWeb = document.getElementById('modal-template-web');
   modalTemplateWeb.style.display = 'none';
-=======
-  const modalTemplateWeb = document.getElementById('modal-template-web');
-  modalTemplateWeb.style.display = 'none';
-
-  document.getElementById('main-page-text').style.filter = 'blur(5px)';
-  const toolbar = document.getElementById('toolbar');
-  toolbar.style.backgroundColor = 'white';
-  toolbar.style.opacity = '1';
-
-  const navbar = document.getElementById('navbar');
-  navbar.style.backgroundColor = 'white';
-  navbar.style.opacity = '1';
-
-  const mainPage = document.getElementById('main-page');
-  mainPage.style.backgroundColor = 'white';
-  mainPage.style.opacity = '1';
-  document.getElementById('main-page-text').style.filter = 'blur(0px)';
->>>>>>> master
 };
 
 // function of modal pop up window
@@ -403,7 +278,6 @@ const onProjectButtonClick = (idProject, event) => {
 
   // dynamic template for mobile
   const detailHtmlMobile = `
-<<<<<<< HEAD
 
   <button class="close-btn-mobile"  onclick="MobileModalClose()">&times;</button>
   <div class="modal-header"  id="modal-heading-${detail.id}" >
@@ -447,49 +321,11 @@ const onProjectButtonClick = (idProject, event) => {
   </div>
  
     `;
-=======
-  <div class="modal-header"  id="modal-${detail.id}" >
-  <span onclick="MobileModalClose()" >&times;</span>
-      <img class="img-modal" src= ${detail.imageLink2} alt="">
-  </div>
-  <div class="modal-body">
-      <h3 class="modal-title"> ${detail.name} </h3>
-          <div class="modal-text">    
-              <p class="modal-text-element one"> ${detail.company} </p>
-              <p class="modal-text-element two"> ${detail.role}</p>
-              <p class="modal-text-element"> ${detail.year}</p>
-          </div>  
-           <p class="modal-description">  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent</p>          
-           <div class="modal-container-btns">
-              <ul class="modal-button-group">
-                   ${projectString}      
-              </ul> 
-          </div>
-          <div class="modal-box-buttons-group" >
-              <div class="modal-box-button">
-                  <button class="btn-modal">
-                    See live
-                    <img class="img-btn src"src="./assets/githubblue.png" alt="">
-                  </button>
-              </div>
-              <div class="modal-box-button">
-                  <button class="btn-modal">
-                    See source
-                    <img class="img-btn src"src="./assets/githubblue.png" alt="">
-                  </button>
-              </div>
-            
-          </div>
-  </div>
-  
-   `;
->>>>>>> master
 
   modalTemplateMobile.innerHTML = detailHtmlMobile;
 
   // dynamic template for web
   const detailHtmlWebModal = `
-<<<<<<< HEAD
   <div class="modal-header-web" id="modal-${detail.id}">
   <h2 class="modal-title-web" > ${detail.name} </h2>
   <button class="close-btn-web"  onclick="closeModalWeb()" >&times;</button>
@@ -535,53 +371,3 @@ const onProjectButtonClick = (idProject, event) => {
   `;
   modalTemplateWeb.innerHTML = detailHtmlWebModal;
 };
-=======
-  <div class="modal-header-web " id="modal-heading-${detail.id}">
-  <div class="modal-text-content-web">
-      <h2 class="modal-title-web" > ${detail.name}</h2>
-      <span onclick="closeModalWeb()" >&times;</span>
-  </div>
-      <div class="modal-text-web">    
-          <p class="modal-text-element-web one"> ${detail.company} </p>
-           
-          <p class="modal-text-element-web two">${detail.role}</p>
-           
-          <p class="modal-text-element-web">${detail.year}</p>
-      </div>
-  <img class="modal-img"src=${detail.imageLink2} alt="" style="height: 586px; width: 1108px">
-  </div>
-  <div class="modal-body-web"> 
-      <p class="modal-description-web">
-      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea
-      </p>          
-      <!--Here starts labels and button-->
-      <div class="modal-container-btns-web">
-              
-              <ul class="modal-button-group-web">
-                  ${projectString}
-              </ul> 
-      
-          <div class="modal-box-buttons-group-web">
-             <div class="modal-box-button-web">
-                  <button class="btn-modal-web">
-                    See live
-                    <img class="img-btn live"src="./assets/githubblue.png" alt="">
-                  </button>
-              </div>
-              
-              <div class="modal-box-button-web">
-                  <button class="btn-modal-web">
-                    See Source
-                    <img class="img-btn src"src="./assets/githubblue.png" alt="">
-                  </button>
-              </div>
-          </div>
-          
-      </div>
-  
-  </div>
-  `;
-  modalTemplateWeb.innerHTML = detailHtmlWebModal;
-};
-
->>>>>>> master

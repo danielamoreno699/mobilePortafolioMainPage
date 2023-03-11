@@ -1,3 +1,4 @@
+
 .container-modal-web {
   background-color: white;
   width: 1156px;
@@ -47,10 +48,6 @@ span {
   content: url(./assets/Counter.png);
   font-size: 14px;
   left: 15px;
-}
-
-.one {
-  font-weight: 1000;
 }
 
 .two::after {
