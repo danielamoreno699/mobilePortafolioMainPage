@@ -147,6 +147,12 @@ https://www.loom.com/share/a216f873fd7d4276a8e5a62378c82584
 - GitHub: [@daniela](https://github.com/danielamoreno699)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/daniela-moreno-06a139124/)
 
+👤 **Federica Ulzurrun**
+
+- GitHub: [@federicaulzurrun](https://github.com/federicaulzurrun)
+- Twitter: [@ulzurrunfede](https://mobile.twitter.com/ulzurrunfede)
+- LinkedIn: [Federica Ulzurrun](https://www.linkedin.com/in/federica-ulzurrun-293a86198)
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
