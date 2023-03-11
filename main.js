@@ -1,5 +1,7 @@
+/* eslint-disable no-unused-vars */
 /* eslint-disable no-plusplus */
-
+const arBtns = document.getElementsByClassName('btn-card');
+const overlayout = document.getElementById('OverlayoutNav');
 
 const openMenu = () => {
   document.getElementById('brand').style.filter = 'blur(5px)';
@@ -7,7 +9,6 @@ const openMenu = () => {
   document.getElementById('main-page').style.opacity = '0.7';
   document.getElementById('union').style.display = 'none';
 
-  const overlayout = document.getElementById('OverlayoutNav');
   overlayout.style.zIndex = '1';
   overlayout.style.position = 'absolute';
   overlayout.style.top = '0';
@@ -37,69 +38,12 @@ const closeMenu = () => {
   document.getElementById('brand').style.filter = 'blur(0px)';
   document.getElementById('main-page-text').style.filter = 'blur(0px)';
   document.getElementById('main-page').style.opacity = '1';
-  const overlayout = document.getElementById('OverlayoutNav');
   overlayout.style.display = 'none';
 
   if (union) {
     union.style.display = 'block';
   }
 };
-
-// // data of projects
-const projectDetailList = [
-  {
-    id: 0,
-    name: 'Tonic',
-    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    imageLink: './assets/Portfolio.png',
-    imageLink2: './assets/SnapshootPortfolio1.png',
-    technologies: ['html', 'css', 'javascript'],
-    role: 'Back end dev',
-    company: 'canopy',
-    year: '2015',
-    sourceLink: '#',
-    demoLink: '#',
-  },
-  {
-    id: 1,
-    name: 'Multi-post stories',
-    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    imageLink: './assets/Portfolio2.png',
-    imageLink2: './assets/snapshotPortafolio2.png',
-    technologies: ['html', 'css', 'javascript'],
-    role: 'Full Stack Dev',
-    company: 'Facebook',
-    year: '2015',
-    sourceLink: '#',
-    demoLink: '#',
-  },
-  {
-    id: 2,
-    name: 'Facebook 360',
-    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. ',
-    imageLink: './assets/Portfolio3.png',
-    imageLink2: './assets/SnapshootPortfolio3.png',
-    technologies: ['html', 'css', 'javascript'],
-    role: 'Back end Dev',
-    company: 'Facebook',
-    year: '2015',
-    sourceLink: '#',
-    demoLink: '#',
-  },
-  {
-    id: 3,
-    name: 'Uber Navigation',
-    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    imageLink: './assets/Portfolio4.png',
-    imageLink2: './assets/SnapshootPortfolio4.png',
-    technologies: ['html', 'css', 'javascript'],
-    role: 'Lead developer',
-    company: 'Uber',
-    year: '2018',
-    sourceLink: '#',
-    demoLink: '#',
-  },
-];
 
 // // stric check of str
 
@@ -131,50 +75,106 @@ const form = document.getElementById('form');
 form.addEventListener('submit', validateInputEmail);
 
 // Displaying card dynamically
-// eslint-disable-next-line no-unused-vars
-projectDetailList.forEach((card, index) =>{ 
-const gridBox = document.getElementById('portfolio');
-const projectBox = document.createElement('div');
-projectBox.classList.add('.card-container');
-projectBox.innerHTML = `
+const projectDetailList = [
+  {
+    id: 0,
+    name: 'Tonic',
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    imageLink: 'assets/card0.png',
+    technologies: ['html', 'css', 'javascript'],
+    role: 'Back end dev',
+    company: 'canopy',
+    year: '2015',
+    sourceLink: '#',
+    demoLink: '#',
+  },
+  {
+    id: 1,
+    name: 'Multi-post stories',
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    imageLink: 'assets/card1.png',
+    technologies: ['html', 'css', 'javascript'],
+    role: 'Full Stack Dev',
+    company: 'Facebook',
+    year: '2015',
+    sourceLink: '#',
+    demoLink: '#',
+  },
+  {
+    id: 2,
+    name: 'Facebook 360',
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. ',
+    imageLink: 'assets/card2.png',
+    technologies: ['html', 'css', 'javascript'],
+    role: 'Back end Dev',
+    company: 'Facebook',
+    year: '2015',
+    sourceLink: '#',
+    demoLink: '#',
+  },
+  {
+    id: 3,
+    name: 'Uber Navigation',
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    imageLink: 'assets/card3.png',
+    technologies: ['html', 'css', 'javascript'],
+    role: 'Lead developer',
+    company: 'Uber',
+    year: '2018',
+    sourceLink: '#',
+    demoLink: '#',
+  },
+  {
+    id: 4,
+    name: 'Uber Navigation',
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    imageLink: 'assets/card3.png',
+    technologies: ['html', 'css', 'javascript'],
+    role: 'Lead developer',
+    company: 'Uber',
+    year: '2018',
+    sourceLink: '#',
+    demoLink: '#',
+  },
+];
 
-  <div class="card card1">
-  <div class="card-header header-1">
-      <img class="card-img img-portafolio-1"src=${card.imageLink2} alt="">
-  </div>
+const sectionCard = document.querySelector('.section-card');
 
-  <div class="card-body">
-      <h3 class="card-title">${card.name}</h3>
-          <div class="text">    
-              <p class="text-element one"> ${card.company} </p>
-               
-              <p class="text-element">${card.role}</p>
-              
-              <p class="text-element">${card.year}</p>
-          </div>
-      <p class="card-description">
-          A daily selection of privately personalized reads; no accounts or sign-ups required.
-      </p>          
-      <!--Here starts labels and button-->
-          <div class="container-btns">
-              <div class="buttons-are">
-              <ul class="button-group">
-                  
-              </ul> 
-          </div>
-          <div class="box-button">
-              <button id="myBtnModal" class="btn-card" onclick="onProjectButtonClick(1, event)">
-                         See project 
-              </button>
-           </div>
+projectDetailList.forEach((card) => {
+  const newCard = document.createElement('div'); // We create a new element in this case; Div
+  newCard.classList.add('card-container', 'justify-center'); // We add a class to the element in this case; card-container
+  newCard.innerHTML = `
+    <div class="card-img">
+    <div class="card-img" style="background-image: url(${card.imageLink})"></div>
+    </div>
+    <div class="card-content">
+      <h2 class="card-title poppins no-margin no-padding">${card.name}</h2>
+      <div class="tags-cont">
+        <p class="card-tag">${card.company}</p>
+        <img src="assets/separator.png" alt="" class="tag-separator">
+        <p class="card-tag">${card.role}</p>
+        <img src="assets/separator.png" alt="" class="tag-separator">
+        <p class="card-tag">${card.year}</p>
       </div>
-  </div>
-  </div>
-  `;
+      <p class="card-desc"> A daily selection of privately personalized reads; no accounts or sign-ups required.
+      </p>
+      <ul class="technologies">
+        <li class="tech">html</li>
+        <li class="tech">css</li>
+        <li class="tech">javascript</li>
+      </ul>
+      <button id="myBtnModal" class="btn-card" onclick="onProjectButtonClick(${card.id}, event)">
+        See project
+      </button>
+    </div>
 
-  console.log(gridBox)
-  gridBox.append(projectBox);
-})
+  `;
+  sectionCard.appendChild(newCard);
+});
+
+// ID, NAME, DESCRIPTION, IMAGELINK
+// TECHNOLOGIES, ROLE, COMPANY, YEAR
+// SOURCELINK, DEMOLINK
 
 // function to display Modal depending on media query size
 const onMediaQueryModal = (width) => {
@@ -197,8 +197,6 @@ const effectsOnMobile = () => {
 
   const modalTemplateMobile = document.getElementById('modal-template-mobile');
 
-  const arBtns = document.getElementsByClassName('btn-card');
-
   Array.from(arBtns).forEach((el) => {
     el.addEventListener('click', () => {
       modalTemplateMobile.style.display = 'block';
@@ -208,7 +206,6 @@ const effectsOnMobile = () => {
       backgroundModalmobile.style.zIndex = ('1');
       backgroundModalmobile.style.top = ('0');
       backgroundModalmobile.style.width = ('100%');
-      /*backgroundModalmobile.style.height = ('100%');*/
       backgroundModalmobile.style.overflow = ('auto');
       backgroundModalmobile.style.background = ('rgba(0,0,0,0.2)');
     });
@@ -221,7 +218,6 @@ const MobileModalClose = () => {
 
   modalTemplateMobile.style.display = ('none');
   backgroundModalmobile.style.display = ('initial');
-  backgroundModalmobile.style.backdropFilter = '';
   backgroundModalmobile.style.position = '';
   backgroundModalmobile.style.zIndex = '';
   backgroundModalmobile.style.top = '';
@@ -229,7 +225,6 @@ const MobileModalClose = () => {
   backgroundModalmobile.style.height = '';
   backgroundModalmobile.style.overflow = '';
   backgroundModalmobile.style.background = '';
-
 };
 
 const effectsOnModalWeb = () => {
@@ -245,7 +240,6 @@ const effectsOnModalWeb = () => {
 
   const modalTemplateWeb = document.getElementById('modal-template-web');
   modalTemplateWeb.style.display = ('block');
-  const arBtns = document.getElementsByClassName('btn-card');
 
   Array.from(arBtns).forEach((el) => {
     el.addEventListener('click', () => {
@@ -288,11 +282,11 @@ const onProjectButtonClick = (idProject, event) => {
 
   <button class="close-btn-mobile"  onclick="MobileModalClose()">&times;</button>
   <div class="modal-header"  id="modal-heading-${detail.id}" >
-      <img class="img-modal" src=${detail.imageLink2} alt="">
+      <img class="img-modal" src=${detail.imageLink} alt="">
   </div>
 
-<div class="modal-content-mobile">
   <h3 class="modal-title"> ${detail.name} </h3>
+<div class="modal-content-mobile">
   <div class="modal-text">    
       <p class="modal-text-element one"> ${detail.company} </p>
       <p class="modal-text-element two"> ${detail.role}</p>
@@ -345,7 +339,7 @@ const onProjectButtonClick = (idProject, event) => {
        
       <p class="modal-text-element-web">${detail.year}</p>
   </div>
-  <img class="modal-img"src= ${detail.imageLink2} alt="" style="height: 586px; width: 1108px">
+  <img class="modal-img"src= ${detail.imageLink} alt="" style="width: 90%">
 </div>
 
 <div class="modal-body-web"> 
