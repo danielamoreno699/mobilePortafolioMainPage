@@ -1,4 +1,7 @@
+/* eslint-disable no-plusplus */
 /* eslint-disable no-unused-vars */
+/* eslint linebreak-style: ["error", "windows"] */
+
 const openMenu = () => {
   document.getElementById('brand').style.filter = 'blur(5px)';
   document.getElementById('main-page-text').style.filter = 'blur(7px)';
@@ -16,12 +19,9 @@ const openMenu = () => {
   overlayout.className = ('backgroundNav');
 
   const layoutHtml = `
-
     <a class="close-btn" id="cross-icon" onclick="closeMenu()" >
     <span class="effect-icon" style="font-size: 28px; color: #ffffff;">&times;</span>
-
     <div class="effect-ul" id="layout-content">
-
         <li class="pop-nav"> <a href="#portafolio" class="effect-li" onclick="closeMenu()">Portafolio</a></li>
         <li class="pop-nav"> <a href="#about" class="effect-li" onclick="closeMenu()">About</a></li>
         <li class="pop-nav"> <a href="#contact" class="effect-li" onclick="closeMenu()">Contact</a></li>
@@ -38,11 +38,70 @@ const closeMenu = () => {
   document.getElementById('main-page').style.opacity = '1';
   const overlayout = document.getElementById('OverlayoutNav');
   overlayout.style.display = 'none';
+
   if (union) {
     union.style.display = 'block';
   }
 };
+
+// data of projects
+const projectDetailList = [
+  {
+    id: 0,
+    name: 'Tonic',
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    imageLink: './assets/Portfolio.png',
+    imageLink2: './assets/SnapshootPortfolio1.png',
+    technologies: ['html', 'css', 'javascript'],
+    role: 'Back end dev',
+    company: 'canopy',
+    year: '2015',
+    sourceLink: '#',
+    demoLink: '#',
+  },
+  {
+    id: 1,
+    name: 'Multi-post stories',
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    imageLink: './assets/Portfolio2.png',
+    imageLink2: './assets/snapshotPortafolio2.png',
+    technologies: ['html', 'css', 'javascript'],
+    role: 'Full Stack Dev',
+    company: 'Facebook',
+    year: '2015',
+    sourceLink: '#',
+    demoLink: '#',
+  },
+  {
+    id: 2,
+    name: 'Facebook 360',
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. ',
+    imageLink: './assets/Portfolio3.png',
+    imageLink2: './assets/Snapshoot Portfolio3.png',
+    technologies: ['html', 'css', 'javascript'],
+    role: 'Back end Dev',
+    company: 'Facebook',
+    year: '2015',
+    sourceLink: '#',
+    demoLink: '#',
+  },
+  {
+    id: 3,
+    name: 'Uber Navigation',
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    imageLink: './assets/Portfolio4.png',
+    imageLink2: './assets/Snapshoot Portfolio4.png',
+    technologies: ['html', 'css', 'javascript'],
+    role: 'Lead developer',
+    company: 'Uber',
+    year: '2018',
+    sourceLink: '#',
+    demoLink: '#',
+  },
+];
+
 // stric check of str
+
 const checkLowerCase = (str) => {
   const check = str.toString().toLowerCase();
   if (str === check) {
@@ -70,58 +129,241 @@ const validateInputEmail = (e) => {
 const form = document.getElementById('form');
 form.addEventListener('submit', validateInputEmail);
 
-document.addEventListener('DOMContentLoaded', () => {
-  form.addEventListener('submit', validateInputEmail);
+// function to display Modal depending on media query size
+const onMediaQueryModal = (width) => {
+  if (window.matchMedia('(min-width: 767px)').matches) {
+    return true;
+  }
+  return false;
+};
 
-  const formInput = JSON.parse(localStorage.getItem('formInput'));
-  const formStorage = {
-    name: '',
-    mail: '',
-    text: '',
-  };
-  const name = document.getElementById('username');
-  const mail = document.getElementById('email');
-  const text = document.getElementById('msg');
+// function to display Modal depending on media query size
+const onMediaQueryModalMobile = (width) => {
+  if (window.matchMedia('(max-width: 767px)').matches) {
+    return true;
+  }
+  return false;
+};
 
-  name.addEventListener('input', () => {
-    if (formInput) {
-      formInput.name = name.value;
-      localStorage.setItem('formInput', JSON.stringify(formInput));
-    } else {
-      formStorage.name = name.value;
-      localStorage.setItem('formInput', JSON.stringify(formStorage));
-    }
+// function of pop up modal mobile
+
+const effectsOnMobile = () => {
+  const modalTemplateMobile = document.getElementById('modal-template-mobile');
+
+  const arBtns = document.getElementsByClassName('btn-card');
+
+  Array.from(arBtns).forEach((el) => {
+    el.addEventListener('click', () => {
+      modalTemplateMobile.style.display = 'block';
+
+      document.getElementById('main-page-text').style.filter = 'blur(5px)';
+      const toolbar = document.getElementById('toolbar');
+      toolbar.style.backgroundColor = '#C1C7D0';
+      toolbar.style.opacity = '0.7';
+
+      const navbar = document.getElementById('navbar');
+      navbar.style.backgroundColor = '#C1C7D0';
+      navbar.style.opacity = '0.7';
+
+      const mainPage = document.getElementById('main-page');
+      mainPage.style.backgroundColor = '#C1C7D0';
+
+      modalTemplateMobile.style.left = ('13%');
+      modalTemplateMobile.style.top = ('-88%');
+      modalTemplateMobile.style.position = ('relative');
+      modalTemplateMobile.style.zIndex = '1';
+      modalTemplateMobile.style.opacity = ('1');
+    });
   });
+};
 
-  mail.addEventListener('input', () => {
-    if (formInput) {
-      formInput.mail = mail.value;
-      localStorage.setItem('formInput', JSON.stringify(formInput));
-    } else {
-      formStorage.mail = mail.value;
-      localStorage.setItem('formInput', JSON.stringify(formStorage));
-    }
+// function to close mobile modal window
+
+const MobileModalClose = () => {
+  const modalTemplateMobile = document.getElementById('modal-template-mobile');
+  modalTemplateMobile.style.display = ('none');
+
+  document.getElementById('main-page-text').style.filter = 'blur(0px)';
+  const toolbar = document.getElementById('toolbar');
+  toolbar.style.backgroundColor = 'white';
+  toolbar.style.opacity = '1';
+
+  const navbar = document.getElementById('navbar');
+  navbar.style.backgroundColor = 'white';
+  navbar.style.opacity = '1';
+
+  const mainPage = document.getElementById('main-page');
+  mainPage.style.backgroundColor = 'white';
+};
+
+// function to pop up modal web
+
+const effectsOnModalWeb = () => {
+  const modalTemplateWeb = document.getElementById('modal-template-web');
+  const arBtns = document.getElementsByClassName('btn-card');
+
+  Array.from(arBtns).forEach((el) => {
+    el.addEventListener('click', () => {
+      modalTemplateWeb.style.display = 'block';
+
+      document.getElementById('toolbar').style.display = ('none');
+      document.getElementById('portafolio').style.display = ('none');
+      document.getElementById('main-page-conatiner').style.display = ('none');
+      //document.getElementById('about').style.display = ('none');
+      //document.getElementById('contact').style.display = ('none');
+
+      const body = document.querySelector('body');
+      body.style.backgroundColor = ('rgb(227, 227, 227)');
+      body.style.size = ('100%');
+
+
+      // document.getElementById('main-page-text').style.filter = 'blur(5px)';
+      // const toolbar = document.getElementById('toolbar');
+      // toolbar.style.backgroundColor = '#C1C7D0';
+      // toolbar.style.opacity = '0.7';
+
+      // const navbar = document.getElementById('navbar');
+      // navbar.style.backgroundColor = '#C1C7D0';
+      // navbar.style.opacity = '0.7';
+
+      // const mainPage = document.getElementById('main-page');
+      // mainPage.style.backgroundColor = '#C1C7D0';
+      // mainPage.style.opacity = '1';
+
+      // modalTemplateWeb.style.left = ('-27%');
+      // modalTemplateWeb.style.top = ('-86px');
+      // modalTemplateWeb.style.height = ('105%');
+    });
   });
+};
 
-  text.addEventListener('input', () => {
-    if (formInput) {
-      formInput.text = text.value;
-      localStorage.setItem('formInput', JSON.stringify(formInput));
-    } else {
-      formStorage.text = text.value;
-      localStorage.setItem('formInput', JSON.stringify(formStorage));
-    }
-  });
+const closeModalWeb = () => {
+  const modalTemplateWeb = document.getElementById('modal-template-web');
+  modalTemplateWeb.style.display = 'none';
 
-  if (formInput) {
-    document.getElementById('username').value = formInput.name;
-    document.getElementById('email').value = formInput.mail;
-    document.getElementById('msg').value = formInput.text;
+  document.getElementById('main-page-text').style.filter = 'blur(5px)';
+  const toolbar = document.getElementById('toolbar');
+  toolbar.style.backgroundColor = 'white';
+  toolbar.style.opacity = '1';
+
+  const navbar = document.getElementById('navbar');
+  navbar.style.backgroundColor = 'white';
+  navbar.style.opacity = '1';
+
+  const mainPage = document.getElementById('main-page');
+  mainPage.style.backgroundColor = 'white';
+  mainPage.style.opacity = '1';
+  document.getElementById('main-page-text').style.filter = 'blur(0px)';
+};
+
+// function of modal pop up window
+const onProjectButtonClick = (idProject, event) => {
+  const modalTemplateMobile = document.getElementById('modal-template-mobile');
+  const modalTemplateWeb = document.getElementById('modal-template-web');
+
+  if ((onMediaQueryModal(event.screenX)) === true) {
+    effectsOnModalWeb();
+  }
+  if ((onMediaQueryModalMobile(event.screenX)) === true) {
+    effectsOnMobile();
   }
 
-  if (localStorage.getItem(formInput)) {
-    document.getElementById('username').value = formInput.name;
-    document.getElementById('email').value = formInput.mail;
-    document.getElementById('msg').value = formInput.text;
+  const detail = projectDetailList.find((detail) => detail.id === idProject);
+
+  const arrayString = [];
+  for (let el = 0; el < detail.technologies.length; el++) {
+    const ListTech = `<li class="modal-btn-li">${detail.technologies[el]}</li>`;
+    arrayString.push(ListTech);
   }
-});
+  const projectString = arrayString.join('');
+
+  // dynamic template for mobile
+  const detailHtmlMobile = `
+  <div class="modal-header"  id="modal-${detail.id}" >
+  <span onclick="MobileModalClose()" >&times;</span>
+      <img class="img-modal" src= ${detail.imageLink2} alt="">
+  </div>
+  <div class="modal-body">
+      <h3 class="modal-title"> ${detail.name} </h3>
+          <div class="modal-text">    
+              <p class="modal-text-element one"> ${detail.company} </p>
+              <p class="modal-text-element two"> ${detail.role}</p>
+              <p class="modal-text-element"> ${detail.year}</p>
+          </div>  
+           <p class="modal-description">  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent</p>          
+           <div class="modal-container-btns">
+              <ul class="modal-button-group">
+                   ${projectString}      
+              </ul> 
+          </div>
+          <div class="modal-box-buttons-group" >
+              <div class="modal-box-button">
+                  <button class="btn-modal">
+                    See live
+                    <img class="img-btn src"src="./assets/githubblue.png" alt="">
+                  </button>
+              </div>
+              <div class="modal-box-button">
+                  <button class="btn-modal">
+                    See source
+                    <img class="img-btn src"src="./assets/githubblue.png" alt="">
+                  </button>
+              </div>
+            
+          </div>
+  </div>
+  
+   `;
+
+  modalTemplateMobile.innerHTML = detailHtmlMobile;
+
+  // dynamic template for web
+  const detailHtmlWebModal = `
+  <div class="modal-header-web " id="modal-heading-${detail.id}">
+  <div class="modal-text-content-web">
+      <h2 class="modal-title-web" > ${detail.name}</h2>
+      <span onclick="closeModalWeb()" >&times;</span>
+  </div>
+      <div class="modal-text-web">    
+          <p class="modal-text-element-web one"> ${detail.company} </p>
+           
+          <p class="modal-text-element-web two">${detail.role}</p>
+           
+          <p class="modal-text-element-web">${detail.year}</p>
+      </div>
+  <img class="modal-img"src=${detail.imageLink2} alt="" style="height: 586px; width: 1108px">
+  </div>
+  <div class="modal-body-web"> 
+      <p class="modal-description-web">
+      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea
+      </p>          
+      <!--Here starts labels and button-->
+      <div class="modal-container-btns-web">
+              
+              <ul class="modal-button-group-web">
+                  ${projectString}
+              </ul> 
+      
+          <div class="modal-box-buttons-group-web">
+             <div class="modal-box-button-web">
+                  <button class="btn-modal-web">
+                    See live
+                    <img class="img-btn live"src="./assets/githubblue.png" alt="">
+                  </button>
+              </div>
+              
+              <div class="modal-box-button-web">
+                  <button class="btn-modal-web">
+                    See Source
+                    <img class="img-btn src"src="./assets/githubblue.png" alt="">
+                  </button>
+              </div>
+          </div>
+          
+      </div>
+  
+  </div>
+  `;
+  modalTemplateWeb.innerHTML = detailHtmlWebModal;
+};
+

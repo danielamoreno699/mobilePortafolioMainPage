@@ -33,8 +33,8 @@
         <img class="union" src="./assets/Union.png" alt="union" id="union" onclick="openMenu()">
     </nav>
     
-   <!---Overlayout-->
-    <div class="OverlayoutNav" id="OverlayoutNav">
+    <!--overlayout div-->
+    <div class="OverlayoutNav" id="OverlayoutNav" style="display:none;">
         
     </div>
 
@@ -58,6 +58,17 @@
     </div>
 </div>
 
+    <!--here starts modal-mobile-version-->
+    <div class="modal" id="modal-template-mobile" style="display: none">
+                
+    </div>
+
+    <!--here starts modal for web version-->
+    <div class="container-modal-web" id="modal-template-web" style="display: none">
+        
+
+    </div>
+
 </section>
 
 <!--here starts Section Card-->
@@ -75,9 +86,9 @@
             <h3 class="card-title">Tonic</h3>
                 <div class="text">    
                     <p class="text-element one"> CANOPY </p>
-                     <!--- <img class="counter-png" src="./assets/Counter.png" alt=""> -->
+                     
                     <p class="text-element">Backend</p>
-                     <!--- <img class="counter-png" src="./assets/Counter.png" alt=""> -->
+                    
                     <p class="text-element">2015</p>
                 </div>
             <p class="card-description">
@@ -93,7 +104,7 @@
                     </ul> 
                 </div>
                 <div class="box-button">
-                    <button id="myBtnModal" class="btn-card" onclick="onProjectButtonClick(0)">
+                    <button id="myBtnModal" class="btn-card" onclick="onProjectButtonClick(0, event)">
                      See Project
                     </button>
                  </div>
@@ -129,7 +140,7 @@
                         </ul> 
 
                     <div class="box-button">
-                        <button class="btn-card" onclick="onProjectButtonClick(1)">
+                        <button class="btn-card" onclick="onProjectButtonClick(1, event)">
                         See Project
                         </button>
                      </div>
@@ -166,7 +177,7 @@
                         </ul> 
                     </div>
                     <div class="box-button">
-                        <button class="btn-card" onclick="onProjectButtonClick(2)">
+                        <button class="btn-card" onclick="onProjectButtonClick(2, event)">
                         See Project
                         </button>
                      </div>
@@ -202,7 +213,7 @@
                         </ul> 
 
                     <div class="box-button">
-                        <button class="btn-card" onclick="onProjectButtonClick(3)">
+                        <button class="btn-card" onclick="onProjectButtonClick(3, event)">
                         See Project
                         </button>
                      </div>
@@ -302,13 +313,13 @@
         
         
 
-        <form class="form-contact" id="form" name ="form" action="https://formspree.io/f/mvonawkj"  method="POST">
+        <form class="form-contact" id="form" name ="form" action="https://formspree.io/f/mvonawkj"  method="POST" onsubmit="validationForm()">
           
                   <input class= "form-input" type="text" id="username" name="username" placeholder="type name" required maxlength="30" minlength = "5" required/>
                
                   <input class= "form-input" type="email" id="email" name="email" placeholder="type email" minlength = "5" required/>
 
-                  <textarea class= "form-input" id="msg" name="msg" placeholder="write your message here" maxlength="500" minlength = "5" required ></textarea>
+                  <textarea class= "form-input" id="msg" name="user_message" placeholder="write your message here" maxlength="500" minlength = "5" required ></textarea>
                 
             <div class="error" id="error"> Email should be written in lower case</div>
             <div class="box-button-contact">
