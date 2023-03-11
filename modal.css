@@ -1,32 +1,3 @@
-* {
-  box-sizing: inherit;
-}
-
-/* HTML5 display-role reset for older browsers */
-
-html {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font: inherit;
-  font-size: 16px;
-  vertical-align: baseline;
-
-  /* display: block; */
-}
-
-ol,
-ul {
-  list-style: none;
-}
-
-body {
-  background-color: #f7f7f9;
-  margin: 0;
-  padding: 0;
-  overflow-x: hidden;
-}
-
 .container-modal-web {
   background-color: white;
   width: 1156px;
@@ -53,7 +24,6 @@ body {
 
 span {
   margin: 2%;
-  width: 20%;
 }
 
 .modal-description-web {
@@ -94,16 +64,9 @@ span {
   grid-template-columns: 70% 30%;
 }
 
-.modal-button-group {
+.button-group-web-modal {
   display: flex;
-  justify-content: flex-center;
-  flex-wrap: wrap;
-  gap: 3%;
-}
-
-.modal-button-group-web {
-  display: flex;
-  justify-content: flex-center;
+  justify-content: flex-start;
   flex-wrap: wrap;
   gap: 3%;
 }
