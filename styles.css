@@ -901,6 +901,10 @@ textarea:invalid {
     top: -112px;
   }
 
+  .left-card{
+    left: 10%;
+  }
+
   .card2 .card-body {
     left: 10%;
   }

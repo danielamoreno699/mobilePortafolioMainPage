@@ -130,6 +130,55 @@ const validateInputEmail = (e) => {
 const form = document.getElementById('form');
 form.addEventListener('submit', validateInputEmail);
 
+// Displaying card dynamically
+// eslint-disable-next-line no-unused-vars
+let htmlCode = '';
+projectDetailList.forEach((el) => {
+  const arrayString = [];
+  for (let el = 0; el < projectDetailList.technologies.length; el++) {
+    const ListTech = `<li class="modal-btn-li">${projectDetailList.technologies[el]}</li>`;
+    arrayString.push(ListTech);
+  }
+  const projectString = arrayString.join('');
+
+  const gridBox = document.querySelector('#grid-boxs');
+  const htmlCode = 
+  `
+  <div class="card card1">
+  <div class="card-header header-1">
+      <img class="card-img img-portafolio-1"src=${projectDetailList.imageLink2} alt="">
+  </div>
+
+  <div class="card-body">
+      <h3 class="card-title">${projectDetailList.name}</h3>
+          <div class="text">    
+              <p class="text-element one"> ${projectDetailList.company} </p>
+               
+              <p class="text-element">${projectDetailList.role}</p>
+              
+              <p class="text-element">${projectDetailList.year}</p>
+          </div>
+      <p class="card-description">
+          A daily selection of privately personalized reads; no accounts or sign-ups required.
+      </p>          
+      <!--Here starts labels and button-->
+          <div class="container-btns">
+              <div class="buttons-are">
+              <ul class="button-group">
+                  ${projectString}
+              </ul> 
+          </div>
+          <div class="box-button">
+              <button id="myBtnModal" class="btn-card" onclick="onProjectButtonClick(0, event)">
+                         See project 
+              </button>
+           </div>
+      </div>
+  </div>
+  </div>`;
+});
+
+
 
 // function to display Modal depending on media query size
 const onMediaQueryModal = (width) => {
@@ -175,7 +224,7 @@ const MobileModalClose = () => {
   const modalTemplateMobile = document.getElementById('modal-template-mobile');
 
   modalTemplateMobile.style.display = ('none');
-  backgroundModalmobile.style.display = ('none');
+  backgroundModalmobile.style.display = ('initial');
   backgroundModalmobile.style.backdropFilter = '';
   backgroundModalmobile.style.position = '';
   backgroundModalmobile.style.zIndex = '';
