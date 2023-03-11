@@ -132,31 +132,25 @@ form.addEventListener('submit', validateInputEmail);
 
 // Displaying card dynamically
 // eslint-disable-next-line no-unused-vars
-let htmlCode = '';
-projectDetailList.forEach((el) => {
-  const arrayString = [];
-  for (let el = 0; el < projectDetailList.technologies.length; el++) {
-    const ListTech = `<li class="modal-btn-li">${projectDetailList.technologies[el]}</li>`;
-    arrayString.push(ListTech);
-  }
-  const projectString = arrayString.join('');
+projectDetailList.forEach((card, index) =>{ 
+const gridBox = document.getElementById('portfolio');
+const projectBox = document.createElement('div');
+projectBox.classList.add('.card-container');
+projectBox.innerHTML = `
 
-  const gridBox = document.querySelector('#grid-boxs');
-  const htmlCode = 
-  `
   <div class="card card1">
   <div class="card-header header-1">
-      <img class="card-img img-portafolio-1"src=${projectDetailList.imageLink2} alt="">
+      <img class="card-img img-portafolio-1"src=${card.imageLink2} alt="">
   </div>
 
   <div class="card-body">
-      <h3 class="card-title">${projectDetailList.name}</h3>
+      <h3 class="card-title">${card.name}</h3>
           <div class="text">    
-              <p class="text-element one"> ${projectDetailList.company} </p>
+              <p class="text-element one"> ${card.company} </p>
                
-              <p class="text-element">${projectDetailList.role}</p>
+              <p class="text-element">${card.role}</p>
               
-              <p class="text-element">${projectDetailList.year}</p>
+              <p class="text-element">${card.year}</p>
           </div>
       <p class="card-description">
           A daily selection of privately personalized reads; no accounts or sign-ups required.
@@ -165,20 +159,22 @@ projectDetailList.forEach((el) => {
           <div class="container-btns">
               <div class="buttons-are">
               <ul class="button-group">
-                  ${projectString}
+                  
               </ul> 
           </div>
           <div class="box-button">
-              <button id="myBtnModal" class="btn-card" onclick="onProjectButtonClick(0, event)">
+              <button id="myBtnModal" class="btn-card" onclick="onProjectButtonClick(1, event)">
                          See project 
               </button>
            </div>
       </div>
   </div>
-  </div>`;
-});
+  </div>
+  `;
 
-
+  console.log(gridBox)
+  gridBox.append(projectBox);
+})
 
 // function to display Modal depending on media query size
 const onMediaQueryModal = (width) => {

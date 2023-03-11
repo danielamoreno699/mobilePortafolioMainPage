@@ -206,7 +206,19 @@ body {
   row-gap: 20px;
 }
 
-.card {
+.project-box1 {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  width: 20.438rem;
+  height: 29.625rem;
+  background: #ebf0ee;
+  border: 1px solid #d0d9d4;
+  border-radius: 8px;
+  transition: transform 0.2s;
+}
+
+.card.box {
   display: flex;
   flex-direction: column;
   align-items: center;
